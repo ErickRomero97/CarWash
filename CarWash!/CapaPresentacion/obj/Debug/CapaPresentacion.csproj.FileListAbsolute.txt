@@ -1,0 +1,16 @@
+C:\Users\ERICK GALLARDO\Desktop\CarWash\CarWash!\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\ERICK GALLARDO\Desktop\CarWash\CarWash!\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\ERICK GALLARDO\Desktop\CarWash\CarWash!\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\ERICK GALLARDO\Desktop\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
+C:\Users\ERICK GALLARDO\Desktop\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAutomoviles.resources
+C:\Users\ERICK GALLARDO\Desktop\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.FrmClientes.resources
+C:\Users\ERICK GALLARDO\Desktop\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.FrmEmpleados.resources
+C:\Users\ERICK GALLARDO\Desktop\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.FrmFactura.resources
+C:\Users\ERICK GALLARDO\Desktop\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.FrmLogAuditoria.resources
+C:\Users\ERICK GALLARDO\Desktop\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.FrmLogin.resources
+C:\Users\ERICK GALLARDO\Desktop\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.FrmServicios.resources
+C:\Users\ERICK GALLARDO\Desktop\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUsuarios.resources
+C:\Users\ERICK GALLARDO\Desktop\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\ERICK GALLARDO\Desktop\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
+C:\Users\ERICK GALLARDO\Desktop\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\ERICK GALLARDO\Desktop\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
