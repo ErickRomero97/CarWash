@@ -39,3 +39,5 @@ C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\obj\Debug\Cap
 C:\Users\Edwin Ordoñez\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
 C:\Users\Edwin Ordoñez\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 C:\Users\Edwin Ordoñez\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.FrmPrincipal.resources
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.FrmBusquedaEmpleado.resources

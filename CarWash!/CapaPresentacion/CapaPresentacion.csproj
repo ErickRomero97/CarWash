@@ -94,6 +94,12 @@
     <Compile Include="Formularios\FrmFactura.Designer.cs">
       <DependentUpon>FrmFactura.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBusquedaEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBusquedaEmpleado.Designer.cs">
+      <DependentUpon>FrmBusquedaEmpleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogAuditoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmAutomoviles.resx">
       <DependentUpon>FrmAutomoviles.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmFactura.resx">
       <DependentUpon>FrmFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBusquedaEmpleado.resx">
+      <DependentUpon>FrmBusquedaEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogAuditoria.resx">
       <DependentUpon>FrmLogAuditoria.cs</DependentUpon>
