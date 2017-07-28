@@ -14,3 +14,25 @@ C:\Users\ERICK GALLARDO\Desktop\CarWash\CarWash!\CapaPresentacion\obj\Debug\Capa
 C:\Users\ERICK GALLARDO\Desktop\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
 C:\Users\ERICK GALLARDO\Desktop\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 C:\Users\ERICK GALLARDO\Desktop\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\CapaDatos.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\CapaEntidades.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\CapaDatos.pdb
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\CapaEntidades.pdb
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAutomoviles.resources
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.FrmClientes.resources
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.FrmEmpleados.resources
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.FrmFactura.resources
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.FrmLogAuditoria.resources
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.FrmLogin.resources
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.FrmServicios.resources
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUsuarios.resources
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.pdb

@@ -1,0 +1,7 @@
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaDatos\bin\Debug\CapaEntidades.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaDatos\bin\Debug\CapaEntidades.pdb
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaDatos\obj\Debug\CapaDatos.pdb
