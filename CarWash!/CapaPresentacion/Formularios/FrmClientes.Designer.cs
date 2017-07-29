@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmClientes));
             this.dgvClientes = new System.Windows.Forms.DataGridView();
+            this.CmsOpciones = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.editarMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chkVer = new System.Windows.Forms.CheckBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtApellidos = new System.Windows.Forms.TextBox();
@@ -54,13 +57,10 @@
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.CmsOpciones = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.editarMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
+            this.CmsOpciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.gbDatos.SuspendLayout();
-            this.CmsOpciones.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvClientes
@@ -76,6 +76,31 @@
             this.dgvClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvClientes.Size = new System.Drawing.Size(488, 222);
             this.dgvClientes.TabIndex = 24;
+            // 
+            // CmsOpciones
+            // 
+            this.CmsOpciones.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.CmsOpciones.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editarMenuItem,
+            this.eliminarMenuItem});
+            this.CmsOpciones.Name = "CmsOpciones";
+            this.CmsOpciones.Size = new System.Drawing.Size(122, 56);
+            // 
+            // editarMenuItem
+            // 
+            this.editarMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("editarMenuItem.Image")));
+            this.editarMenuItem.Name = "editarMenuItem";
+            this.editarMenuItem.Size = new System.Drawing.Size(121, 26);
+            this.editarMenuItem.Text = "Editar";
+            this.editarMenuItem.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // eliminarMenuItem
+            // 
+            this.eliminarMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("eliminarMenuItem.Image")));
+            this.eliminarMenuItem.Name = "eliminarMenuItem";
+            this.eliminarMenuItem.Size = new System.Drawing.Size(121, 26);
+            this.eliminarMenuItem.Text = "Eliminar";
+            this.eliminarMenuItem.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // chkVer
             // 
@@ -307,36 +332,11 @@
             this.label6.TabIndex = 9;
             this.label6.Text = "Dirección:";
             // 
-            // CmsOpciones
-            // 
-            this.CmsOpciones.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.CmsOpciones.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.editarMenuItem,
-            this.eliminarMenuItem});
-            this.CmsOpciones.Name = "CmsOpciones";
-            this.CmsOpciones.Size = new System.Drawing.Size(157, 78);
-            // 
-            // editarMenuItem
-            // 
-            this.editarMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("editarMenuItem.Image")));
-            this.editarMenuItem.Name = "editarMenuItem";
-            this.editarMenuItem.Size = new System.Drawing.Size(156, 26);
-            this.editarMenuItem.Text = "Editar";
-            this.editarMenuItem.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
-            // 
-            // eliminarMenuItem
-            // 
-            this.eliminarMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("eliminarMenuItem.Image")));
-            this.eliminarMenuItem.Name = "eliminarMenuItem";
-            this.eliminarMenuItem.Size = new System.Drawing.Size(156, 26);
-            this.eliminarMenuItem.Text = "Eliminar";
-            this.eliminarMenuItem.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
-            // 
             // FrmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(512, 273);
+            this.ClientSize = new System.Drawing.Size(512, 290);
             this.Controls.Add(this.gbDatos);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnModificar);
@@ -353,10 +353,10 @@
             this.Text = "Clientes";
             this.Load += new System.EventHandler(this.FrmClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
+            this.CmsOpciones.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.gbDatos.ResumeLayout(false);
             this.gbDatos.PerformLayout();
-            this.CmsOpciones.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -43,7 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CDBusquedaCliente.cs" />
+    <Compile Include="CDBusquedaServicio.cs" />
     <Compile Include="CDEmpleado.cs" />
+    <Compile Include="CDServicio.cs" />
     <Compile Include="CDUsuario.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="D_Cliente.cs" />

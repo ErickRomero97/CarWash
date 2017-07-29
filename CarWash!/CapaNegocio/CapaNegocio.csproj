@@ -40,7 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CNBusquedaCliente.cs" />
+    <Compile Include="CNBusquedaServicio.cs" />
     <Compile Include="CNEmpleado.cs" />
+    <Compile Include="CNServicio.cs" />
     <Compile Include="CNUsuario.cs" />
     <Compile Include="N_Cliente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

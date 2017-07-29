@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmServicios));
-            this.dgvProductos = new System.Windows.Forms.DataGridView();
+            this.dgvServicios = new System.Windows.Forms.DataGridView();
             this.chkLista = new System.Windows.Forms.CheckBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -37,37 +38,48 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.gbDatos = new System.Windows.Forms.GroupBox();
+            this.txtDesc = new System.Windows.Forms.TextBox();
+            this.btnProveedor = new System.Windows.Forms.Button();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.txtNS = new System.Windows.Forms.TextBox();
+            this.txtIdSer = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.btnProveedor = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.epSer = new System.Windows.Forms.ErrorProvider(this.components);
+            this.CmsOpciones = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.editarMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvServicios)).BeginInit();
+            this.gbDatos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.epSer)).BeginInit();
+            this.CmsOpciones.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgvProductos
+            // dgvServicios
             // 
-            this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProductos.Location = new System.Drawing.Point(12, 288);
-            this.dgvProductos.Name = "dgvProductos";
-            this.dgvProductos.Size = new System.Drawing.Size(497, 195);
-            this.dgvProductos.TabIndex = 22;
+            this.dgvServicios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvServicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvServicios.ContextMenuStrip = this.CmsOpciones;
+            this.dgvServicios.Location = new System.Drawing.Point(12, 288);
+            this.dgvServicios.Name = "dgvServicios";
+            this.dgvServicios.Size = new System.Drawing.Size(634, 195);
+            this.dgvServicios.TabIndex = 22;
             // 
             // chkLista
             // 
             this.chkLista.AutoSize = true;
-            this.chkLista.Location = new System.Drawing.Point(414, 240);
+            this.chkLista.Location = new System.Drawing.Point(437, 240);
             this.chkLista.Name = "chkLista";
             this.chkLista.Size = new System.Drawing.Size(67, 17);
             this.chkLista.TabIndex = 21;
             this.chkLista.Text = "Ver Lista";
             this.chkLista.UseVisualStyleBackColor = true;
+            this.chkLista.CheckedChanged += new System.EventHandler(this.chkLista_CheckedChanged);
             // 
             // label9
             // 
@@ -108,6 +120,7 @@
             this.btnCancelar.Size = new System.Drawing.Size(44, 38);
             this.btnCancelar.TabIndex = 17;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
@@ -121,6 +134,7 @@
             this.btnGuardar.Size = new System.Drawing.Size(44, 40);
             this.btnGuardar.TabIndex = 16;
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnNuevo
             // 
@@ -134,38 +148,84 @@
             this.btnNuevo.Size = new System.Drawing.Size(44, 40);
             this.btnNuevo.TabIndex = 15;
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // groupBox1
+            // gbDatos
             // 
-            this.groupBox1.Controls.Add(this.txtDescripcion);
-            this.groupBox1.Controls.Add(this.btnProveedor);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(396, 245);
-            this.groupBox1.TabIndex = 14;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Datos de Servicios";
+            this.gbDatos.Controls.Add(this.txtDesc);
+            this.gbDatos.Controls.Add(this.btnProveedor);
+            this.gbDatos.Controls.Add(this.txtPrecio);
+            this.gbDatos.Controls.Add(this.txtNS);
+            this.gbDatos.Controls.Add(this.txtIdSer);
+            this.gbDatos.Controls.Add(this.label3);
+            this.gbDatos.Controls.Add(this.label5);
+            this.gbDatos.Controls.Add(this.label2);
+            this.gbDatos.Controls.Add(this.label1);
+            this.gbDatos.Location = new System.Drawing.Point(12, 12);
+            this.gbDatos.Name = "gbDatos";
+            this.gbDatos.Size = new System.Drawing.Size(405, 245);
+            this.gbDatos.TabIndex = 14;
+            this.gbDatos.TabStop = false;
+            this.gbDatos.Text = "Datos de Servicios";
             // 
-            // textBox2
+            // txtDesc
             // 
-            this.textBox2.Location = new System.Drawing.Point(133, 51);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(131, 20);
-            this.textBox2.TabIndex = 2;
+            this.txtDesc.Location = new System.Drawing.Point(133, 112);
+            this.txtDesc.Multiline = true;
+            this.txtDesc.Name = "txtDesc";
+            this.txtDesc.Size = new System.Drawing.Size(257, 112);
+            this.txtDesc.TabIndex = 13;
             // 
-            // textBox1
+            // btnProveedor
             // 
-            this.textBox1.Location = new System.Drawing.Point(133, 25);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(56, 20);
-            this.textBox1.TabIndex = 1;
+            this.btnProveedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnProveedor.FlatAppearance.BorderSize = 0;
+            this.btnProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProveedor.Location = new System.Drawing.Point(268, 185);
+            this.btnProveedor.Name = "btnProveedor";
+            this.btnProveedor.Size = new System.Drawing.Size(25, 20);
+            this.btnProveedor.TabIndex = 12;
+            this.btnProveedor.UseVisualStyleBackColor = true;
+            // 
+            // txtPrecio
+            // 
+            this.txtPrecio.Location = new System.Drawing.Point(133, 81);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(98, 20);
+            this.txtPrecio.TabIndex = 5;
+            this.txtPrecio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtNS
+            // 
+            this.txtNS.Location = new System.Drawing.Point(133, 51);
+            this.txtNS.Name = "txtNS";
+            this.txtNS.Size = new System.Drawing.Size(131, 20);
+            this.txtNS.TabIndex = 2;
+            // 
+            // txtIdSer
+            // 
+            this.txtIdSer.Location = new System.Drawing.Point(133, 25);
+            this.txtIdSer.Name = "txtIdSer";
+            this.txtIdSer.Size = new System.Drawing.Size(56, 20);
+            this.txtIdSer.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(56, 115);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(66, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Descripcion:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(82, 84);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(40, 13);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Precio:";
             // 
             // label2
             // 
@@ -185,57 +245,68 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Id Servicio:";
             // 
-            // label5
+            // label4
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(82, 84);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 13);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Precio:";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(527, 95);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 13);
+            this.label4.TabIndex = 114;
+            this.label4.Text = "Modificar";
             // 
-            // textBox3
+            // btnModificar
             // 
-            this.textBox3.Location = new System.Drawing.Point(133, 81);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(98, 20);
-            this.textBox3.TabIndex = 5;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnModificar.BackColor = System.Drawing.Color.Transparent;
+            this.btnModificar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnModificar.BackgroundImage")));
+            this.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnModificar.FlatAppearance.BorderSize = 0;
+            this.btnModificar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificar.Location = new System.Drawing.Point(522, 37);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(55, 49);
+            this.btnModificar.TabIndex = 113;
+            this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
-            // btnProveedor
+            // epSer
             // 
-            this.btnProveedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnProveedor.FlatAppearance.BorderSize = 0;
-            this.btnProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProveedor.Location = new System.Drawing.Point(268, 185);
-            this.btnProveedor.Name = "btnProveedor";
-            this.btnProveedor.Size = new System.Drawing.Size(25, 20);
-            this.btnProveedor.TabIndex = 12;
-            this.btnProveedor.UseVisualStyleBackColor = true;
+            this.epSer.ContainerControl = this;
             // 
-            // label3
+            // CmsOpciones
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(56, 115);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Descripcion:";
+            this.CmsOpciones.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.CmsOpciones.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editarMenuItem,
+            this.eliminarMenuItem});
+            this.CmsOpciones.Name = "CmsOpciones";
+            this.CmsOpciones.Size = new System.Drawing.Size(122, 56);
             // 
-            // txtDescripcion
+            // editarMenuItem
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(133, 112);
-            this.txtDescripcion.Multiline = true;
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(257, 112);
-            this.txtDescripcion.TabIndex = 13;
+            this.editarMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("editarMenuItem.Image")));
+            this.editarMenuItem.Name = "editarMenuItem";
+            this.editarMenuItem.Size = new System.Drawing.Size(121, 26);
+            this.editarMenuItem.Text = "Editar";
+            this.editarMenuItem.Click += new System.EventHandler(this.editarMenuItem_Click);
+            // 
+            // eliminarMenuItem
+            // 
+            this.eliminarMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("eliminarMenuItem.Image")));
+            this.eliminarMenuItem.Name = "eliminarMenuItem";
+            this.eliminarMenuItem.Size = new System.Drawing.Size(121, 26);
+            this.eliminarMenuItem.Text = "Eliminar";
+            this.eliminarMenuItem.Click += new System.EventHandler(this.eliminarMenuItem_Click);
             // 
             // FrmServicios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(521, 495);
-            this.Controls.Add(this.dgvProductos);
+            this.ClientSize = new System.Drawing.Size(658, 495);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.dgvServicios);
             this.Controls.Add(this.chkLista);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -243,12 +314,15 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnNuevo);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbDatos);
             this.Name = "FrmServicios";
             this.Text = "Servicios";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Load += new System.EventHandler(this.FrmServicios_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvServicios)).EndInit();
+            this.gbDatos.ResumeLayout(false);
+            this.gbDatos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.epSer)).EndInit();
+            this.CmsOpciones.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,7 +330,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvProductos;
+        private System.Windows.Forms.DataGridView dgvServicios;
         private System.Windows.Forms.CheckBox chkLista;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
@@ -264,15 +338,21 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.GroupBox gbDatos;
+        private System.Windows.Forms.TextBox txtNS;
+        private System.Windows.Forms.TextBox txtIdSer;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.TextBox txtDesc;
         private System.Windows.Forms.Button btnProveedor;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        internal System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.ErrorProvider epSer;
+        internal System.Windows.Forms.ContextMenuStrip CmsOpciones;
+        internal System.Windows.Forms.ToolStripMenuItem editarMenuItem;
+        internal System.Windows.Forms.ToolStripMenuItem eliminarMenuItem;
     }
 }

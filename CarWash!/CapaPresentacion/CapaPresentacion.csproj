@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusquedaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusquedaCliente.Designer.cs">
+      <DependentUpon>BusquedaCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,12 @@
     <Compile Include="FrmBusquedaEmpleado.Designer.cs">
       <DependentUpon>FrmBusquedaEmpleado.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBusquedaServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBusquedaServicio.Designer.cs">
+      <DependentUpon>FrmBusquedaServicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogAuditoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +138,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BusquedaCliente.resx">
+      <DependentUpon>BusquedaCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBusquedaEmpleado.resx">
       <DependentUpon>FrmBusquedaEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBusquedaServicio.resx">
+      <DependentUpon>FrmBusquedaServicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogAuditoria.resx">
       <DependentUpon>FrmLogAuditoria.cs</DependentUpon>
