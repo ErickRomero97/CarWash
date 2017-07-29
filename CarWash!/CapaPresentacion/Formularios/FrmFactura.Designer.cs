@@ -46,15 +46,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnCliente = new System.Windows.Forms.Button();
+            this.txtAutomovil = new System.Windows.Forms.TextBox();
+            this.btnAutomovil = new System.Windows.Forms.Button();
             this.dtpFechaFactura = new System.Windows.Forms.DateTimePicker();
             this.txtCliente = new System.Windows.Forms.TextBox();
             this.txtCodFactura = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtAutomovil = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -167,7 +167,6 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 14;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox3
             // 
@@ -226,7 +225,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txtAutomovil);
-            this.groupBox1.Controls.Add(this.btnCliente);
+            this.groupBox1.Controls.Add(this.btnAutomovil);
             this.groupBox1.Controls.Add(this.dtpFechaFactura);
             this.groupBox1.Controls.Add(this.txtCliente);
             this.groupBox1.Controls.Add(this.txtCodFactura);
@@ -241,17 +240,25 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de Factura";
             // 
-            // btnCliente
+            // txtAutomovil
             // 
-            this.btnCliente.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCliente.BackgroundImage")));
-            this.btnCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCliente.FlatAppearance.BorderSize = 0;
-            this.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCliente.Location = new System.Drawing.Point(214, 51);
-            this.btnCliente.Name = "btnCliente";
-            this.btnCliente.Size = new System.Drawing.Size(25, 20);
-            this.btnCliente.TabIndex = 11;
-            this.btnCliente.UseVisualStyleBackColor = true;
+            this.txtAutomovil.Location = new System.Drawing.Point(94, 50);
+            this.txtAutomovil.Name = "txtAutomovil";
+            this.txtAutomovil.Size = new System.Drawing.Size(114, 20);
+            this.txtAutomovil.TabIndex = 12;
+            this.txtAutomovil.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnAutomovil
+            // 
+            this.btnAutomovil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAutomovil.BackgroundImage")));
+            this.btnAutomovil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAutomovil.FlatAppearance.BorderSize = 0;
+            this.btnAutomovil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAutomovil.Location = new System.Drawing.Point(214, 51);
+            this.btnAutomovil.Name = "btnAutomovil";
+            this.btnAutomovil.Size = new System.Drawing.Size(25, 20);
+            this.btnAutomovil.TabIndex = 11;
+            this.btnAutomovil.UseVisualStyleBackColor = true;
             // 
             // dtpFechaFactura
             // 
@@ -272,7 +279,7 @@
             // 
             this.txtCodFactura.Location = new System.Drawing.Point(94, 23);
             this.txtCodFactura.Name = "txtCodFactura";
-            this.txtCodFactura.Size = new System.Drawing.Size(86, 20);
+            this.txtCodFactura.Size = new System.Drawing.Size(64, 20);
             this.txtCodFactura.TabIndex = 1;
             this.txtCodFactura.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -284,6 +291,15 @@
             this.label3.Size = new System.Drawing.Size(40, 13);
             this.label3.TabIndex = 0;
             this.label3.Text = "Fecha:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(268, 53);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(42, 13);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Cliente:";
             // 
             // label
             // 
@@ -302,22 +318,6 @@
             this.label1.Size = new System.Drawing.Size(82, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Código Factura:";
-            // 
-            // txtAutomovil
-            // 
-            this.txtAutomovil.Location = new System.Drawing.Point(94, 50);
-            this.txtAutomovil.Name = "txtAutomovil";
-            this.txtAutomovil.Size = new System.Drawing.Size(114, 20);
-            this.txtAutomovil.TabIndex = 12;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(268, 53);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 13);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Cliente:";
             // 
             // FrmFactura
             // 
@@ -365,7 +365,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnCliente;
+        private System.Windows.Forms.Button btnAutomovil;
         private System.Windows.Forms.DateTimePicker dtpFechaFactura;
         private System.Windows.Forms.TextBox txtCliente;
         private System.Windows.Forms.TextBox txtCodFactura;

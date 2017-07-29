@@ -24,30 +24,6 @@ namespace CapaPresentacion
             MostrarTodoCliente();
         }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
-        {
-            if (txtBuscar.Text == "")
-            {
-                epBuscar.SetError(txtBuscar, "El campo de busqueda está vacío");
-                txtBuscar.Focus();
-                return;
-            }
-            else
-            {
-                epBuscar.SetError(txtBuscar, "");
-            }
-
-
-            if (rdbId.Checked == true)
-            {
-                BuscarXCliente(txtBuscar.Text);
-            }
-            else
-            {
-                BuscarNombreCliente(txtBuscar.Text);
-            }
-            
-        }
 
         private void rdbId_CheckedChanged(object sender, EventArgs e)
         {
@@ -90,6 +66,30 @@ namespace CapaPresentacion
         private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
             MostrarTodoCliente();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            if (txtBuscar.Text == "")
+            {
+                epBuscar.SetError(txtBuscar, "El campo de busqueda está vacío");
+                txtBuscar.Focus();
+                return;
+            }
+            else
+            {
+                epBuscar.SetError(txtBuscar, "");
+            }
+
+
+            if (rdbId.Checked == true)
+            {
+                BuscarXCliente(txtBuscar.Text);
+            }
+            else
+            {
+                BuscarNombreCliente(txtBuscar.Text);
+            }
         }
     }
 }

@@ -51,8 +51,15 @@
     <StartupObject>CapaPresentacion.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -64,10 +71,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusquedaCliente.cs">
+    <Compile Include="Formularios\BusquedaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BusquedaCliente.Designer.cs">
+    <Compile Include="Formularios\BusquedaCliente.Designer.cs">
       <DependentUpon>BusquedaCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Form1.cs">
@@ -100,45 +107,57 @@
     <Compile Include="Formularios\FrmFactura.Designer.cs">
       <DependentUpon>FrmFactura.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmBusquedaEmpleado.cs">
+    <Compile Include="Formularios\FrmBusquedaEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmBusquedaEmpleado.Designer.cs">
+    <Compile Include="Formularios\FrmBusquedaEmpleado.Designer.cs">
       <DependentUpon>FrmBusquedaEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmBusquedaServicio.cs">
+    <Compile Include="Formularios\FrmBusquedaServicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmBusquedaServicio.Designer.cs">
+    <Compile Include="Formularios\FrmBusquedaServicio.Designer.cs">
       <DependentUpon>FrmBusquedaServicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmLogAuditoria.cs">
+    <Compile Include="Formularios\FrmLogAuditoria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLogAuditoria.Designer.cs">
+    <Compile Include="Formularios\FrmLogAuditoria.Designer.cs">
       <DependentUpon>FrmLogAuditoria.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmLogin.cs">
+    <Compile Include="Formularios\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLogin.Designer.cs">
+    <Compile Include="Formularios\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmServicios.cs">
+    <Compile Include="Formularios\FrmMarca.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmServicios.Designer.cs">
+    <Compile Include="Formularios\FrmMarca.Designer.cs">
+      <DependentUpon>FrmMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmModelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmModelo.Designer.cs">
+      <DependentUpon>FrmModelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmServicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmServicios.Designer.cs">
       <DependentUpon>FrmServicios.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmUsuarios.cs">
+    <Compile Include="Formularios\FrmUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmUsuarios.Designer.cs">
+    <Compile Include="Formularios\FrmUsuarios.Designer.cs">
       <DependentUpon>FrmUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="BusquedaCliente.resx">
+    <EmbeddedResource Include="Formularios\BusquedaCliente.resx">
       <DependentUpon>BusquedaCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Form1.resx">
@@ -156,22 +175,28 @@
     <EmbeddedResource Include="Formularios\FrmFactura.resx">
       <DependentUpon>FrmFactura.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmBusquedaEmpleado.resx">
+    <EmbeddedResource Include="Formularios\FrmBusquedaEmpleado.resx">
       <DependentUpon>FrmBusquedaEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmBusquedaServicio.resx">
+    <EmbeddedResource Include="Formularios\FrmBusquedaServicio.resx">
       <DependentUpon>FrmBusquedaServicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmLogAuditoria.resx">
+    <EmbeddedResource Include="Formularios\FrmLogAuditoria.resx">
       <DependentUpon>FrmLogAuditoria.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmLogin.resx">
+    <EmbeddedResource Include="Formularios\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmServicios.resx">
+    <EmbeddedResource Include="Formularios\FrmMarca.resx">
+      <DependentUpon>FrmMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmModelo.resx">
+      <DependentUpon>FrmModelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmServicios.resx">
       <DependentUpon>FrmServicios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmUsuarios.resx">
+    <EmbeddedResource Include="Formularios\FrmUsuarios.resx">
       <DependentUpon>FrmUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -182,6 +207,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -221,6 +247,9 @@
       <Project>{7812351d-7720-4409-872f-b6506a499b25}</Project>
       <Name>CapaNegocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_add.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

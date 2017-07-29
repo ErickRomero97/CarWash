@@ -181,6 +181,59 @@ namespace CapaPresentacion
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            HabilitarBotones(true, false, true, false, false);
+            Limpiar();
+           
+        }
+
+     
+
+        private void chkVer_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkVer.Checked == true)
+            {
+                Height = 550;
+                CenterToScreen();
+
+            }
+            else
+            {
+                Height = 310;
+                CenterToScreen();
+            }
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FilaSeleccionada();
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            string IdCliente = dgvClientes.SelectedRows[0].Cells[0].Value.ToString();
+            EliminarCliente(IdCliente);
+            CargarCliente();
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            HabilitarBotones(false, true, true, false, true);
+            chkVer.Enabled = false;
+            chkVer.Checked = false;
+        }
+
+        private void btnGuardar_Click_1(object sender, EventArgs e)
+        {
             #region Validacion
 
             if (mtbIdCliente.MaskFull == false)
@@ -232,7 +285,7 @@ namespace CapaPresentacion
             HabilitarBotones(true, false, true, false, false);
         }
 
-        private void btnModificar_Click(object sender, EventArgs e)
+        private void btnModificar_Click_1(object sender, EventArgs e)
         {
             #region Validacion
 
@@ -287,40 +340,10 @@ namespace CapaPresentacion
 
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void btnCancelar_Click_1(object sender, EventArgs e)
         {
             HabilitarBotones(true, false, true, false, false);
             Limpiar();
-           
-        }
-
-     
-
-        private void chkVer_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkVer.Checked == true)
-            {
-                Height = 550;
-                CenterToScreen();
-
-            }
-            else
-            {
-                Height = 310;
-                CenterToScreen();
-            }
-        }
-
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            FilaSeleccionada();
-        }
-
-        private void toolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            string IdCliente = dgvClientes.SelectedRows[0].Cells[0].Value.ToString();
-            EliminarCliente(IdCliente);
-            CargarCliente();
         }
     }
 }

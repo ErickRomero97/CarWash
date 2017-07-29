@@ -90,5 +90,29 @@ namespace CapaPresentacion
             dgvSer.DataSource = buscarC.MostrarServicio().Tables["MostrarTodoCliente"];
             //this.dgvMostrar.Columns["CodUsuario"].Visible = false;
         }
+
+        private void btnBuscar_Click_1(object sender, EventArgs e)
+        {
+            if (txtBuscar.Text == "")
+            {
+                epBuscar.SetError(txtBuscar, "El campo de busqueda está vacío");
+                txtBuscar.Focus();
+                return;
+            }
+            else
+            {
+                epBuscar.SetError(txtBuscar, "");
+            }
+
+
+            if (rdbId.Checked == true)
+            {
+                BuscarServicio(Convert.ToInt32(txtBuscar.Text));
+            }
+            else
+            {
+                BuscarNombreCliente(txtBuscar.Text);
+            }
+        }
     }
 }

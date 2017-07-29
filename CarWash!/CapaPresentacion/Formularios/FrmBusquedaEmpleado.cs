@@ -90,5 +90,10 @@ namespace CapaPresentacion
         {
             BuscarEmpleadoNombre(txtNombre.Text);
         }
+
+        private void btnBuscar_Click_1(object sender, EventArgs e)
+        {
+            BuscarEmpleadoId(txtIdEmpleado.Text);
+        }
     }
 }

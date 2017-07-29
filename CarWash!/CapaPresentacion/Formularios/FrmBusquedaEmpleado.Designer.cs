@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBusquedaEmpleado));
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.txtIdEmpleado = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rdbNombre = new System.Windows.Forms.RadioButton();
             this.rdbId = new System.Windows.Forms.RadioButton();
             this.dgvEmpleado = new System.Windows.Forms.DataGridView();
+            this.btnBuscar = new DevExpress.XtraEditors.SimpleButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleado)).BeginInit();
             this.SuspendLayout();
@@ -46,16 +47,6 @@
             this.txtNombre.Size = new System.Drawing.Size(229, 20);
             this.txtNombre.TabIndex = 14;
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged_1);
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Location = new System.Drawing.Point(493, 77);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscar.TabIndex = 13;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtIdEmpleado
             // 
@@ -108,13 +99,24 @@
             this.dgvEmpleado.Size = new System.Drawing.Size(661, 227);
             this.dgvEmpleado.TabIndex = 10;
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
+            this.btnBuscar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnBuscar.Location = new System.Drawing.Point(479, 73);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(86, 29);
+            this.btnBuscar.TabIndex = 21;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click_1);
+            // 
             // FrmBusquedaEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(771, 373);
-            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtIdEmpleado);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvEmpleado);
@@ -132,11 +134,11 @@
         #endregion
 
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtIdEmpleado;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rdbNombre;
         private System.Windows.Forms.RadioButton rdbId;
         public System.Windows.Forms.DataGridView dgvEmpleado;
+        private DevExpress.XtraEditors.SimpleButton btnBuscar;
     }
 }

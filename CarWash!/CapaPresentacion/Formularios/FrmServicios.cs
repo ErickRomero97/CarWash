@@ -32,48 +32,7 @@ namespace CapaPresentacion
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            #region Validacion
-            if (txtNS.Text == "")
-            {
-                epSer.SetError(txtNS, "Ingrese el nombre del Servicio");
-                txtNS.Focus();
-                return;
-            }
-            else
-            {
-                epSer.SetError(txtNS, "");
-            }
 
-            if (txtPrecio.Text == "")
-            {
-                epSer.SetError(txtPrecio, "Ingrese el  precio del servicio");
-                txtPrecio.Focus();
-                return;
-            }
-            else
-            {
-                epSer.SetError(txtPrecio, "");
-            }
-
-            if (txtDesc.Text == "")
-            {
-                epSer.SetError(txtDesc, "Ingrese la descripcion del servicio");
-                txtDesc.Focus();
-                return;
-            }
-            else
-            {
-                epSer.SetError(txtDesc, "");
-            }
-
-         
-            #endregion
-
-            InsertarServicio();
-            CargarServicio();
-            HabilitarBotones(true, false, false, false, false);
-            chkLista.Enabled = true;
-            chkLista.Checked = false;
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -86,44 +45,7 @@ namespace CapaPresentacion
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            #region Validacion
-            if (txtNS.Text == "")
-            {
-                epSer.SetError(txtNS, "Ingrese el nombre del Servicio");
-                txtNS.Focus();
-                return;
-            }
-            else
-            {
-                epSer.SetError(txtNS, "");
-            }
 
-            if (txtPrecio.Text == "")
-            {
-                epSer.SetError(txtPrecio, "Ingrese el  precio del servicio");
-                txtPrecio.Focus();
-                return;
-            }
-            else
-            {
-                epSer.SetError(txtPrecio, "");
-            }
-
-            if (txtDesc.Text == "")
-            {
-                epSer.SetError(txtDesc, "Ingrese la descripcion del servicio");
-                txtDesc.Focus();
-                return;
-            }
-            else
-            {
-                epSer.SetError(txtDesc, "");
-            }
-
-
-            #endregion
-            ActualizarServicio();
-            CargarServicio();
         }
 
         private void chkLista_CheckedChanged(object sender, EventArgs e)
@@ -269,6 +191,112 @@ namespace CapaPresentacion
             int Cod = Convert.ToInt32(dgvServicios.SelectedRows[0].Cells[0].Value.ToString());
             EliminarServicio(Cod);
             CargarServicio();
+        }
+
+        private void btnNuevo_Click_1(object sender, EventArgs e)
+        {
+            Limpiar();
+            gbDatos.Enabled = true;
+            HabilitarBotones(false, true, true, false, true);
+            chkLista.Enabled = false;
+            chkLista.Checked = false;
+            investigarCorrelativo();
+        }
+
+        private void btnGuardar_Click_1(object sender, EventArgs e)
+        {
+            #region Validacion
+            if (txtNS.Text == "")
+            {
+                epSer.SetError(txtNS, "Ingrese el nombre del Servicio");
+                txtNS.Focus();
+                return;
+            }
+            else
+            {
+                epSer.SetError(txtNS, "");
+            }
+
+            if (txtPrecio.Text == "")
+            {
+                epSer.SetError(txtPrecio, "Ingrese el  precio del servicio");
+                txtPrecio.Focus();
+                return;
+            }
+            else
+            {
+                epSer.SetError(txtPrecio, "");
+            }
+
+            if (txtDesc.Text == "")
+            {
+                epSer.SetError(txtDesc, "Ingrese la descripcion del servicio");
+                txtDesc.Focus();
+                return;
+            }
+            else
+            {
+                epSer.SetError(txtDesc, "");
+            }
+
+
+            #endregion
+
+            InsertarServicio();
+            CargarServicio();
+            HabilitarBotones(true, false, false, false, false);
+            chkLista.Enabled = true;
+            chkLista.Checked = false;
+        }
+
+        private void btnModificar_Click_1(object sender, EventArgs e)
+        {
+            #region Validacion
+            if (txtNS.Text == "")
+            {
+                epSer.SetError(txtNS, "Ingrese el nombre del Servicio");
+                txtNS.Focus();
+                return;
+            }
+            else
+            {
+                epSer.SetError(txtNS, "");
+            }
+
+            if (txtPrecio.Text == "")
+            {
+                epSer.SetError(txtPrecio, "Ingrese el  precio del servicio");
+                txtPrecio.Focus();
+                return;
+            }
+            else
+            {
+                epSer.SetError(txtPrecio, "");
+            }
+
+            if (txtDesc.Text == "")
+            {
+                epSer.SetError(txtDesc, "Ingrese la descripcion del servicio");
+                txtDesc.Focus();
+                return;
+            }
+            else
+            {
+                epSer.SetError(txtDesc, "");
+            }
+
+
+            #endregion
+            ActualizarServicio();
+            CargarServicio();
+        }
+
+        private void btnCancelar_Click_1(object sender, EventArgs e)
+        {
+            Limpiar();
+            chkLista.Checked = false;
+            chkLista.Enabled = true;
+            HabilitarBotones(true, false, false, false, false);
         }
     }
 }

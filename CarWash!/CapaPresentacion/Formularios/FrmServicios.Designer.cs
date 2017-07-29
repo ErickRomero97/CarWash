@@ -31,13 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmServicios));
             this.dgvServicios = new System.Windows.Forms.DataGridView();
+            this.CmsOpciones = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.editarMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chkLista = new System.Windows.Forms.CheckBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnNuevo = new System.Windows.Forms.Button();
             this.gbDatos = new System.Windows.Forms.GroupBox();
             this.txtDesc = new System.Windows.Forms.TextBox();
             this.btnProveedor = new System.Windows.Forms.Button();
@@ -48,16 +45,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnModificar = new System.Windows.Forms.Button();
             this.epSer = new System.Windows.Forms.ErrorProvider(this.components);
-            this.CmsOpciones = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.editarMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
+            this.btnModificar = new DevExpress.XtraEditors.SimpleButton();
+            this.btnGuardar = new DevExpress.XtraEditors.SimpleButton();
+            this.btnNuevo = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicios)).BeginInit();
+            this.CmsOpciones.SuspendLayout();
             this.gbDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.epSer)).BeginInit();
-            this.CmsOpciones.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvServicios
@@ -70,6 +66,31 @@
             this.dgvServicios.Size = new System.Drawing.Size(634, 195);
             this.dgvServicios.TabIndex = 22;
             // 
+            // CmsOpciones
+            // 
+            this.CmsOpciones.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.CmsOpciones.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editarMenuItem,
+            this.eliminarMenuItem});
+            this.CmsOpciones.Name = "CmsOpciones";
+            this.CmsOpciones.Size = new System.Drawing.Size(122, 56);
+            // 
+            // editarMenuItem
+            // 
+            this.editarMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("editarMenuItem.Image")));
+            this.editarMenuItem.Name = "editarMenuItem";
+            this.editarMenuItem.Size = new System.Drawing.Size(121, 26);
+            this.editarMenuItem.Text = "Editar";
+            this.editarMenuItem.Click += new System.EventHandler(this.editarMenuItem_Click);
+            // 
+            // eliminarMenuItem
+            // 
+            this.eliminarMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("eliminarMenuItem.Image")));
+            this.eliminarMenuItem.Name = "eliminarMenuItem";
+            this.eliminarMenuItem.Size = new System.Drawing.Size(121, 26);
+            this.eliminarMenuItem.Text = "Eliminar";
+            this.eliminarMenuItem.Click += new System.EventHandler(this.eliminarMenuItem_Click);
+            // 
             // chkLista
             // 
             this.chkLista.AutoSize = true;
@@ -80,75 +101,6 @@
             this.chkLista.Text = "Ver Lista";
             this.chkLista.UseVisualStyleBackColor = true;
             this.chkLista.CheckedChanged += new System.EventHandler(this.chkLista_CheckedChanged);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(436, 199);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(49, 13);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "Cancelar";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(438, 140);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(45, 13);
-            this.label8.TabIndex = 20;
-            this.label8.Text = "Guardar";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(439, 81);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(42, 13);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "Insertar";
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancelar.BackgroundImage")));
-            this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancelar.FlatAppearance.BorderSize = 0;
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Location = new System.Drawing.Point(437, 161);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(44, 38);
-            this.btnCancelar.TabIndex = 17;
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGuardar.BackgroundImage")));
-            this.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGuardar.FlatAppearance.BorderSize = 0;
-            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Location = new System.Drawing.Point(437, 98);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(44, 40);
-            this.btnGuardar.TabIndex = 16;
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNuevo.BackgroundImage")));
-            this.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNuevo.FlatAppearance.BorderSize = 0;
-            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevo.Location = new System.Drawing.Point(437, 38);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(44, 40);
-            this.btnNuevo.TabIndex = 15;
-            this.btnNuevo.UseVisualStyleBackColor = true;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // gbDatos
             // 
@@ -245,84 +197,74 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Id Servicio:";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(527, 95);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 13);
-            this.label4.TabIndex = 114;
-            this.label4.Text = "Modificar";
-            // 
-            // btnModificar
-            // 
-            this.btnModificar.BackColor = System.Drawing.Color.Transparent;
-            this.btnModificar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnModificar.BackgroundImage")));
-            this.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnModificar.FlatAppearance.BorderSize = 0;
-            this.btnModificar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModificar.Location = new System.Drawing.Point(522, 37);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(55, 49);
-            this.btnModificar.TabIndex = 113;
-            this.btnModificar.UseVisualStyleBackColor = false;
-            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
-            // 
             // epSer
             // 
             this.epSer.ContainerControl = this;
             // 
-            // CmsOpciones
+            // btnCancelar
             // 
-            this.CmsOpciones.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.CmsOpciones.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.editarMenuItem,
-            this.eliminarMenuItem});
-            this.CmsOpciones.Name = "CmsOpciones";
-            this.CmsOpciones.Size = new System.Drawing.Size(122, 56);
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnCancelar.Location = new System.Drawing.Point(493, 158);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(86, 29);
+            this.btnCancelar.TabIndex = 24;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_1);
             // 
-            // editarMenuItem
+            // btnModificar
             // 
-            this.editarMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("editarMenuItem.Image")));
-            this.editarMenuItem.Name = "editarMenuItem";
-            this.editarMenuItem.Size = new System.Drawing.Size(121, 26);
-            this.editarMenuItem.Text = "Editar";
-            this.editarMenuItem.Click += new System.EventHandler(this.editarMenuItem_Click);
+            this.btnModificar.Image = ((System.Drawing.Image)(resources.GetObject("btnModificar.Image")));
+            this.btnModificar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnModificar.Location = new System.Drawing.Point(493, 123);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(86, 29);
+            this.btnModificar.TabIndex = 25;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click_1);
             // 
-            // eliminarMenuItem
+            // btnGuardar
             // 
-            this.eliminarMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("eliminarMenuItem.Image")));
-            this.eliminarMenuItem.Name = "eliminarMenuItem";
-            this.eliminarMenuItem.Size = new System.Drawing.Size(121, 26);
-            this.eliminarMenuItem.Text = "Eliminar";
-            this.eliminarMenuItem.Click += new System.EventHandler(this.eliminarMenuItem_Click);
+            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
+            this.btnGuardar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnGuardar.Location = new System.Drawing.Point(493, 88);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(86, 29);
+            this.btnGuardar.TabIndex = 26;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click_1);
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
+            this.btnNuevo.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnNuevo.Location = new System.Drawing.Point(493, 53);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(86, 29);
+            this.btnNuevo.TabIndex = 27;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click_1);
             // 
             // FrmServicios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(658, 495);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.btnModificar);
-            this.Controls.Add(this.dgvServicios);
-            this.Controls.Add(this.chkLista);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnNuevo);
+            this.Controls.Add(this.dgvServicios);
+            this.Controls.Add(this.chkLista);
             this.Controls.Add(this.gbDatos);
             this.Name = "FrmServicios";
             this.Text = "Servicios";
             this.Load += new System.EventHandler(this.FrmServicios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicios)).EndInit();
+            this.CmsOpciones.ResumeLayout(false);
             this.gbDatos.ResumeLayout(false);
             this.gbDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.epSer)).EndInit();
-            this.CmsOpciones.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -332,12 +274,6 @@
 
         private System.Windows.Forms.DataGridView dgvServicios;
         private System.Windows.Forms.CheckBox chkLista;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.GroupBox gbDatos;
         private System.Windows.Forms.TextBox txtNS;
         private System.Windows.Forms.TextBox txtIdSer;
@@ -348,11 +284,13 @@
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        internal System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.ErrorProvider epSer;
         internal System.Windows.Forms.ContextMenuStrip CmsOpciones;
         internal System.Windows.Forms.ToolStripMenuItem editarMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem eliminarMenuItem;
+        private DevExpress.XtraEditors.SimpleButton btnCancelar;
+        private DevExpress.XtraEditors.SimpleButton btnModificar;
+        private DevExpress.XtraEditors.SimpleButton btnGuardar;
+        private DevExpress.XtraEditors.SimpleButton btnNuevo;
     }
 }

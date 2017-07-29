@@ -25,10 +25,7 @@ namespace CapaPresentacion
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            if (ValidarDatos())
-            {
-                Login();
-            }
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -97,5 +94,17 @@ namespace CapaPresentacion
             }
         }
 
+        private void btnIngresar_Click_1(object sender, EventArgs e)
+        {
+            if (ValidarDatos())
+            {
+                Login();
+            }
+        }
+
+        private void btnSalir_Click_1(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

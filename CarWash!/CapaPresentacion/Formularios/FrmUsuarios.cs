@@ -53,7 +53,7 @@ namespace CapaPresentacion
         {
             btnNuevo.Enabled = insertar;
             btnGuardar.Enabled = guardar;
-            btnEditar.Enabled = actualizar;
+            btnModificar.Enabled = actualizar;
             btnCancelar.Enabled = cancelar;
             gbDatos.Enabled = groupbox;
         }
@@ -171,6 +171,57 @@ namespace CapaPresentacion
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnCancelar_Click_1(object sender, EventArgs e)
+        {
+            Limpiar();
+            HabilitarBotones(true, false, false, false, false);
+        }
+
+        private void chkLista_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkLista.Checked == true)
+            {
+                Height = 533;
+            }
+            else
+            {
+                Height = 338;
+            }
+        }
+
+        private void btnEmpleado_Click(object sender, EventArgs e)
+        {
+            FrmBusquedaEmpleado frmbuscar = new FrmBusquedaEmpleado();
+            frmbuscar.Show();
+        }
+
+        private void editarToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            txtIdUsuario.Text = dgvUsuarios.CurrentRow.Cells[0].Value.ToString();
+            txtNombreUsuario.Text = dgvUsuarios.CurrentRow.Cells[1].Value.ToString();
+            txtContraseña.Text = dgvUsuarios.CurrentRow.Cells[2].Value.ToString();
+            cboEstado.Text = dgvUsuarios.CurrentRow.Cells[3].Value.ToString();
+            mtbIdEmpleado.Text = dgvUsuarios.CurrentRow.Cells[4].Value.ToString();
+            txtNombreEmpleado.Text = dgvUsuarios.CurrentRow.Cells[5].Value.ToString();
+            cboTipoUsuario.Text = dgvUsuarios.CurrentRow.Cells[6].Value.ToString();
+            HabilitarBotones(false, false, true, true, true);
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            HabilitarBotones(false, true, false, true, true);
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            Validar();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
             if (txtNombreUsuario.Text == "")
             {
                 epValidar.SetError(txtNombreUsuario, "Ingrese el nombre de usuario");
@@ -210,40 +261,10 @@ namespace CapaPresentacion
             HabilitarBotones(true, false, false, false, false);
         }
 
-        private void btnCancelar_Click_1(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
             Limpiar();
             HabilitarBotones(true, false, false, false, false);
-        }
-
-        private void chkLista_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkLista.Checked == true)
-            {
-                Height = 533;
-            }
-            else
-            {
-                Height = 338;
-            }
-        }
-
-        private void btnEmpleado_Click(object sender, EventArgs e)
-        {
-            FrmBusquedaEmpleado frmbuscar = new FrmBusquedaEmpleado();
-            frmbuscar.Show();
-        }
-
-        private void editarToolStripMenuItem_Click_1(object sender, EventArgs e)
-        {
-            txtIdUsuario.Text = dgvUsuarios.CurrentRow.Cells[0].Value.ToString();
-            txtNombreUsuario.Text = dgvUsuarios.CurrentRow.Cells[1].Value.ToString();
-            txtContraseña.Text = dgvUsuarios.CurrentRow.Cells[2].Value.ToString();
-            cboEstado.Text = dgvUsuarios.CurrentRow.Cells[3].Value.ToString();
-            mtbIdEmpleado.Text = dgvUsuarios.CurrentRow.Cells[4].Value.ToString();
-            txtNombreEmpleado.Text = dgvUsuarios.CurrentRow.Cells[5].Value.ToString();
-            cboTipoUsuario.Text = dgvUsuarios.CurrentRow.Cells[6].Value.ToString();
-            HabilitarBotones(false, false, true, true, true);
         }
     }
 }
