@@ -2548,7 +2548,7 @@
         +ZNhAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnProducto.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnServicio.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
         dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAU+SURBVFhHrVdrbFRFGB3jg3c1RFCjRBOjMST+ENCI
@@ -2577,7 +2577,7 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnAutomovil.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnAuto.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
         dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAU+SURBVFhHrVdrbFRFGB3jg3c1RFCjRBOjMST+ENCI
@@ -2606,4 +2606,7 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="epFactu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

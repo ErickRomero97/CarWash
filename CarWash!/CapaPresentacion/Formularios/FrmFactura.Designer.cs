@@ -28,62 +28,130 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFactura));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtISV = new System.Windows.Forms.TextBox();
+            this.txtTotal = new System.Windows.Forms.TextBox();
+            this.txtSub = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.dgvFactu = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gbArticulos = new System.Windows.Forms.GroupBox();
+            this.txtCant = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.btnProducto = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.txtNombreSer = new System.Windows.Forms.TextBox();
+            this.btnServicio = new System.Windows.Forms.Button();
+            this.txtIdServicio = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtAutomovil = new System.Windows.Forms.TextBox();
-            this.btnAutomovil = new System.Windows.Forms.Button();
+            this.gbDatos = new System.Windows.Forms.GroupBox();
+            this.txtAnio = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtDescAuto = new System.Windows.Forms.TextBox();
+            this.lbl1 = new System.Windows.Forms.Label();
+            this.txtApellidoCliente = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtNombreCliente = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtIdAutomovil = new System.Windows.Forms.TextBox();
+            this.btnAuto = new System.Windows.Forms.Button();
             this.dtpFechaFactura = new System.Windows.Forms.DateTimePicker();
-            this.txtCliente = new System.Windows.Forms.TextBox();
-            this.txtCodFactura = new System.Windows.Forms.TextBox();
+            this.txtIdCliente = new System.Windows.Forms.TextBox();
+            this.txtIdFactura = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.epFactu = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFactu)).BeginInit();
+            this.gbArticulos.SuspendLayout();
+            this.gbDatos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.epFactu)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // txtISV
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 224);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(617, 208);
-            this.dataGridView1.TabIndex = 29;
+            this.txtISV.Location = new System.Drawing.Point(668, 556);
+            this.txtISV.Name = "txtISV";
+            this.txtISV.Size = new System.Drawing.Size(114, 20);
+            this.txtISV.TabIndex = 51;
+            // 
+            // txtTotal
+            // 
+            this.txtTotal.Location = new System.Drawing.Point(668, 582);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(114, 20);
+            this.txtTotal.TabIndex = 50;
+            // 
+            // txtSub
+            // 
+            this.txtSub.Location = new System.Drawing.Point(668, 529);
+            this.txtSub.Name = "txtSub";
+            this.txtSub.Size = new System.Drawing.Size(114, 20);
+            this.txtSub.TabIndex = 49;
+            this.txtSub.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(626, 585);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(34, 13);
+            this.label14.TabIndex = 46;
+            this.label14.Text = "Total:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(633, 563);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(27, 13);
+            this.label15.TabIndex = 47;
+            this.label15.Text = "ISV:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(607, 536);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(53, 13);
+            this.label16.TabIndex = 48;
+            this.label16.Text = "SubTotal:";
+            // 
+            // dgvFactu
+            // 
+            this.dgvFactu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFactu.Location = new System.Drawing.Point(12, 282);
+            this.dgvFactu.Name = "dgvFactu";
+            this.dgvFactu.Size = new System.Drawing.Size(768, 208);
+            this.dgvFactu.TabIndex = 45;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(513, 187);
+            this.label9.Location = new System.Drawing.Point(677, 214);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(49, 13);
-            this.label9.TabIndex = 27;
+            this.label9.TabIndex = 43;
             this.label9.Text = "Cancelar";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(515, 128);
+            this.label8.Location = new System.Drawing.Point(615, 214);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(45, 13);
-            this.label8.TabIndex = 28;
+            this.label8.TabIndex = 44;
             this.label8.Text = "Guardar";
             // 
             // btnNuevo
@@ -93,19 +161,20 @@
             this.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNuevo.FlatAppearance.BorderSize = 0;
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevo.Location = new System.Drawing.Point(514, 26);
+            this.btnNuevo.Location = new System.Drawing.Point(554, 171);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(44, 40);
-            this.btnNuevo.TabIndex = 23;
+            this.btnNuevo.TabIndex = 39;
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(516, 69);
+            this.label10.Location = new System.Drawing.Point(556, 214);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(42, 13);
-            this.label10.TabIndex = 26;
+            this.label10.TabIndex = 42;
             this.label10.Text = "Insertar";
             // 
             // btnGuardar
@@ -115,11 +184,12 @@
             this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatAppearance.BorderSize = 0;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Location = new System.Drawing.Point(514, 86);
+            this.btnGuardar.Location = new System.Drawing.Point(614, 172);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(44, 40);
-            this.btnGuardar.TabIndex = 24;
+            this.btnGuardar.TabIndex = 40;
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnCancelar
             // 
@@ -128,72 +198,95 @@
             this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancelar.FlatAppearance.BorderSize = 0;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Location = new System.Drawing.Point(514, 149);
+            this.btnCancelar.Location = new System.Drawing.Point(678, 176);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(44, 38);
-            this.btnCancelar.TabIndex = 25;
+            this.btnCancelar.TabIndex = 41;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // groupBox2
+            // gbArticulos
             // 
-            this.groupBox2.Controls.Add(this.btnAgregar);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.btnProducto);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(12, 105);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(469, 95);
-            this.groupBox2.TabIndex = 22;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Servicios";
+            this.gbArticulos.Controls.Add(this.txtCant);
+            this.gbArticulos.Controls.Add(this.label13);
+            this.gbArticulos.Controls.Add(this.btnAgregar);
+            this.gbArticulos.Controls.Add(this.txtPrecio);
+            this.gbArticulos.Controls.Add(this.txtNombreSer);
+            this.gbArticulos.Controls.Add(this.btnServicio);
+            this.gbArticulos.Controls.Add(this.txtIdServicio);
+            this.gbArticulos.Controls.Add(this.label6);
+            this.gbArticulos.Controls.Add(this.label5);
+            this.gbArticulos.Controls.Add(this.label2);
+            this.gbArticulos.Location = new System.Drawing.Point(12, 171);
+            this.gbArticulos.Name = "gbArticulos";
+            this.gbArticulos.Size = new System.Drawing.Size(524, 95);
+            this.gbArticulos.TabIndex = 38;
+            this.gbArticulos.TabStop = false;
+            this.gbArticulos.Text = "Servicios";
+            // 
+            // txtCant
+            // 
+            this.txtCant.Location = new System.Drawing.Point(315, 52);
+            this.txtCant.Name = "txtCant";
+            this.txtCant.Size = new System.Drawing.Size(100, 20);
+            this.txtCant.TabIndex = 18;
+            this.txtCant.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(263, 55);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(52, 13);
+            this.label13.TabIndex = 17;
+            this.label13.Text = "Cantidad:";
             // 
             // btnAgregar
             // 
             this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAgregar.Location = new System.Drawing.Point(323, 52);
+            this.btnAgregar.Location = new System.Drawing.Point(430, 24);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
             this.btnAgregar.TabIndex = 16;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // textBox4
+            // txtPrecio
             // 
-            this.textBox4.Location = new System.Drawing.Point(314, 25);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 14;
+            this.txtPrecio.Location = new System.Drawing.Point(314, 25);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(100, 20);
+            this.txtPrecio.TabIndex = 14;
+            this.txtPrecio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox3
+            // txtNombreSer
             // 
-            this.textBox3.Location = new System.Drawing.Point(105, 49);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(141, 20);
-            this.textBox3.TabIndex = 12;
+            this.txtNombreSer.Location = new System.Drawing.Point(105, 49);
+            this.txtNombreSer.Name = "txtNombreSer";
+            this.txtNombreSer.Size = new System.Drawing.Size(141, 20);
+            this.txtNombreSer.TabIndex = 12;
             // 
-            // btnProducto
+            // btnServicio
             // 
-            this.btnProducto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnProducto.BackgroundImage")));
-            this.btnProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnProducto.FlatAppearance.BorderSize = 0;
-            this.btnProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProducto.Location = new System.Drawing.Point(199, 24);
-            this.btnProducto.Name = "btnProducto";
-            this.btnProducto.Size = new System.Drawing.Size(25, 20);
-            this.btnProducto.TabIndex = 11;
-            this.btnProducto.UseVisualStyleBackColor = true;
+            this.btnServicio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnServicio.BackgroundImage")));
+            this.btnServicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnServicio.FlatAppearance.BorderSize = 0;
+            this.btnServicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnServicio.Location = new System.Drawing.Point(199, 24);
+            this.btnServicio.Name = "btnServicio";
+            this.btnServicio.Size = new System.Drawing.Size(25, 20);
+            this.btnServicio.TabIndex = 11;
+            this.btnServicio.UseVisualStyleBackColor = true;
+            this.btnServicio.Click += new System.EventHandler(this.btnServicio_Click);
             // 
-            // textBox1
+            // txtIdServicio
             // 
-            this.textBox1.Location = new System.Drawing.Point(105, 23);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(89, 20);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtIdServicio.Location = new System.Drawing.Point(105, 23);
+            this.txtIdServicio.Name = "txtIdServicio";
+            this.txtIdServicio.Size = new System.Drawing.Size(89, 20);
+            this.txtIdServicio.TabIndex = 1;
+            this.txtIdServicio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
             // 
@@ -222,43 +315,115 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Id Servicios:";
             // 
-            // groupBox1
+            // gbDatos
             // 
-            this.groupBox1.Controls.Add(this.txtAutomovil);
-            this.groupBox1.Controls.Add(this.btnAutomovil);
-            this.groupBox1.Controls.Add(this.dtpFechaFactura);
-            this.groupBox1.Controls.Add(this.txtCliente);
-            this.groupBox1.Controls.Add(this.txtCodFactura);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(469, 87);
-            this.groupBox1.TabIndex = 21;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Datos de Factura";
+            this.gbDatos.Controls.Add(this.txtAnio);
+            this.gbDatos.Controls.Add(this.label12);
+            this.gbDatos.Controls.Add(this.txtDescAuto);
+            this.gbDatos.Controls.Add(this.lbl1);
+            this.gbDatos.Controls.Add(this.txtApellidoCliente);
+            this.gbDatos.Controls.Add(this.label11);
+            this.gbDatos.Controls.Add(this.txtNombreCliente);
+            this.gbDatos.Controls.Add(this.label7);
+            this.gbDatos.Controls.Add(this.txtIdAutomovil);
+            this.gbDatos.Controls.Add(this.btnAuto);
+            this.gbDatos.Controls.Add(this.dtpFechaFactura);
+            this.gbDatos.Controls.Add(this.txtIdCliente);
+            this.gbDatos.Controls.Add(this.txtIdFactura);
+            this.gbDatos.Controls.Add(this.label3);
+            this.gbDatos.Controls.Add(this.label4);
+            this.gbDatos.Controls.Add(this.label);
+            this.gbDatos.Controls.Add(this.label1);
+            this.gbDatos.Location = new System.Drawing.Point(12, 9);
+            this.gbDatos.Name = "gbDatos";
+            this.gbDatos.Size = new System.Drawing.Size(745, 161);
+            this.gbDatos.TabIndex = 52;
+            this.gbDatos.TabStop = false;
+            this.gbDatos.Text = "Datos de Factura";
             // 
-            // txtAutomovil
+            // txtAnio
             // 
-            this.txtAutomovil.Location = new System.Drawing.Point(94, 50);
-            this.txtAutomovil.Name = "txtAutomovil";
-            this.txtAutomovil.Size = new System.Drawing.Size(114, 20);
-            this.txtAutomovil.TabIndex = 12;
-            this.txtAutomovil.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtAnio.Location = new System.Drawing.Point(542, 51);
+            this.txtAnio.Name = "txtAnio";
+            this.txtAnio.Size = new System.Drawing.Size(148, 20);
+            this.txtAnio.TabIndex = 20;
             // 
-            // btnAutomovil
+            // label12
             // 
-            this.btnAutomovil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAutomovil.BackgroundImage")));
-            this.btnAutomovil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAutomovil.FlatAppearance.BorderSize = 0;
-            this.btnAutomovil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAutomovil.Location = new System.Drawing.Point(214, 51);
-            this.btnAutomovil.Name = "btnAutomovil";
-            this.btnAutomovil.Size = new System.Drawing.Size(25, 20);
-            this.btnAutomovil.TabIndex = 11;
-            this.btnAutomovil.UseVisualStyleBackColor = true;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(495, 54);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(29, 13);
+            this.label12.TabIndex = 19;
+            this.label12.Text = "Año:";
+            // 
+            // txtDescAuto
+            // 
+            this.txtDescAuto.Location = new System.Drawing.Point(310, 53);
+            this.txtDescAuto.Name = "txtDescAuto";
+            this.txtDescAuto.Size = new System.Drawing.Size(148, 20);
+            this.txtDescAuto.TabIndex = 18;
+            // 
+            // lbl1
+            // 
+            this.lbl1.AutoSize = true;
+            this.lbl1.Location = new System.Drawing.Point(245, 57);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(66, 13);
+            this.lbl1.TabIndex = 17;
+            this.lbl1.Text = "Descripción:";
+            // 
+            // txtApellidoCliente
+            // 
+            this.txtApellidoCliente.Location = new System.Drawing.Point(542, 89);
+            this.txtApellidoCliente.Name = "txtApellidoCliente";
+            this.txtApellidoCliente.Size = new System.Drawing.Size(148, 20);
+            this.txtApellidoCliente.TabIndex = 16;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(495, 92);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(47, 13);
+            this.label11.TabIndex = 15;
+            this.label11.Text = "Apellido:";
+            // 
+            // txtNombreCliente
+            // 
+            this.txtNombreCliente.Location = new System.Drawing.Point(310, 89);
+            this.txtNombreCliente.Name = "txtNombreCliente";
+            this.txtNombreCliente.Size = new System.Drawing.Size(148, 20);
+            this.txtNombreCliente.TabIndex = 14;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(263, 92);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(47, 13);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Nombre:";
+            // 
+            // txtIdAutomovil
+            // 
+            this.txtIdAutomovil.Location = new System.Drawing.Point(94, 50);
+            this.txtIdAutomovil.Name = "txtIdAutomovil";
+            this.txtIdAutomovil.Size = new System.Drawing.Size(114, 20);
+            this.txtIdAutomovil.TabIndex = 12;
+            // 
+            // btnAuto
+            // 
+            this.btnAuto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAuto.BackgroundImage")));
+            this.btnAuto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAuto.FlatAppearance.BorderSize = 0;
+            this.btnAuto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAuto.Location = new System.Drawing.Point(214, 51);
+            this.btnAuto.Name = "btnAuto";
+            this.btnAuto.Size = new System.Drawing.Size(25, 20);
+            this.btnAuto.TabIndex = 11;
+            this.btnAuto.UseVisualStyleBackColor = true;
+            this.btnAuto.Click += new System.EventHandler(this.btnAuto_Click);
             // 
             // dtpFechaFactura
             // 
@@ -268,20 +433,20 @@
             this.dtpFechaFactura.Size = new System.Drawing.Size(97, 20);
             this.dtpFechaFactura.TabIndex = 3;
             // 
-            // txtCliente
+            // txtIdCliente
             // 
-            this.txtCliente.Location = new System.Drawing.Point(315, 50);
-            this.txtCliente.Name = "txtCliente";
-            this.txtCliente.Size = new System.Drawing.Size(148, 20);
-            this.txtCliente.TabIndex = 2;
+            this.txtIdCliente.Location = new System.Drawing.Point(94, 89);
+            this.txtIdCliente.Name = "txtIdCliente";
+            this.txtIdCliente.Size = new System.Drawing.Size(148, 20);
+            this.txtIdCliente.TabIndex = 2;
             // 
-            // txtCodFactura
+            // txtIdFactura
             // 
-            this.txtCodFactura.Location = new System.Drawing.Point(94, 23);
-            this.txtCodFactura.Name = "txtCodFactura";
-            this.txtCodFactura.Size = new System.Drawing.Size(64, 20);
-            this.txtCodFactura.TabIndex = 1;
-            this.txtCodFactura.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtIdFactura.Location = new System.Drawing.Point(94, 23);
+            this.txtIdFactura.Name = "txtIdFactura";
+            this.txtIdFactura.Size = new System.Drawing.Size(86, 20);
+            this.txtIdFactura.TabIndex = 1;
+            this.txtIdFactura.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
@@ -295,11 +460,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(268, 53);
+            this.label4.Location = new System.Drawing.Point(47, 92);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 13);
+            this.label4.Size = new System.Drawing.Size(51, 13);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Cliente:";
+            this.label4.Text = "IdCliente:";
             // 
             // label
             // 
@@ -319,28 +484,40 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Código Factura:";
             // 
+            // epFactu
+            // 
+            this.epFactu.ContainerControl = this;
+            // 
             // FrmFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(641, 451);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(802, 653);
+            this.Controls.Add(this.gbDatos);
+            this.Controls.Add(this.txtISV);
+            this.Controls.Add(this.txtTotal);
+            this.Controls.Add(this.txtSub);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.dgvFactu);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbArticulos);
             this.Name = "FrmFactura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmFactura";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Load += new System.EventHandler(this.FrmFactura_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFactu)).EndInit();
+            this.gbArticulos.ResumeLayout(false);
+            this.gbArticulos.PerformLayout();
+            this.gbDatos.ResumeLayout(false);
+            this.gbDatos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.epFactu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -348,31 +525,48 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtISV;
+        private System.Windows.Forms.TextBox txtTotal;
+        private System.Windows.Forms.TextBox txtSub;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.DataGridView dgvFactu;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gbArticulos;
+        private System.Windows.Forms.TextBox txtCant;
+        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button btnProducto;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.TextBox txtNombreSer;
+        private System.Windows.Forms.Button btnServicio;
+        private System.Windows.Forms.TextBox txtIdServicio;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnAutomovil;
+        private System.Windows.Forms.GroupBox gbDatos;
+        private System.Windows.Forms.TextBox txtAnio;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtDescAuto;
+        private System.Windows.Forms.Label lbl1;
+        private System.Windows.Forms.TextBox txtApellidoCliente;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtNombreCliente;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtIdAutomovil;
+        private System.Windows.Forms.Button btnAuto;
         private System.Windows.Forms.DateTimePicker dtpFechaFactura;
-        private System.Windows.Forms.TextBox txtCliente;
-        private System.Windows.Forms.TextBox txtCodFactura;
+        private System.Windows.Forms.TextBox txtIdCliente;
+        private System.Windows.Forms.TextBox txtIdFactura;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtAutomovil;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ErrorProvider epFactu;
     }
 }
