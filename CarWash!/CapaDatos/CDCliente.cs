@@ -6,12 +6,12 @@ using System.Windows.Forms;
 
 namespace CapaDatos
 {
-    public class D_Cliente: Conexion
+    public class CDCliente: Conexion
     {
         #region InsertUpdateDelete
 
 
-        public int InsertarCliente(E_Cliente objC)
+        public int InsertarCliente(CECliente objC)
         {
             int resultado = 0;
 
@@ -45,7 +45,7 @@ namespace CapaDatos
             return resultado;
         }
 
-        public int ActualizarCliente(E_Cliente objC)
+        public int ActualizarCliente(CECliente objC)
         {
             int resultado = 0;
 
@@ -61,11 +61,10 @@ namespace CapaDatos
             {
                 ConectarDB();
                 resultado = cmd.ExecuteNonQuery();
-                //MessageBox.Show(null, "Registro actualizado satisfactoriamente.", "CarWash System", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            catch (Exception)
+            catch (Exception ex )
             {
-                //MessageBox.Show(null, "Error al actualizar registro.", "CarWash System", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw new Exception("Error al actualizar el reguistro del cliente", ex);
             }
             finally
             {
@@ -77,7 +76,7 @@ namespace CapaDatos
         }
 
 
-        public int EliminarCliente(E_Cliente objC)
+        public int EliminarCliente(CECliente objC)
         {
             int resultado = 0;
 
@@ -90,7 +89,7 @@ namespace CapaDatos
             {
                 ConectarDB();
                 resultado = cmd.ExecuteNonQuery();
-                //MessageBox.Show(null, "Registro eliminado satisfactoriamente.", "CarWash System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+               
             }
             catch (Exception ex)
             {
@@ -101,7 +100,7 @@ namespace CapaDatos
                 }
                 else
                 {
-                    //MessageBox.Show(null, "Error al eliminar registro.", "CarWash System", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    throw new Exception("Error al eliminar el reguistro del cliente", ex);
                 }
             }
             finally
@@ -127,8 +126,8 @@ namespace CapaDatos
             }
             catch (Exception ex)
             {
-                MessageBox.Show(null, "Error al solicitar datos", "CarWash System", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                
+                throw new Exception("Error al solicitar los datos de los clientes", ex);
+
             }
             finally
             {
@@ -149,11 +148,10 @@ namespace CapaDatos
                 da.Fill(ds, "MostrarTodoCliente");
                 return ds;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                //MessageBox.Show(null, "No se pudo realizar la consulta.", "CarWash System", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                throw;
-               
+                throw new Exception("Error  no se pudo realizar la consulta", ex);
+
             }
 
             finally

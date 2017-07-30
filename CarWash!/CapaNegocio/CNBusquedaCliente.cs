@@ -13,12 +13,12 @@ namespace CapaNegocio
     {
         CDBusquedaCliente objCl = new CDBusquedaCliente();
 
-        public DataSet BuscarPorCodigo(E_Cliente objC)
+        public DataSet BuscarPorCodigo(CECliente objC)
         {
             return objCl.BuscarPorCodigo(objC);
         }
 
-        public DataSet BuscarPorNombre(E_Cliente objC)
+        public DataSet BuscarPorNombre(CECliente objC)
         {
             return objCl.BuscarPorNombre(objC);
         }

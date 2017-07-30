@@ -52,7 +52,7 @@
     <Compile Include="CDServicio.cs" />
     <Compile Include="CDUsuario.cs" />
     <Compile Include="Conexion.cs" />
-    <Compile Include="D_Cliente.cs" />
+    <Compile Include="CDCliente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

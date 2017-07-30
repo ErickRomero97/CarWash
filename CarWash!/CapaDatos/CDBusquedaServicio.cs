@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using CapaEntidades;
 using System.Data;
 using System.Data.SqlClient;
-using System.Windows.Forms;
 namespace CapaDatos
 {
     public class CDBusquedaServicio: Conexion
@@ -25,10 +24,9 @@ namespace CapaDatos
                 da.Fill(ds, "MostrarXServicio");
                 return ds;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show(null, "Error al solicitar los datos de la base de datos", "CarWash System", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                throw;
+                throw new Exception("Error al solicitar los datos de la base de datos", ex);
             }
             finally
             {
@@ -51,10 +49,9 @@ namespace CapaDatos
                 da.Fill(ds, "MostrarXNombre");
                 return ds;
             }
-            catch (Exception)
+            catch (Exception ex )
             {
-                MessageBox.Show(null, "Error al solicitar los datos de la base de datos", "CarWash System", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                throw;
+                throw new Exception("Error al solicitar los datos de la base de datos", ex);
             }
             finally
             {
@@ -76,10 +73,9 @@ namespace CapaDatos
                 da.Fill(ds, "MostrarTodoCliente");
                 return ds;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show(null, "Error al solicitar los datos de la base de datos", "CarWash System", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                throw;
+                throw new Exception("Error al solicitar los datos de la base de datos", ex);
             }
             finally
             {

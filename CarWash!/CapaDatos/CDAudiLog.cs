@@ -24,10 +24,9 @@ namespace CapaDatos
                 da.Fill(ds, "MostrarTodoAuditoria");
                 return ds;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show(null, "Error al solicitar los datos de la base de datos", "Venta", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                throw;
+                throw new Exception("Error al solicitar los datos de la base de datos", ex);
             }
             finally
             {

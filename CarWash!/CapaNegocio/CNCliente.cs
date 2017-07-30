@@ -9,20 +9,20 @@ using CapaEntidades;
 
 namespace CapaNegocio
 {
-    public class N_Cliente
+    public class CNCliente
     {
-        D_Cliente objCl = new D_Cliente();
-        public int NuevoCliente(E_Cliente objC)
+        CDCliente objCl = new CDCliente();
+        public int NuevoCliente(CECliente objC)
         {
             return objCl.InsertarCliente(objC);
         }
 
-        public int ActualizarCliente(E_Cliente objC)
+        public int ActualizarCliente(CECliente objC)
         {
             return objCl.ActualizarCliente(objC);
         }
 
-        public int EliminarCliente(E_Cliente objC)
+        public int EliminarCliente(CECliente objC)
         {
             return objCl.EliminarCliente(objC);
         }

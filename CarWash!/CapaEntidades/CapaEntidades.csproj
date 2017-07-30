@@ -44,7 +44,7 @@
     <Compile Include="CEFactura.cs" />
     <Compile Include="CEServicio.cs" />
     <Compile Include="CEUsuario.cs" />
-    <Compile Include="E_Cliente.cs" />
+    <Compile Include="CECliente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

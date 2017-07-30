@@ -36,12 +36,12 @@ namespace CapaDatos
 
                 if (ex.ToString().Contains("FK_Factura_Cliente"))
                 {
-                    MessageBox.Show(null, "El cliente no se encuentra registrado", "CarWash System", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    throw new Exception("Error el cliente no se encuentra registrado", ex);
 
                 }
                 else
                 {
-                    MessageBox.Show(null, "No se pudo registrar la factura", "CarWash System", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    throw new Exception("Error no se pudo registrar la factura", ex);
                 }
             }
             finally
@@ -70,7 +70,7 @@ namespace CapaDatos
             catch (Exception ex)
             {
 
-                MessageBox.Show(ex.ToString());
+                throw new Exception("Error no se pudo ingresar el detalle de la factura", ex);
             }
             finally
             {

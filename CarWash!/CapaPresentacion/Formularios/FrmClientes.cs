@@ -34,8 +34,8 @@ namespace CapaPresentacion
 
         private void InsertarCliente()
         {
-            N_Cliente insertC = new N_Cliente();
-            E_Cliente objCliente = new E_Cliente();
+            CNCliente insertC = new CNCliente();
+            CECliente objCliente = new CECliente();
             objCliente.IdCliente = mtbIdCliente.Text;
             objCliente.Nombre = txtNombre.Text;
             objCliente.Apellidos = txtApellidos.Text;
@@ -55,8 +55,8 @@ namespace CapaPresentacion
 
         private void ActuralizarUsuario()
         {
-            N_Cliente actualizarC = new N_Cliente();
-            E_Cliente objCliente = new E_Cliente();
+            CNCliente actualizarC = new CNCliente();
+            CECliente objCliente = new CECliente();
             objCliente.IdCliente = mtbIdCliente.Text;
             objCliente.Nombre = txtNombre.Text;
             objCliente.Apellidos = txtApellidos.Text;
@@ -77,8 +77,8 @@ namespace CapaPresentacion
 
         private void EliminarCliente(string IdCliente)
         {
-            N_Cliente eliminarC = new N_Cliente();
-            E_Cliente objCliente = new E_Cliente();
+            CNCliente eliminarC = new CNCliente();
+            CECliente objCliente = new CECliente();
             objCliente.IdCliente = IdCliente;
             if (eliminarC.EliminarCliente(objCliente) > 0)
             {
@@ -119,9 +119,8 @@ namespace CapaPresentacion
 
         private void CargarCliente()
         {
-            N_Cliente objC = new N_Cliente();
+            CNCliente objC = new CNCliente();
             dgvClientes.DataSource = objC.MostrarTodoCliente().Tables["MostrarTodoCliente"];
-            //this.dgvClientes.Columns["CodUsuario"].Visible = false;
         }
 
         private void FilaSeleccionada()
@@ -163,7 +162,7 @@ namespace CapaPresentacion
         }
         private void CargarComboSexo()
         {
-            N_Cliente objC = new N_Cliente();
+            CNCliente objC = new CNCliente();
             cboSexo.DataSource = objC.ListadoSexo().Tables["Sexo"];
             cboSexo.DisplayMember = "Sexo";
             cboSexo.ValueMember = "IdSexo";
@@ -179,25 +178,12 @@ namespace CapaPresentacion
           
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnModificar_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             HabilitarBotones(true, false, true, false, false);
             Limpiar();
            
         }
-
-     
-
         private void chkVer_CheckedChanged(object sender, EventArgs e)
         {
             if (chkVer.Checked == true)

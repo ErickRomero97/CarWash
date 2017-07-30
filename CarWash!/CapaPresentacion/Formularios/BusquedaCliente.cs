@@ -43,7 +43,7 @@ namespace CapaPresentacion
         private void BuscarXCliente(String Codigo)
         {
             CNBusquedaCliente buscarC = new CNBusquedaCliente();
-            E_Cliente objCliente = new E_Cliente();
+            CECliente objCliente = new CECliente();
             objCliente.IdCliente = Codigo;
             dgvMostrar.DataSource = buscarC.BuscarPorCodigo(objCliente).Tables["MostrarXCodigo"];
         }
@@ -51,7 +51,7 @@ namespace CapaPresentacion
         private void BuscarNombreCliente(String Nombre)
         {
             CNBusquedaCliente buscarC = new CNBusquedaCliente();
-            E_Cliente objCliente = new E_Cliente();
+            CECliente objCliente = new CECliente();
             objCliente.Nombre = Nombre;
             dgvMostrar.DataSource = buscarC.BuscarPorNombre(objCliente).Tables["MostrarXNombre"];
         }

@@ -48,7 +48,7 @@
     <Compile Include="CNFactura.cs" />
     <Compile Include="CNServicio.cs" />
     <Compile Include="CNUsuario.cs" />
-    <Compile Include="N_Cliente.cs" />
+    <Compile Include="CNCliente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -29,9 +29,9 @@ namespace CapaDatos
                 ConectarDB();
                 resultado = cmd.ExecuteNonQuery();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show(null, "El Servicio no se almaceno", "CarWash System", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw new Exception("Error el servicio no se encuentra registrado", ex);
             }
             finally
             {
@@ -56,10 +56,10 @@ namespace CapaDatos
                 ConectarDB();
                 resultado = cmd.ExecuteNonQuery();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                MessageBox.Show(null, "Error al actualizar registro", "CarWash System", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw new Exception("Error al actualizar el registro de servicio", ex);
             }
             finally
             {
@@ -83,7 +83,7 @@ namespace CapaDatos
             }
             catch (Exception ex)
             {
-                MessageBox.Show(null, "Error al eliminar registro.", "CarWash System", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw new Exception("Error al intentar el eliminar el registtro de servicio", ex);
             }
             finally
             {
@@ -108,10 +108,9 @@ namespace CapaDatos
                 da.Fill(ds, "ListadoServicio");
                 return ds;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show(null, "No se pueden mostrar los registros", "CarWash System", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                throw;
+                throw new Exception("Error al solicitar los datos de la base de datos", ex);
             }
             finally
             {
