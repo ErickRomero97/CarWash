@@ -74,10 +74,10 @@
             this.rdbNombre.AutoSize = true;
             this.rdbNombre.Location = new System.Drawing.Point(167, 16);
             this.rdbNombre.Name = "rdbNombre";
-            this.rdbNombre.Size = new System.Drawing.Size(62, 17);
+            this.rdbNombre.Size = new System.Drawing.Size(103, 17);
             this.rdbNombre.TabIndex = 1;
             this.rdbNombre.TabStop = true;
-            this.rdbNombre.Text = "Nombre";
+            this.rdbNombre.Text = "Nombre Servicio";
             this.rdbNombre.UseVisualStyleBackColor = true;
             this.rdbNombre.CheckedChanged += new System.EventHandler(this.rdbNombre_CheckedChanged);
             // 
@@ -86,10 +86,10 @@
             this.rdbId.AutoSize = true;
             this.rdbId.Location = new System.Drawing.Point(21, 16);
             this.rdbId.Name = "rdbId";
-            this.rdbId.Size = new System.Drawing.Size(84, 17);
+            this.rdbId.Size = new System.Drawing.Size(75, 17);
             this.rdbId.TabIndex = 0;
             this.rdbId.TabStop = true;
-            this.rdbId.Text = "Id Empleado";
+            this.rdbId.Text = "Id Servicio";
             this.rdbId.UseVisualStyleBackColor = true;
             this.rdbId.CheckedChanged += new System.EventHandler(this.rdbId_CheckedChanged);
             // 

@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CDAudiLog.cs" />
     <Compile Include="CDBusquedaCliente.cs" />
+    <Compile Include="CDBusquedaFactura.cs" />
     <Compile Include="CDBusquedaServicio.cs" />
     <Compile Include="CDEmpleado.cs" />
     <Compile Include="CDFactura.cs" />

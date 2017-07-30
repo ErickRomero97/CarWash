@@ -107,3 +107,4 @@ C:\Users\Walter\Documents\GitHub\CarWash!\CapaPresentacion\obj\Debug\CapaPresent
 C:\Users\Walter\Documents\GitHub\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUsuarios.resources
 C:\Users\Walter\Documents\GitHub\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
 C:\Users\Walter\Documents\GitHub\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
+C:\Users\Walter\Documents\GitHub\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.FrmBusquedaFactura.resources
