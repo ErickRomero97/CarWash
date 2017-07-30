@@ -23,10 +23,15 @@ namespace CapaPresentacion
 
         private void btnAuto_Click(object sender, EventArgs e)
         {
-            //frmBuscarCliente frm = new frmBuscarCliente();
-            //frm.ShowDialog();
-            //txtCliente.Text = Convert.ToString(frm.dgvMostrar.CurrentRow.Cells[0].Value);
-            //this.Show();
+            Busquedas.FrmBusquedaAuto frm = new Busquedas.FrmBusquedaAuto();
+            frm.ShowDialog();
+            txtIdAutomovil.Text = Convert.ToString(frm.dgvMostrar.CurrentRow.Cells[0].Value);
+            txtDescAuto.Text = Convert.ToString(frm.dgvMostrar.CurrentRow.Cells[1].Value);
+            txtAnio.Text = Convert.ToString(frm.dgvMostrar.CurrentRow.Cells[2].Value);
+            txtIdCliente.Text = Convert.ToString(frm.dgvMostrar.CurrentRow.Cells[4].Value);
+            txtNombreCliente.Text = Convert.ToString(frm.dgvMostrar.CurrentRow.Cells[5].Value);
+            txtApellidoCliente.Text = Convert.ToString(frm.dgvMostrar.CurrentRow.Cells[6].Value);
+            this.Show();
             
         }
 
@@ -150,6 +155,9 @@ namespace CapaPresentacion
             }
 
             #endregion
+            Calculos();
+            registro = 1;
+            LimpiarArticulos();
         }
 
         private void FrmFactura_Load(object sender, EventArgs e)
@@ -219,6 +227,7 @@ namespace CapaPresentacion
 
         private void LimpiarArticulos()
         {
+            Limpiar();
             txtDescAuto.Clear();
             txtCant.Clear();
             txtPrecio.Clear();

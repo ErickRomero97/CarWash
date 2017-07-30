@@ -71,141 +71,151 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Formularios\BusquedaCliente.cs">
+    <Compile Include="Busquedas\BusquedaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\BusquedaCliente.Designer.cs">
+    <Compile Include="Busquedas\BusquedaCliente.Designer.cs">
       <DependentUpon>BusquedaCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Form1.cs">
+    <Compile Include="Busquedas\FrmBusquedaAuto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Form1.Designer.cs">
+    <Compile Include="Busquedas\FrmBusquedaAuto.Designer.cs">
+      <DependentUpon>FrmBusquedaAuto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principales\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principales\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmAutomoviles.cs">
+    <Compile Include="Catalogo\FrmAutomoviles.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmAutomoviles.Designer.cs">
+    <Compile Include="Catalogo\FrmAutomoviles.Designer.cs">
       <DependentUpon>FrmAutomoviles.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmClientes.cs">
+    <Compile Include="Catalogo\FrmClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmClientes.Designer.cs">
+    <Compile Include="Catalogo\FrmClientes.Designer.cs">
       <DependentUpon>FrmClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmEmpleados.cs">
+    <Compile Include="Catalogo\FrmEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmEmpleados.Designer.cs">
+    <Compile Include="Catalogo\FrmEmpleados.Designer.cs">
       <DependentUpon>FrmEmpleados.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmFactura.cs">
+    <Compile Include="Principales\frmBuscarCliente.cs" />
+    <Compile Include="Principales\FrmFactura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmFactura.Designer.cs">
+    <Compile Include="Principales\FrmFactura.Designer.cs">
       <DependentUpon>FrmFactura.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmBusquedaEmpleado.cs">
+    <Compile Include="Busquedas\FrmBusquedaEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmBusquedaEmpleado.Designer.cs">
+    <Compile Include="Busquedas\FrmBusquedaEmpleado.Designer.cs">
       <DependentUpon>FrmBusquedaEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmBusquedaServicio.cs">
+    <Compile Include="Busquedas\FrmBusquedaServicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmBusquedaServicio.Designer.cs">
+    <Compile Include="Busquedas\FrmBusquedaServicio.Designer.cs">
       <DependentUpon>FrmBusquedaServicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmLogAuditoria.cs">
+    <Compile Include="Catalogo\FrmLogAuditoria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmLogAuditoria.Designer.cs">
+    <Compile Include="Catalogo\FrmLogAuditoria.Designer.cs">
       <DependentUpon>FrmLogAuditoria.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmLogin.cs">
+    <Compile Include="Principales\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmLogin.Designer.cs">
+    <Compile Include="Principales\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmMarca.cs">
+    <Compile Include="Catalogo\FrmMarca.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmMarca.Designer.cs">
+    <Compile Include="Catalogo\FrmMarca.Designer.cs">
       <DependentUpon>FrmMarca.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmModelo.cs">
+    <Compile Include="Catalogo\FrmModelo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmModelo.Designer.cs">
+    <Compile Include="Catalogo\FrmModelo.Designer.cs">
       <DependentUpon>FrmModelo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmServicios.cs">
+    <Compile Include="Catalogo\FrmServicios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmServicios.Designer.cs">
+    <Compile Include="Catalogo\FrmServicios.Designer.cs">
       <DependentUpon>FrmServicios.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmUsuarios.cs">
+    <Compile Include="Catalogo\FrmUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmUsuarios.Designer.cs">
+    <Compile Include="Catalogo\FrmUsuarios.Designer.cs">
       <DependentUpon>FrmUsuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmBusquedaFactura.cs">
+    <Compile Include="Busquedas\FrmBusquedaFactura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmBusquedaFactura.Designer.cs">
+    <Compile Include="Busquedas\FrmBusquedaFactura.Designer.cs">
       <DependentUpon>FrmBusquedaFactura.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formularios\BusquedaCliente.resx">
+    <EmbeddedResource Include="Busquedas\BusquedaCliente.resx">
       <DependentUpon>BusquedaCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Form1.resx">
+    <EmbeddedResource Include="Busquedas\FrmBusquedaAuto.resx">
+      <DependentUpon>FrmBusquedaAuto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principales\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmAutomoviles.resx">
+    <EmbeddedResource Include="Catalogo\FrmAutomoviles.resx">
       <DependentUpon>FrmAutomoviles.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmClientes.resx">
+    <EmbeddedResource Include="Catalogo\FrmClientes.resx">
       <DependentUpon>FrmClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmEmpleados.resx">
+    <EmbeddedResource Include="Catalogo\FrmEmpleados.resx">
       <DependentUpon>FrmEmpleados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmFactura.resx">
+    <EmbeddedResource Include="Principales\FrmFactura.resx">
       <DependentUpon>FrmFactura.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmBusquedaEmpleado.resx">
+    <EmbeddedResource Include="Busquedas\FrmBusquedaEmpleado.resx">
       <DependentUpon>FrmBusquedaEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmBusquedaServicio.resx">
+    <EmbeddedResource Include="Busquedas\FrmBusquedaServicio.resx">
       <DependentUpon>FrmBusquedaServicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmLogAuditoria.resx">
+    <EmbeddedResource Include="Catalogo\FrmLogAuditoria.resx">
       <DependentUpon>FrmLogAuditoria.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmLogin.resx">
+    <EmbeddedResource Include="Principales\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmMarca.resx">
+    <EmbeddedResource Include="Catalogo\FrmMarca.resx">
       <DependentUpon>FrmMarca.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmModelo.resx">
+    <EmbeddedResource Include="Catalogo\FrmModelo.resx">
       <DependentUpon>FrmModelo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmServicios.resx">
+    <EmbeddedResource Include="Catalogo\FrmServicios.resx">
       <DependentUpon>FrmServicios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmUsuarios.resx">
+    <EmbeddedResource Include="Catalogo\FrmUsuarios.resx">
       <DependentUpon>FrmUsuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmBusquedaFactura.resx">
+    <EmbeddedResource Include="Busquedas\FrmBusquedaFactura.resx">
       <DependentUpon>FrmBusquedaFactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

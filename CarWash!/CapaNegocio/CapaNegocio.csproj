@@ -40,10 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Busqueda\CNBusquedaAuto.cs" />
     <Compile Include="CNAudiLog.cs" />
-    <Compile Include="CNBusquedaCliente.cs" />
-    <Compile Include="CNBusquedaFactura.cs" />
-    <Compile Include="CNBusquedaServicio.cs" />
+    <Compile Include="Busqueda\CNBusquedaCliente.cs" />
+    <Compile Include="Busqueda\CNBusquedaFactura.cs" />
+    <Compile Include="Busqueda\CNBusquedaServicio.cs" />
     <Compile Include="CNEmpleado.cs" />
     <Compile Include="CNFactura.cs" />
     <Compile Include="CNServicio.cs" />

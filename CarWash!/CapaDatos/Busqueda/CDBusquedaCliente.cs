@@ -10,6 +10,7 @@ namespace CapaDatos
 {
     public class CDBusquedaCliente:Conexion
     {
+       
         public DataSet BuscarPorCodigo(CECliente objC)
         {
             SqlDataAdapter da;
