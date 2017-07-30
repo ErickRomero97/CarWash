@@ -73,6 +73,13 @@
             this.label = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.epFactu = new System.Windows.Forms.ErrorProvider(this.components);
+            this.chidfac = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFactu)).BeginInit();
             this.gbArticulos.SuspendLayout();
             this.gbDatos.SuspendLayout();
@@ -131,6 +138,14 @@
             // dgvFactu
             // 
             this.dgvFactu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFactu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.chidfac,
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6});
             this.dgvFactu.Location = new System.Drawing.Point(12, 282);
             this.dgvFactu.Name = "dgvFactu";
             this.dgvFactu.Size = new System.Drawing.Size(768, 208);
@@ -488,6 +503,41 @@
             // 
             this.epFactu.ContainerControl = this;
             // 
+            // chidfac
+            // 
+            this.chidfac.HeaderText = "IdFactura";
+            this.chidfac.Name = "chidfac";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "IdServicio";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "IdCliente";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Nombre";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Apellido";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Precio";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Cantidad";
+            this.Column6.Name = "Column6";
+            // 
             // FrmFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -568,5 +618,12 @@
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ErrorProvider epFactu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn chidfac;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
     }
 }

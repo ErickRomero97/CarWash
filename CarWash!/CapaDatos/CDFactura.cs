@@ -13,7 +13,7 @@ namespace CapaDatos
     {
         #region InsertUpdateDelete
 
-        public int InsertarFactura(CEFactura objA)
+        public int InsertarFactura1(CEFactura objA)
         {
             int resultado = 0;
 

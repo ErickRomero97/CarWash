@@ -14,7 +14,7 @@ namespace CapaNegocio
 
         public int NuevaFactura(CEFactura objA)
         {
-            return objF.InsertarFactura(objA);
+            return objF.InsertarFactura1(objA);
         }
 
         public int AgregarDetalle(CEFactura objA)

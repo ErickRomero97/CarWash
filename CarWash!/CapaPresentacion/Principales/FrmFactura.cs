@@ -155,6 +155,7 @@ namespace CapaPresentacion
             }
 
             #endregion
+            dgvFactu.Rows.Add(txtIdFactura.Text, txtIdAutomovil.Text, txtIdCliente.Text, txtNombreCliente.Text, txtApellidoCliente.Text, txtPrecio.Text, txtCant.Text);
             Calculos();
             registro = 1;
             LimpiarArticulos();
@@ -170,9 +171,17 @@ namespace CapaPresentacion
             CEFactura objFactura = new CEFactura();
             objFactura.Fecha = dtpFechaFactura.Value;
             objFactura.IdAutomovil = txtIdAutomovil.Text;
-            objFactura.IdUsuario = 10;
+            objFactura.IdUsuario = Convert.ToInt16(10);
             objFactura.Cantidad = Convert.ToDecimal(txtCant.Text);
-            inserF.NuevaFactura(objFactura);
+            if(inserF.NuevaFactura(objFactura)>0)
+            {
+
+                MessageBox.Show(null, "Se Guardo el reguistro de la factura", "CarWash System", MessageBoxButtons.OK);
+            }
+            else
+            {
+                MessageBox.Show(null, "Error al guardar un nuevo registro de la factura.", "CarWash System", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
 
@@ -185,7 +194,6 @@ namespace CapaPresentacion
                 CEFactura objFactura = new CEFactura();
                 objFactura.IdFactura = Convert.ToInt32(dgvFactu.Rows[i].Cells["dtIdFactura"].Value);
                 objFactura.IdServicio = Convert.ToInt32(dgvFactu.Rows[i].Cells["dtIdServicio"].Value);
-                insertDetalle.AgregarDetalle(objFactura);
                 if (insertDetalle.AgregarDetalle(objFactura) > 0)
                 {
                     MessageBox.Show(null, "Se Guardo el reguistro del detalle de la factura", "CarWash System", MessageBoxButtons.OK);
@@ -199,14 +207,17 @@ namespace CapaPresentacion
 
         private void Calculos()
         {
-            decimal subtotal = 0;
+
+            decimal subtotal=0;
+            decimal s1=0;
             decimal isv;
             decimal total;
-            for (int i = 0; i < dgvFactu.RowCount; i++)
+            for (int i = 0; i < dgvFactu.RowCount; i++) 
             {
-                subtotal = subtotal + Convert.ToDecimal(dgvFactu.Rows[i].Cells[5].Value);
+                s1 = Convert.ToDecimal(dgvFactu.Rows[i].Cells[5].Value) * Convert.ToDecimal(dgvFactu.Rows[i].Cells[6].Value);
+                
             }
-
+            subtotal +=s1;
             isv = subtotal * Convert.ToDecimal(0.15);
             total = subtotal + isv;
 
@@ -218,7 +229,7 @@ namespace CapaPresentacion
         private void Limpiar()
         {
             txtIdFactura.Clear();
-            txtIdAutomovil.Clear();
+           
             txtSub.Clear();
             txtISV.Clear();
             txtTotal.Clear();
@@ -227,7 +238,13 @@ namespace CapaPresentacion
 
         private void LimpiarArticulos()
         {
-            Limpiar();
+            
+            txtIdServicio.Clear();
+            txtAnio.Clear();
+            txtApellidoCliente.Clear();
+            txtNombreCliente.Clear();
+            txtNombreSer.Clear();
+            txtIdCliente.Clear();
             txtDescAuto.Clear();
             txtCant.Clear();
             txtPrecio.Clear();
