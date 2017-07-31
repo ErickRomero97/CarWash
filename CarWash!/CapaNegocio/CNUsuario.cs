@@ -41,5 +41,9 @@ namespace CapaNegocio
         {
             return objUsuario.ListadoTipoUsuario();
         }
+        public int InvestigarCorrelativo()
+        {
+            return objUsuario.InvestigarCorrelativo();
+        }
     }
 }

@@ -22,8 +22,7 @@ namespace CapaDatos
             cmd.Parameters.AddWithValue("@Fecha", SqlDbType.DateTime).Value = objA.Fecha;
             cmd.Parameters.AddWithValue("@IdAutomovil", SqlDbType.Int).Value = objA.IdAutomovil;
             cmd.Parameters.AddWithValue("@IdUsuario", SqlDbType.Int).Value = objA.IdUsuario;
-            cmd.Parameters.AddWithValue("@Cantidad", SqlDbType.Bit).Value = objA.Cantidad;
-
+ 
             try
             {
                 ConectarDB();

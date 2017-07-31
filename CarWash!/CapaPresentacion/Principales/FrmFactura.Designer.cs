@@ -44,8 +44,6 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.gbArticulos = new System.Windows.Forms.GroupBox();
-            this.txtCant = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.txtNombreSer = new System.Windows.Forms.TextBox();
@@ -73,13 +71,13 @@
             this.label = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.epFactu = new System.Windows.Forms.ErrorProvider(this.components);
-            this.chidfac = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdFactura = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdServicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFactu)).BeginInit();
             this.gbArticulos.SuspendLayout();
             this.gbDatos.SuspendLayout();
@@ -139,13 +137,13 @@
             // 
             this.dgvFactu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFactu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.chidfac,
+            this.IdFactura,
+            this.IdServicio,
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4,
-            this.Column5,
-            this.Column6});
+            this.Column5});
             this.dgvFactu.Location = new System.Drawing.Point(12, 282);
             this.dgvFactu.Name = "dgvFactu";
             this.dgvFactu.Size = new System.Drawing.Size(768, 208);
@@ -222,8 +220,6 @@
             // 
             // gbArticulos
             // 
-            this.gbArticulos.Controls.Add(this.txtCant);
-            this.gbArticulos.Controls.Add(this.label13);
             this.gbArticulos.Controls.Add(this.btnAgregar);
             this.gbArticulos.Controls.Add(this.txtPrecio);
             this.gbArticulos.Controls.Add(this.txtNombreSer);
@@ -238,23 +234,6 @@
             this.gbArticulos.TabIndex = 38;
             this.gbArticulos.TabStop = false;
             this.gbArticulos.Text = "Servicios";
-            // 
-            // txtCant
-            // 
-            this.txtCant.Location = new System.Drawing.Point(315, 52);
-            this.txtCant.Name = "txtCant";
-            this.txtCant.Size = new System.Drawing.Size(100, 20);
-            this.txtCant.TabIndex = 18;
-            this.txtCant.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(263, 55);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(52, 13);
-            this.label13.TabIndex = 17;
-            this.label13.Text = "Cantidad:";
             // 
             // btnAgregar
             // 
@@ -503,14 +482,19 @@
             // 
             this.epFactu.ContainerControl = this;
             // 
-            // chidfac
+            // IdFactura
             // 
-            this.chidfac.HeaderText = "IdFactura";
-            this.chidfac.Name = "chidfac";
+            this.IdFactura.HeaderText = "IdFactura";
+            this.IdFactura.Name = "IdFactura";
+            // 
+            // IdServicio
+            // 
+            this.IdServicio.HeaderText = "IdServicio";
+            this.IdServicio.Name = "IdServicio";
             // 
             // Column1
             // 
-            this.Column1.HeaderText = "IdServicio";
+            this.Column1.HeaderText = "Placa Auto";
             this.Column1.Name = "Column1";
             // 
             // Column2
@@ -532,11 +516,6 @@
             // 
             this.Column5.HeaderText = "Precio";
             this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Cantidad";
-            this.Column6.Name = "Column6";
             // 
             // FrmFactura
             // 
@@ -589,8 +568,6 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.GroupBox gbArticulos;
-        private System.Windows.Forms.TextBox txtCant;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.TextBox txtNombreSer;
@@ -618,12 +595,12 @@
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ErrorProvider epFactu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn chidfac;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdFactura;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdServicio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
     }
 }

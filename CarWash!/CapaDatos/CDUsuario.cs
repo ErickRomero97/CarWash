@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using CapaEntidades;
+using System.Windows.Forms;
 
 namespace CapaDatos
 {
@@ -187,6 +188,41 @@ namespace CapaDatos
                 CerrarDB();
                 ds.Dispose();
             }
+        }
+        public int InvestigarCorrelativo()
+        {
+            int resultado = 0;
+            SqlCommand cmd = new SqlCommand("SP_MostrarUsuarioIdentity", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            try
+            {
+                ConectarDB();
+
+                SqlDataReader ListarProveedores;
+                ListarProveedores = cmd.ExecuteReader();
+
+                if (ListarProveedores.Read() == true)
+                {
+                    if (ListarProveedores["Id"] is DBNull)
+                    {
+                        resultado = 1;
+                    }
+                    else
+                    {
+                        resultado = Convert.ToInt32(ListarProveedores["Id"].ToString());
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(Convert.ToString(ex));
+            }
+            finally
+            {
+                CerrarDB();
+            }
+            return resultado;
         }
     }
 }

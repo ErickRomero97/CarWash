@@ -34,5 +34,9 @@ namespace CapaNegocio
         {
             return objCl.MostrarXCliente();
         }
+        public bool ExisteCliente(CECliente objE)
+        {
+            return objCl.Existe(objE);
+        }
     }
 }

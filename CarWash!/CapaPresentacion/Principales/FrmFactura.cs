@@ -132,17 +132,6 @@ namespace CapaPresentacion
                 epFactu.SetError(txtIdAutomovil, "");
             }
 
-            if (txtCant.Text == "")
-            {
-                epFactu.SetError(txtCant, "Debe ingresar una cantidad de automoviles a lavar.");
-                txtCant.Focus();
-                return;
-            }
-            else
-            {
-                epFactu.SetError(txtCant, "");
-            }
-
             if (txtPrecio.Text == "")
             {
                 epFactu.SetError(txtPrecio, "Debe ingresar el precio de los servicios.");
@@ -155,7 +144,7 @@ namespace CapaPresentacion
             }
 
             #endregion
-            dgvFactu.Rows.Add(txtIdFactura.Text, txtIdAutomovil.Text, txtIdCliente.Text, txtNombreCliente.Text, txtApellidoCliente.Text, txtPrecio.Text, txtCant.Text);
+            dgvFactu.Rows.Add(txtIdFactura.Text,txtIdServicio.Text, txtIdAutomovil.Text, txtIdCliente.Text, txtNombreCliente.Text, txtApellidoCliente.Text, txtPrecio.Text);
             Calculos();
             registro = 1;
             LimpiarArticulos();
@@ -172,7 +161,6 @@ namespace CapaPresentacion
             objFactura.Fecha = dtpFechaFactura.Value;
             objFactura.IdAutomovil = txtIdAutomovil.Text;
             objFactura.IdUsuario = Convert.ToInt16(10);
-            objFactura.Cantidad = Convert.ToDecimal(txtCant.Text);
             if(inserF.NuevaFactura(objFactura)>0)
             {
 
@@ -192,8 +180,8 @@ namespace CapaPresentacion
             {
                 CNFactura insertDetalle = new CNFactura();
                 CEFactura objFactura = new CEFactura();
-                objFactura.IdFactura = Convert.ToInt32(dgvFactu.Rows[i].Cells["dtIdFactura"].Value);
-                objFactura.IdServicio = Convert.ToInt32(dgvFactu.Rows[i].Cells["dtIdServicio"].Value);
+                objFactura.IdFactura = Convert.ToInt32(dgvFactu.Rows[i].Cells["IdFactura"].Value);
+                objFactura.IdServicio = Convert.ToInt32(dgvFactu.Rows[i].Cells["IdServicio"].Value);
                 if (insertDetalle.AgregarDetalle(objFactura) > 0)
                 {
                     MessageBox.Show(null, "Se Guardo el reguistro del detalle de la factura", "CarWash System", MessageBoxButtons.OK);
@@ -209,15 +197,13 @@ namespace CapaPresentacion
         {
 
             decimal subtotal=0;
-            decimal s1=0;
             decimal isv;
             decimal total;
             for (int i = 0; i < dgvFactu.RowCount; i++) 
             {
-                s1 = Convert.ToDecimal(dgvFactu.Rows[i].Cells[5].Value) * Convert.ToDecimal(dgvFactu.Rows[i].Cells[6].Value);
-                
+                subtotal = subtotal + Convert.ToDecimal(dgvFactu.Rows[i].Cells[6].Value);
+
             }
-            subtotal +=s1;
             isv = subtotal * Convert.ToDecimal(0.15);
             total = subtotal + isv;
 
@@ -229,24 +215,20 @@ namespace CapaPresentacion
         private void Limpiar()
         {
             txtIdFactura.Clear();
-           
             txtSub.Clear();
             txtISV.Clear();
             txtTotal.Clear();
-
+            txtAnio.Clear();
+            txtIdCliente.Clear();
+            txtDescAuto.Clear();
+            txtApellidoCliente.Clear();
+            txtNombreCliente.Clear();
         }
 
         private void LimpiarArticulos()
-        {
-            
+        { 
             txtIdServicio.Clear();
-            txtAnio.Clear();
-            txtApellidoCliente.Clear();
-            txtNombreCliente.Clear();
             txtNombreSer.Clear();
-            txtIdCliente.Clear();
-            txtDescAuto.Clear();
-            txtCant.Clear();
             txtPrecio.Clear();
         }
         private void InvestigarCorrelativo()

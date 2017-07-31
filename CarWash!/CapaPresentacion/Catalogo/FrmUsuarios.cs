@@ -213,6 +213,7 @@ namespace CapaPresentacion
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             HabilitarBotones(false, true, false, true, true);
+            InvestigarCorrelativo();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -265,6 +266,11 @@ namespace CapaPresentacion
         {
             Limpiar();
             HabilitarBotones(true, false, false, false, false);
+        }
+        private void InvestigarCorrelativo()
+        {
+            CNUsuario correlativo = new CNUsuario();
+            txtIdUsuario.Text = Convert.ToString(correlativo.InvestigarCorrelativo());
         }
     }
 }

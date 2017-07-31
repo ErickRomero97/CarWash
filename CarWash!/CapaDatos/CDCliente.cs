@@ -35,6 +35,7 @@ namespace CapaDatos
             {
 
                 throw new Exception("Error al ingresar un nuevo reguistro de clientes", ex);
+               
             }
             finally
             {
@@ -158,6 +159,30 @@ namespace CapaDatos
             {
                 CerrarDB();
                 ds.Dispose();
+            }
+        }
+        public bool Existe(CECliente objE)
+        {
+            SqlCommand cmd = new SqlCommand("Sp_ExisteCliente", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@IdCliente", SqlDbType.NVarChar).Value = objE.IdCliente;
+
+            try
+            {
+                ConectarDB();
+                int count = Convert.ToInt32(cmd.ExecuteScalar());
+                if (count == 0)
+                    return false;
+                else
+                    return true;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al verificar al Cliente", ex);
+            }
+            finally
+            {
+                CerrarDB();
             }
         }
     }

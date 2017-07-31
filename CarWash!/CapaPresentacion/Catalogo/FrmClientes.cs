@@ -170,13 +170,7 @@ namespace CapaPresentacion
         }
         
 
-        private void btnNuevo_Click_1(object sender, EventArgs e)
-        {
-            HabilitarBotones(false, true, true, false, true);
-            chkVer.Enabled = false;
-            chkVer.Checked = false;
-          
-        }
+       
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
@@ -221,54 +215,64 @@ namespace CapaPresentacion
         private void btnGuardar_Click_1(object sender, EventArgs e)
         {
             #region Validacion
+            CNCliente objC = new CNCliente();
+            CECliente objDatos = new CECliente();
+            objDatos.IdCliente = mtbIdCliente.Text;
+            if (objC.ExisteCliente(objDatos))
+            {
+                MessageBox.Show("Este Cliente ya Existe dentro de la base de datos");
+            }
+            else
+            {
 
-            if (mtbIdCliente.MaskFull == false)
-            {
-                errorProvider1.SetError(mtbIdCliente, "El codigo del cliente es requerido");
-                mtbIdCliente.Focus();
-                return;
-            }
-            else
-            {
-                errorProvider1.SetError(mtbIdCliente, "");
-            }
-            if (txtNombre.Text == "")
-            {
-                errorProvider1.SetError(txtNombre, "El nombre del cliente es requerido");
-                txtNombre.Focus();
-                return;
-            }
-            else
-            {
-                errorProvider1.SetError(txtNombre, "");
-            }
+                if (mtbIdCliente.MaskFull == false)
+                {
+                    errorProvider1.SetError(mtbIdCliente, "El codigo del cliente es requerido");
+                    mtbIdCliente.Focus();
+                    return;
+                }
+                else
+                {
+                    errorProvider1.SetError(mtbIdCliente, "");
+                }
+                if (txtNombre.Text == "")
+                {
+                    errorProvider1.SetError(txtNombre, "El nombre del cliente es requerido");
+                    txtNombre.Focus();
+                    return;
+                }
+                else
+                {
+                    errorProvider1.SetError(txtNombre, "");
+                }
 
-            if (txtApellidos.Text == "")
-            {
-                errorProvider1.SetError(txtApellidos, "el apellido del cliente es requerido");
-                txtApellidos.Focus();
-                return;
-            }
-            else
-            {
-                errorProvider1.SetError(txtApellidos, "");
-            }
-            if (txtDireccion.Text == "")
-            {
-                errorProvider1.SetError(txtApellidos, "la Direccion del cliente es requerida");
-                txtDireccion.Focus();
-                return;
-            }
-            else
-            {
-                errorProvider1.SetError(txtDireccion, "");
-            }
-            #endregion
+                if (txtApellidos.Text == "")
+                {
+                    errorProvider1.SetError(txtApellidos, "el apellido del cliente es requerido");
+                    txtApellidos.Focus();
+                    return;
+                }
+                else
+                {
+                    errorProvider1.SetError(txtApellidos, "");
+                }
+                if (txtDireccion.Text == "")
+                {
+                    errorProvider1.SetError(txtApellidos, "la Direccion del cliente es requerida");
+                    txtDireccion.Focus();
+                    return;
+                }
+                else
+                {
+                    errorProvider1.SetError(txtDireccion, "");
+                }
+                #endregion
 
-            InsertarCliente();
-            CargarCliente();
-            Limpiar();
-            HabilitarBotones(true, false, true, false, false);
+                InsertarCliente();
+                CargarCliente();
+                Limpiar();
+                HabilitarBotones(true, false, true, false, false);
+            }
         }
 
         private void btnModificar_Click_1(object sender, EventArgs e)

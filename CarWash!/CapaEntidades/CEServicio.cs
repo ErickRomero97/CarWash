@@ -13,5 +13,6 @@ namespace CapaEntidades
         public decimal Precio { get; set; }
         public string Descripcion { get; set; }
         public int IdUsuario { get; set; }
+
     }
 }
