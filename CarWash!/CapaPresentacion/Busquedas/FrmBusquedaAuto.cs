@@ -90,5 +90,10 @@ namespace CapaPresentacion.Busquedas
             CNBusquedaAuto buscarC = new CNBusquedaAuto();
             dgvMostrar.DataSource = buscarC.MostrarAuto().Tables["MostrarTodoCliente"];
         }
+
+        private void dgvMostrar_DoubleClick(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -168,7 +168,7 @@ namespace CapaPresentacion
             }
             else
             {
-                MessageBox.Show(null, "Error al guardar un nuevo registro de la factura.", "CarWash System", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show(null, "Error al guardar un nuevo registro de la factura.", "CarWash System", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -176,12 +176,12 @@ namespace CapaPresentacion
         public void AgregarDetalle()
         {
 
-            for (int i = 0; i < dgvFactu.RowCount; i++)
+            foreach(DataGridViewRow fila in dgvFactu.Rows)
             {
                 CNFactura insertDetalle = new CNFactura();
                 CEFactura objFactura = new CEFactura();
-                objFactura.IdFactura = Convert.ToInt32(dgvFactu.Rows[i].Cells["IdFactura"].Value);
-                objFactura.IdServicio = Convert.ToInt32(dgvFactu.Rows[i].Cells["IdServicio"].Value);
+                objFactura.IdFactura = Convert.ToInt32(fila.Cells[0].Value.ToString());
+                objFactura.IdServicio = Convert.ToInt32(fila.Cells[1].Value.ToString());
                 if (insertDetalle.AgregarDetalle(objFactura) > 0)
                 {
                     MessageBox.Show(null, "Se Guardo el reguistro del detalle de la factura", "CarWash System", MessageBoxButtons.OK);

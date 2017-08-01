@@ -101,6 +101,7 @@
             this.dgvSer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSer.Size = new System.Drawing.Size(661, 227);
             this.dgvSer.TabIndex = 15;
+            this.dgvSer.DoubleClick += new System.EventHandler(this.dgvSer_DoubleClick);
             // 
             // epBuscar
             // 

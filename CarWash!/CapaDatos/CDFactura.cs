@@ -64,7 +64,7 @@ namespace CapaDatos
             try
             {
                 ConectarDB();
-                cmd.ExecuteNonQuery();
+                resultado=cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
             {

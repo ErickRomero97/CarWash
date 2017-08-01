@@ -160,12 +160,10 @@ namespace CapaPresentacion
 
         private void fila()
         {
-            txtIdSer.Text = dgvServicios.SelectedRows[0].Cells[0].Value.ToString();
-            txtNS.Text = dgvServicios.SelectedRows[0].Cells[1].Value.ToString();
-            txtPrecio.Text = dgvServicios.SelectedRows[0].Cells[2].Value.ToString();
-            txtDesc.Text = dgvServicios.SelectedRows[0].Cells[3].Value.ToString();
-
-
+            txtIdSer.Text = dgvServicios.CurrentRow.Cells[0].Value.ToString();
+            txtNS.Text = dgvServicios.CurrentRow.Cells[1].Value.ToString();
+            txtPrecio.Text = dgvServicios.CurrentRow.Cells[2].Value.ToString();
+            txtDesc.Text = dgvServicios.CurrentRow.Cells[3].Value.ToString();
         }
 
        
@@ -188,7 +186,7 @@ namespace CapaPresentacion
         private void eliminarMenuItem_Click(object sender, EventArgs e)
         {
 
-            int Cod = Convert.ToInt32(dgvServicios.SelectedRows[0].Cells[0].Value.ToString());
+            int Cod = Convert.ToInt32(dgvServicios.CurrentRow.Cells[0].Value.ToString());
             EliminarServicio(Cod);
             CargarServicio();
         }
@@ -289,6 +287,8 @@ namespace CapaPresentacion
             #endregion
             ActualizarServicio();
             CargarServicio();
+            Limpiar();
+            HabilitarBotones(true, false, false, false, false);
         }
 
         private void btnCancelar_Click_1(object sender, EventArgs e)

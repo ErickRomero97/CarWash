@@ -37,6 +37,13 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.dgvFactu = new System.Windows.Forms.DataGridView();
+            this.IdFactura = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdServicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.btnNuevo = new System.Windows.Forms.Button();
@@ -71,13 +78,6 @@
             this.label = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.epFactu = new System.Windows.Forms.ErrorProvider(this.components);
-            this.IdFactura = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdServicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFactu)).BeginInit();
             this.gbArticulos.SuspendLayout();
             this.gbDatos.SuspendLayout();
@@ -135,6 +135,8 @@
             // 
             // dgvFactu
             // 
+            this.dgvFactu.AllowUserToAddRows = false;
+            this.dgvFactu.AllowUserToDeleteRows = false;
             this.dgvFactu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFactu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdFactura,
@@ -146,8 +148,51 @@
             this.Column5});
             this.dgvFactu.Location = new System.Drawing.Point(12, 282);
             this.dgvFactu.Name = "dgvFactu";
+            this.dgvFactu.ReadOnly = true;
             this.dgvFactu.Size = new System.Drawing.Size(768, 208);
             this.dgvFactu.TabIndex = 45;
+            // 
+            // IdFactura
+            // 
+            this.IdFactura.HeaderText = "IdFactura";
+            this.IdFactura.Name = "IdFactura";
+            this.IdFactura.ReadOnly = true;
+            // 
+            // IdServicio
+            // 
+            this.IdServicio.HeaderText = "IdServicio";
+            this.IdServicio.Name = "IdServicio";
+            this.IdServicio.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Placa Auto";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "IdCliente";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Nombre";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Apellido";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Precio";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             // 
             // label9
             // 
@@ -481,41 +526,6 @@
             // epFactu
             // 
             this.epFactu.ContainerControl = this;
-            // 
-            // IdFactura
-            // 
-            this.IdFactura.HeaderText = "IdFactura";
-            this.IdFactura.Name = "IdFactura";
-            // 
-            // IdServicio
-            // 
-            this.IdServicio.HeaderText = "IdServicio";
-            this.IdServicio.Name = "IdServicio";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Placa Auto";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "IdCliente";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Nombre";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Apellido";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Precio";
-            this.Column5.Name = "Column5";
             // 
             // FrmFactura
             // 
