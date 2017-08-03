@@ -42,12 +42,12 @@ namespace CapaPresentacion
         {
             if (chkLista.CheckState == CheckState.Checked)
             {
-                Height = 499;
+                Height = 593;
                 CenterToScreen();
             }
             else
             {
-                Height = 329;
+                Height = 428;
                 CenterToScreen();
             }
 

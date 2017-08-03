@@ -184,11 +184,11 @@ namespace CapaPresentacion
         {
             if (chkLista.Checked == true)
             {
-                Height = 533;
+                Height = 563;
             }
             else
             {
-                Height = 338;
+                Height = 433;
             }
         }
 
@@ -200,14 +200,7 @@ namespace CapaPresentacion
 
         private void editarToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            txtIdUsuario.Text = dgvUsuarios.CurrentRow.Cells[0].Value.ToString();
-            txtNombreUsuario.Text = dgvUsuarios.CurrentRow.Cells[1].Value.ToString();
-            txtContraseña.Text = dgvUsuarios.CurrentRow.Cells[2].Value.ToString();
-            cboEstado.Text = dgvUsuarios.CurrentRow.Cells[3].Value.ToString();
-            mtbIdEmpleado.Text = dgvUsuarios.CurrentRow.Cells[4].Value.ToString();
-            txtNombreEmpleado.Text = dgvUsuarios.CurrentRow.Cells[5].Value.ToString();
-            cboTipoUsuario.Text = dgvUsuarios.CurrentRow.Cells[6].Value.ToString();
-            HabilitarBotones(false, false, true, true, true);
+            
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -271,6 +264,18 @@ namespace CapaPresentacion
         {
             CNUsuario correlativo = new CNUsuario();
             txtIdUsuario.Text = Convert.ToString(correlativo.InvestigarCorrelativo());
+        }
+
+        private void editarMenuItem_Click(object sender, EventArgs e)
+        {
+            txtIdUsuario.Text = dgvUsuarios.CurrentRow.Cells[0].Value.ToString();
+            txtNombreUsuario.Text = dgvUsuarios.CurrentRow.Cells[1].Value.ToString();
+            txtContraseña.Text = dgvUsuarios.CurrentRow.Cells[2].Value.ToString();
+            cboEstado.Text = dgvUsuarios.CurrentRow.Cells[3].Value.ToString();
+            mtbIdEmpleado.Text = dgvUsuarios.CurrentRow.Cells[4].Value.ToString();
+            txtNombreEmpleado.Text = dgvUsuarios.CurrentRow.Cells[5].Value.ToString();
+            cboTipoUsuario.Text = dgvUsuarios.CurrentRow.Cells[6].Value.ToString();
+            HabilitarBotones(false, false, true, true, true);
         }
     }
 }

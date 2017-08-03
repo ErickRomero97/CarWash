@@ -43,9 +43,10 @@
             // 
             // btnBuscar
             // 
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
             this.btnBuscar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnBuscar.Location = new System.Drawing.Point(551, 142);
+            this.btnBuscar.Location = new System.Drawing.Point(556, 139);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(86, 29);
             this.btnBuscar.TabIndex = 25;
@@ -54,7 +55,7 @@
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(68, 151);
+            this.txtBuscar.Location = new System.Drawing.Point(73, 148);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(229, 20);
             this.txtBuscar.TabIndex = 24;
@@ -65,7 +66,7 @@
             this.gbBuscar.BackColor = System.Drawing.Color.Transparent;
             this.gbBuscar.Controls.Add(this.rdbFecha);
             this.gbBuscar.Controls.Add(this.rdbId);
-            this.gbBuscar.Location = new System.Drawing.Point(100, 93);
+            this.gbBuscar.Location = new System.Drawing.Point(73, 90);
             this.gbBuscar.Name = "gbBuscar";
             this.gbBuscar.Size = new System.Drawing.Size(297, 39);
             this.gbBuscar.TabIndex = 22;
@@ -98,10 +99,15 @@
             // 
             // dgvMostrar
             // 
+            this.dgvMostrar.AllowUserToAddRows = false;
+            this.dgvMostrar.AllowUserToDeleteRows = false;
+            this.dgvMostrar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvMostrar.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
             this.dgvMostrar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMostrar.Location = new System.Drawing.Point(7, 180);
+            this.dgvMostrar.Location = new System.Drawing.Point(12, 177);
             this.dgvMostrar.Name = "dgvMostrar";
+            this.dgvMostrar.ReadOnly = true;
+            this.dgvMostrar.RowHeadersVisible = false;
             this.dgvMostrar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMostrar.Size = new System.Drawing.Size(661, 136);
             this.dgvMostrar.TabIndex = 21;
@@ -109,7 +115,7 @@
             // dtpFactura
             // 
             this.dtpFactura.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFactura.Location = new System.Drawing.Point(316, 151);
+            this.dtpFactura.Location = new System.Drawing.Point(321, 148);
             this.dtpFactura.Name = "dtpFactura";
             this.dtpFactura.Size = new System.Drawing.Size(200, 20);
             this.dtpFactura.TabIndex = 26;
@@ -120,7 +126,7 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label13.Location = new System.Drawing.Point(160, 9);
+            this.label13.Location = new System.Drawing.Point(160, 21);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(388, 55);
             this.label13.TabIndex = 54;
@@ -132,7 +138,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CapaPresentacion.Properties.Resources.Imagen2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(683, 325);
+            this.ClientSize = new System.Drawing.Size(687, 325);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.dtpFactura);
             this.Controls.Add(this.btnBuscar);
@@ -141,7 +147,8 @@
             this.Controls.Add(this.dgvMostrar);
             this.DoubleBuffered = true;
             this.Name = "FrmBusquedaFactura";
-            this.Text = "FrmBusquedaFactura";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Busqueda Factura";
             this.Load += new System.EventHandler(this.FrmBusquedaFactura_Load);
             this.gbBuscar.ResumeLayout(false);
             this.gbBuscar.PerformLayout();

@@ -46,9 +46,10 @@
             // 
             // btnBuscar
             // 
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
             this.btnBuscar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnBuscar.Location = new System.Drawing.Point(439, 145);
+            this.btnBuscar.Location = new System.Drawing.Point(436, 142);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(86, 29);
             this.btnBuscar.TabIndex = 26;
@@ -57,7 +58,7 @@
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(204, 151);
+            this.txtBuscar.Location = new System.Drawing.Point(201, 148);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(229, 20);
             this.txtBuscar.TabIndex = 25;
@@ -65,7 +66,7 @@
             // 
             // txtIdEmpleado
             // 
-            this.txtIdEmpleado.Location = new System.Drawing.Point(204, 151);
+            this.txtIdEmpleado.Location = new System.Drawing.Point(201, 148);
             this.txtIdEmpleado.Name = "txtIdEmpleado";
             this.txtIdEmpleado.Size = new System.Drawing.Size(229, 20);
             this.txtIdEmpleado.TabIndex = 24;
@@ -75,7 +76,7 @@
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.rdbNombre);
             this.groupBox1.Controls.Add(this.rdbId);
-            this.groupBox1.Location = new System.Drawing.Point(214, 103);
+            this.groupBox1.Location = new System.Drawing.Point(211, 100);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(297, 39);
             this.groupBox1.TabIndex = 23;
@@ -108,9 +109,14 @@
             // 
             // dgvSer
             // 
+            this.dgvSer.AllowUserToAddRows = false;
+            this.dgvSer.AllowUserToDeleteRows = false;
+            this.dgvSer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSer.Location = new System.Drawing.Point(15, 186);
+            this.dgvSer.Location = new System.Drawing.Point(12, 183);
             this.dgvSer.Name = "dgvSer";
+            this.dgvSer.ReadOnly = true;
+            this.dgvSer.RowHeadersVisible = false;
             this.dgvSer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSer.Size = new System.Drawing.Size(661, 138);
             this.dgvSer.TabIndex = 22;
@@ -121,7 +127,7 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label13.Location = new System.Drawing.Point(192, 25);
+            this.label13.Location = new System.Drawing.Point(191, 29);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(353, 55);
             this.label13.TabIndex = 54;
@@ -146,7 +152,8 @@
             this.Controls.Add(this.dgvSer);
             this.DoubleBuffered = true;
             this.Name = "FrmBusquedaMarca";
-            this.Text = "FrmBusquedaMarca";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Busqueda Marca";
             this.Load += new System.EventHandler(this.FrmBusquedaMarca_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

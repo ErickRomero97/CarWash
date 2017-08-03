@@ -41,14 +41,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtModelo = new System.Windows.Forms.TextBox();
             this.dgvModelo = new System.Windows.Forms.DataGridView();
+            this.CmsOpciones = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.editarMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
             this.btnModificar = new DevExpress.XtraEditors.SimpleButton();
             this.btnGuardar = new DevExpress.XtraEditors.SimpleButton();
             this.btnNuevo = new DevExpress.XtraEditors.SimpleButton();
             this.label13 = new System.Windows.Forms.Label();
-            this.CmsOpciones = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.editarMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.grpModelo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvModelo)).BeginInit();
@@ -88,11 +88,15 @@
             // 
             // btnMarcaA
             // 
+            this.btnMarcaA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMarcaA.BackgroundImage")));
+            this.btnMarcaA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMarcaA.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMarcaA.FlatAppearance.BorderSize = 0;
+            this.btnMarcaA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMarcaA.Location = new System.Drawing.Point(193, 70);
             this.btnMarcaA.Name = "btnMarcaA";
-            this.btnMarcaA.Size = new System.Drawing.Size(33, 23);
+            this.btnMarcaA.Size = new System.Drawing.Size(22, 20);
             this.btnMarcaA.TabIndex = 55;
-            this.btnMarcaA.Text = "...";
             this.btnMarcaA.UseVisualStyleBackColor = true;
             this.btnMarcaA.Click += new System.EventHandler(this.btnMarcaA_Click);
             // 
@@ -108,9 +112,10 @@
             // 
             this.btnMarcaFormu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMarcaFormu.BackgroundImage")));
             this.btnMarcaFormu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMarcaFormu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMarcaFormu.FlatAppearance.BorderSize = 0;
             this.btnMarcaFormu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMarcaFormu.Location = new System.Drawing.Point(234, 74);
+            this.btnMarcaFormu.Location = new System.Drawing.Point(221, 71);
             this.btnMarcaFormu.Name = "btnMarcaFormu";
             this.btnMarcaFormu.Size = new System.Drawing.Size(25, 20);
             this.btnMarcaFormu.TabIndex = 13;
@@ -161,68 +166,17 @@
             // 
             // dgvModelo
             // 
+            this.dgvModelo.AllowUserToAddRows = false;
+            this.dgvModelo.AllowUserToDeleteRows = false;
+            this.dgvModelo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvModelo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvModelo.ContextMenuStrip = this.CmsOpciones;
-            this.dgvModelo.Location = new System.Drawing.Point(47, 272);
+            this.dgvModelo.Location = new System.Drawing.Point(47, 282);
             this.dgvModelo.Name = "dgvModelo";
+            this.dgvModelo.ReadOnly = true;
+            this.dgvModelo.RowHeadersVisible = false;
             this.dgvModelo.Size = new System.Drawing.Size(405, 93);
             this.dgvModelo.TabIndex = 30;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
-            this.btnCancelar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnCancelar.Location = new System.Drawing.Point(366, 231);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(86, 29);
-            this.btnCancelar.TabIndex = 31;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // btnModificar
-            // 
-            this.btnModificar.Image = ((System.Drawing.Image)(resources.GetObject("btnModificar.Image")));
-            this.btnModificar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnModificar.Location = new System.Drawing.Point(366, 196);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(86, 29);
-            this.btnModificar.TabIndex = 32;
-            this.btnModificar.Text = "Modificar";
-            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
-            this.btnGuardar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnGuardar.Location = new System.Drawing.Point(366, 161);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(86, 29);
-            this.btnGuardar.TabIndex = 33;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
-            this.btnNuevo.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnNuevo.Location = new System.Drawing.Point(366, 126);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(86, 29);
-            this.btnNuevo.TabIndex = 34;
-            this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label13.Location = new System.Drawing.Point(141, 35);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(194, 55);
-            this.label13.TabIndex = 54;
-            this.label13.Text = "Modelo";
             // 
             // CmsOpciones
             // 
@@ -249,6 +203,66 @@
             this.eliminarMenuItem.Text = "Eliminar";
             this.eliminarMenuItem.Click += new System.EventHandler(this.eliminarMenuItem_Click);
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnCancelar.Location = new System.Drawing.Point(366, 231);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(86, 29);
+            this.btnCancelar.TabIndex = 31;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnModificar.Image = ((System.Drawing.Image)(resources.GetObject("btnModificar.Image")));
+            this.btnModificar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnModificar.Location = new System.Drawing.Point(366, 196);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(86, 29);
+            this.btnModificar.TabIndex = 32;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
+            this.btnGuardar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnGuardar.Location = new System.Drawing.Point(366, 161);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(86, 29);
+            this.btnGuardar.TabIndex = 33;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
+            this.btnNuevo.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnNuevo.Location = new System.Drawing.Point(366, 126);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(86, 29);
+            this.btnNuevo.TabIndex = 34;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.label13.Location = new System.Drawing.Point(141, 35);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(194, 55);
+            this.label13.TabIndex = 54;
+            this.label13.Text = "Modelo";
+            // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
@@ -259,7 +273,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CapaPresentacion.Properties.Resources.frm;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(511, 436);
+            this.ClientSize = new System.Drawing.Size(511, 274);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.chkLista);
             this.Controls.Add(this.grpModelo);
@@ -270,6 +284,7 @@
             this.Controls.Add(this.dgvModelo);
             this.DoubleBuffered = true;
             this.Name = "FrmModelo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modelo";
             this.Load += new System.EventHandler(this.FrmModelo_Load);
             this.grpModelo.ResumeLayout(false);

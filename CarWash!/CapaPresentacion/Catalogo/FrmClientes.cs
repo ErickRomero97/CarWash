@@ -174,13 +174,13 @@ namespace CapaPresentacion
         {
             if (chkVer.Checked == true)
             {
-                Height = 550;
+                Height = 543;
                 CenterToScreen();
 
             }
             else
             {
-                Height = 310;
+                Height = 396;
                 CenterToScreen();
             }
         }

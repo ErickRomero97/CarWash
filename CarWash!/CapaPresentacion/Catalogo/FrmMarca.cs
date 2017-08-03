@@ -110,13 +110,13 @@ namespace CapaPresentacion.Formularios
         {
             if (chkLista.Checked == true)
             {
-                Height = 550;
+                Height = 430;
                 CenterToScreen();
 
             }
             else
             {
-                Height = 310;
+                Height = 306;
                 CenterToScreen();
             }
         }

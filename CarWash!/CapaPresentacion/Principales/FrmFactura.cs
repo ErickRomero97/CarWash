@@ -44,70 +44,6 @@ namespace CapaPresentacion
             txtPrecio.Text = Convert.ToString(frm.dgvSer.CurrentRow.Cells[2].Value);
             this.Show();
         }
-
-        private void btnNuevo_Click(object sender, EventArgs e)
-        {
-            HabilitarBotones(false, true, true, true, true);
-            InvestigarCorrelativo();
-        }
-
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-            CDFactura dato = new CDFactura();
-
-            #region validaciones
-
-            if (txtIdAutomovil.Text == "")
-            {
-                epFactu.SetError(txtIdAutomovil, "Debe ingresar un Automovil");
-                btnAuto.Focus();
-                return;
-            }
-            else
-            {
-                epFactu.SetError(txtIdAutomovil, "");
-            }
-
-            if (dgvFactu.Rows.Count == 0)
-            {
-                epFactu.SetError(dgvFactu, "No ha ingresado ningun Automovil a lavar");
-                btnAgregar.Focus();
-                return;
-            }
-            else
-            {
-                epFactu.SetError(dgvFactu, "");
-            }
-
-
-            #endregion
-
-            InsertarFactura();
-            AgregarDetalle();
-            Limpiar();
-            LimpiarArticulos();
-            HabilitarBotones(true, false, false, false, false);
-            dgvFactu.Rows.Clear();
-        }
-
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            if (registro == 1)
-            {
-                Limpiar();
-                LimpiarArticulos();
-                HabilitarBotones(true, false, false, false, false);
-                dgvFactu.Rows.Clear();
-                registro = 0;
-            }
-            else
-            {
-                Limpiar();
-                LimpiarArticulos();
-                HabilitarBotones(true, false, false, false, false);
-                dgvFactu.Rows.Clear();
-            }
-        }
         private void HabilitarBotones(bool nuevo, bool guardar, bool cancelar, bool datos, bool articulos)
         {
             btnNuevo.Enabled = nuevo;
@@ -245,6 +181,70 @@ namespace CapaPresentacion
         private void label8_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            HabilitarBotones(false, true, true, true, true);
+            InvestigarCorrelativo();
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            CDFactura dato = new CDFactura();
+
+            #region validaciones
+
+            if (txtIdAutomovil.Text == "")
+            {
+                epFactu.SetError(txtIdAutomovil, "Debe ingresar un Automovil");
+                btnAuto.Focus();
+                return;
+            }
+            else
+            {
+                epFactu.SetError(txtIdAutomovil, "");
+            }
+
+            if (dgvFactu.Rows.Count == 0)
+            {
+                epFactu.SetError(dgvFactu, "No ha ingresado ningun Automovil a lavar");
+                btnAgregar.Focus();
+                return;
+            }
+            else
+            {
+                epFactu.SetError(dgvFactu, "");
+            }
+
+
+            #endregion
+
+            InsertarFactura();
+            AgregarDetalle();
+            Limpiar();
+            LimpiarArticulos();
+            HabilitarBotones(true, false, false, false, false);
+            dgvFactu.Rows.Clear();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            if (registro == 1)
+            {
+                Limpiar();
+                LimpiarArticulos();
+                HabilitarBotones(true, false, false, false, false);
+                dgvFactu.Rows.Clear();
+                registro = 0;
+            }
+            else
+            {
+                Limpiar();
+                LimpiarArticulos();
+                HabilitarBotones(true, false, false, false, false);
+                dgvFactu.Rows.Clear();
+            }
         }
     }
 }

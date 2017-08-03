@@ -78,10 +78,15 @@
             // 
             // dgvMarca
             // 
+            this.dgvMarca.AllowUserToAddRows = false;
+            this.dgvMarca.AllowUserToDeleteRows = false;
+            this.dgvMarca.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvMarca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMarca.ContextMenuStrip = this.CmsOpciones;
-            this.dgvMarca.Location = new System.Drawing.Point(28, 289);
+            this.dgvMarca.Location = new System.Drawing.Point(28, 286);
             this.dgvMarca.Name = "dgvMarca";
+            this.dgvMarca.ReadOnly = true;
+            this.dgvMarca.RowHeadersVisible = false;
             this.dgvMarca.Size = new System.Drawing.Size(279, 93);
             this.dgvMarca.TabIndex = 3;
             // 
@@ -126,7 +131,7 @@
             this.grpMarca.Controls.Add(this.label2);
             this.grpMarca.Controls.Add(this.txtIdMarca);
             this.grpMarca.Controls.Add(this.txtMarca);
-            this.grpMarca.Location = new System.Drawing.Point(28, 138);
+            this.grpMarca.Location = new System.Drawing.Point(32, 103);
             this.grpMarca.Name = "grpMarca";
             this.grpMarca.Size = new System.Drawing.Size(279, 90);
             this.grpMarca.TabIndex = 28;
@@ -137,7 +142,7 @@
             // 
             this.chkLista.AutoSize = true;
             this.chkLista.BackColor = System.Drawing.Color.Transparent;
-            this.chkLista.Location = new System.Drawing.Point(240, 251);
+            this.chkLista.Location = new System.Drawing.Point(298, 243);
             this.chkLista.Name = "chkLista";
             this.chkLista.Size = new System.Drawing.Size(67, 17);
             this.chkLista.TabIndex = 29;
@@ -147,9 +152,10 @@
             // 
             // btnCancelar
             // 
+            this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnCancelar.Location = new System.Drawing.Point(338, 243);
+            this.btnCancelar.Location = new System.Drawing.Point(349, 208);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(86, 29);
             this.btnCancelar.TabIndex = 24;
@@ -158,9 +164,10 @@
             // 
             // btnModificar
             // 
+            this.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnModificar.Image = ((System.Drawing.Image)(resources.GetObject("btnModificar.Image")));
             this.btnModificar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnModificar.Location = new System.Drawing.Point(338, 208);
+            this.btnModificar.Location = new System.Drawing.Point(349, 173);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(86, 29);
             this.btnModificar.TabIndex = 25;
@@ -169,9 +176,10 @@
             // 
             // btnGuardar
             // 
+            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
             this.btnGuardar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnGuardar.Location = new System.Drawing.Point(338, 173);
+            this.btnGuardar.Location = new System.Drawing.Point(349, 138);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(86, 29);
             this.btnGuardar.TabIndex = 26;
@@ -180,9 +188,10 @@
             // 
             // btnNuevo
             // 
+            this.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
             this.btnNuevo.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnNuevo.Location = new System.Drawing.Point(338, 138);
+            this.btnNuevo.Location = new System.Drawing.Point(349, 103);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(86, 29);
             this.btnNuevo.TabIndex = 27;
@@ -211,7 +220,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CapaPresentacion.Properties.Resources.frm;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(521, 420);
+            this.ClientSize = new System.Drawing.Size(521, 267);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.chkLista);
             this.Controls.Add(this.grpMarca);
@@ -220,7 +229,9 @@
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.dgvMarca);
+            this.DoubleBuffered = true;
             this.Name = "FrmMarca";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Marca";
             this.Load += new System.EventHandler(this.FrmMarca_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMarca)).EndInit();

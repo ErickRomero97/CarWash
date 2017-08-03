@@ -43,7 +43,7 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(245, 160);
+            this.txtNombre.Location = new System.Drawing.Point(201, 163);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(229, 20);
             this.txtNombre.TabIndex = 14;
@@ -51,7 +51,7 @@
             // 
             // txtIdEmpleado
             // 
-            this.txtIdEmpleado.Location = new System.Drawing.Point(245, 160);
+            this.txtIdEmpleado.Location = new System.Drawing.Point(201, 163);
             this.txtIdEmpleado.Name = "txtIdEmpleado";
             this.txtIdEmpleado.Size = new System.Drawing.Size(229, 20);
             this.txtIdEmpleado.TabIndex = 12;
@@ -61,7 +61,7 @@
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.rdbNombre);
             this.groupBox1.Controls.Add(this.rdbId);
-            this.groupBox1.Location = new System.Drawing.Point(255, 112);
+            this.groupBox1.Location = new System.Drawing.Point(211, 115);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(297, 39);
             this.groupBox1.TabIndex = 11;
@@ -94,9 +94,14 @@
             // 
             // dgvEmpleado
             // 
+            this.dgvEmpleado.AllowUserToAddRows = false;
+            this.dgvEmpleado.AllowUserToDeleteRows = false;
+            this.dgvEmpleado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvEmpleado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEmpleado.Location = new System.Drawing.Point(56, 195);
+            this.dgvEmpleado.Location = new System.Drawing.Point(12, 198);
             this.dgvEmpleado.Name = "dgvEmpleado";
+            this.dgvEmpleado.ReadOnly = true;
+            this.dgvEmpleado.RowHeadersVisible = false;
             this.dgvEmpleado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvEmpleado.Size = new System.Drawing.Size(661, 163);
             this.dgvEmpleado.TabIndex = 10;
@@ -104,9 +109,10 @@
             // 
             // btnBuscar
             // 
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
             this.btnBuscar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnBuscar.Location = new System.Drawing.Point(480, 154);
+            this.btnBuscar.Location = new System.Drawing.Point(436, 157);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(86, 29);
             this.btnBuscar.TabIndex = 21;
@@ -119,7 +125,7 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label13.Location = new System.Drawing.Point(173, 32);
+            this.label13.Location = new System.Drawing.Point(149, 42);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(439, 55);
             this.label13.TabIndex = 54;
@@ -131,7 +137,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CapaPresentacion.Properties.Resources.Imagen2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(771, 373);
+            this.ClientSize = new System.Drawing.Size(690, 373);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtNombre);
@@ -140,7 +146,8 @@
             this.Controls.Add(this.dgvEmpleado);
             this.DoubleBuffered = true;
             this.Name = "FrmBusquedaEmpleado";
-            this.Text = "FrmBusquedaEmpleado";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Busqueda Empleado";
             this.Load += new System.EventHandler(this.FrmBusquedaEmpleado_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

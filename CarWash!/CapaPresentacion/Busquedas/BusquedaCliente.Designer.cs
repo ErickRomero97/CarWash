@@ -46,7 +46,7 @@
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(241, 131);
+            this.txtBuscar.Location = new System.Drawing.Point(168, 125);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(229, 20);
             this.txtBuscar.TabIndex = 19;
@@ -54,7 +54,7 @@
             // 
             // txtIdEmpleado
             // 
-            this.txtIdEmpleado.Location = new System.Drawing.Point(241, 131);
+            this.txtIdEmpleado.Location = new System.Drawing.Point(168, 125);
             this.txtIdEmpleado.Name = "txtIdEmpleado";
             this.txtIdEmpleado.Size = new System.Drawing.Size(229, 20);
             this.txtIdEmpleado.TabIndex = 17;
@@ -64,7 +64,7 @@
             this.gbBuscar.BackColor = System.Drawing.Color.Transparent;
             this.gbBuscar.Controls.Add(this.rdbNombre);
             this.gbBuscar.Controls.Add(this.rdbId);
-            this.gbBuscar.Location = new System.Drawing.Point(251, 83);
+            this.gbBuscar.Location = new System.Drawing.Point(178, 77);
             this.gbBuscar.Name = "gbBuscar";
             this.gbBuscar.Size = new System.Drawing.Size(297, 39);
             this.gbBuscar.TabIndex = 16;
@@ -97,10 +97,16 @@
             // 
             // dgvMostrar
             // 
+            this.dgvMostrar.AllowUserToAddRows = false;
+            this.dgvMostrar.AllowUserToDeleteRows = false;
+            this.dgvMostrar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvMostrar.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
             this.dgvMostrar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMostrar.Location = new System.Drawing.Point(52, 166);
+            this.dgvMostrar.Location = new System.Drawing.Point(12, 161);
             this.dgvMostrar.Name = "dgvMostrar";
+            this.dgvMostrar.ReadOnly = true;
+            this.dgvMostrar.RowHeadersVisible = false;
+            this.dgvMostrar.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader;
             this.dgvMostrar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMostrar.Size = new System.Drawing.Size(661, 146);
             this.dgvMostrar.TabIndex = 15;
@@ -112,9 +118,10 @@
             // 
             // btnBuscar
             // 
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
             this.btnBuscar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnBuscar.Location = new System.Drawing.Point(476, 125);
+            this.btnBuscar.Location = new System.Drawing.Point(403, 119);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(86, 29);
             this.btnBuscar.TabIndex = 20;
@@ -127,7 +134,7 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label13.Location = new System.Drawing.Point(209, 9);
+            this.label13.Location = new System.Drawing.Point(139, 9);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(371, 55);
             this.label13.TabIndex = 54;
@@ -139,7 +146,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CapaPresentacion.Properties.Resources.Imagen2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(767, 313);
+            this.ClientSize = new System.Drawing.Size(689, 319);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtBuscar);
@@ -148,7 +155,8 @@
             this.Controls.Add(this.dgvMostrar);
             this.DoubleBuffered = true;
             this.Name = "FrmBusquedaCliente";
-            this.Text = "BusquedaCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Busqueda Cliente";
             this.Load += new System.EventHandler(this.BusquedaCliente_Load);
             this.gbBuscar.ResumeLayout(false);
             this.gbBuscar.PerformLayout();

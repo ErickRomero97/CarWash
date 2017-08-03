@@ -35,10 +35,11 @@
             // 
             // dgvAuditoria
             // 
+            this.dgvAuditoria.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvAuditoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAuditoria.Location = new System.Drawing.Point(12, 103);
             this.dgvAuditoria.Name = "dgvAuditoria";
-            this.dgvAuditoria.Size = new System.Drawing.Size(488, 150);
+            this.dgvAuditoria.Size = new System.Drawing.Size(488, 193);
             this.dgvAuditoria.TabIndex = 0;
             // 
             // label13

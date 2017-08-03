@@ -33,24 +33,17 @@ namespace CapaPresentacion
         {
             if (chkLista.Checked == true)
             {
-                Height = 576;
+                Height = 615;
             }
             else
             {
-                Height = 344;
+                Height = 434;
             }
         }
 
         private void editarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            mtbIdEmpleado.Text = dgvEmpleados.CurrentRow.Cells[0].Value.ToString();
-            txtNombre.Text = dgvEmpleados.CurrentRow.Cells[1].Value.ToString();
-            txtApellidos.Text = dgvEmpleados.CurrentRow.Cells[2].Value.ToString();
-            mtbTelefono.Text = dgvEmpleados.CurrentRow.Cells[3].Value.ToString();
-            txtCorreoElectronico.Text = dgvEmpleados.CurrentRow.Cells[4].Value.ToString();
-            cboSexo.Text = dgvEmpleados.CurrentRow.Cells[5].Value.ToString();
-            txtDireccion.Text = dgvEmpleados.CurrentRow.Cells[6].Value.ToString();
-            HabilitarBotones(false, false, true, true, true);
+            
         }
 
         private void FrmEmpleados_Load(object sender, EventArgs e)
@@ -310,6 +303,18 @@ namespace CapaPresentacion
             CargarEmpleado();
             Limpiar();
             HabilitarBotones(true, false, false, false, false);
+        }
+
+        private void editarMenuItem_Click(object sender, EventArgs e)
+        {
+            mtbIdEmpleado.Text = dgvEmpleados.CurrentRow.Cells[0].Value.ToString();
+            txtNombre.Text = dgvEmpleados.CurrentRow.Cells[1].Value.ToString();
+            txtApellidos.Text = dgvEmpleados.CurrentRow.Cells[2].Value.ToString();
+            mtbTelefono.Text = dgvEmpleados.CurrentRow.Cells[3].Value.ToString();
+            txtCorreoElectronico.Text = dgvEmpleados.CurrentRow.Cells[4].Value.ToString();
+            cboSexo.Text = dgvEmpleados.CurrentRow.Cells[5].Value.ToString();
+            txtDireccion.Text = dgvEmpleados.CurrentRow.Cells[6].Value.ToString();
+            HabilitarBotones(false, false, true, true, true);
         }
     }
 }

@@ -28,7 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblInitial = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lblInitial
+            // 
+            this.lblInitial.AutoSize = true;
+            this.lblInitial.BackColor = System.Drawing.Color.Transparent;
+            this.lblInitial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInitial.Location = new System.Drawing.Point(338, 76);
+            this.lblInitial.Name = "lblInitial";
+            this.lblInitial.Size = new System.Drawing.Size(41, 15);
+            this.lblInitial.TabIndex = 0;
+            this.lblInitial.Text = "label1";
             // 
             // FrmSplash
             // 
@@ -37,14 +55,19 @@
             this.BackgroundImage = global::CapaPresentacion.Properties.Resources.splash;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 458);
+            this.Controls.Add(this.lblInitial);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmSplash";
             this.Text = "Splash";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lblInitial;
     }
 }
