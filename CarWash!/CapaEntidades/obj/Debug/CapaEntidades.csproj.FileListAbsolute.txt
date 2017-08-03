@@ -5,6 +5,5 @@ C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaEntidades\obj\Debug\CapaEn
 C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaEntidades\obj\Debug\CapaEntidades.csprojResolveAssemblyReference.cache
 C:\Users\Walter\Documents\GitHub\CarWash!\CapaEntidades\bin\Debug\CapaEntidades.dll
 C:\Users\Walter\Documents\GitHub\CarWash!\CapaEntidades\bin\Debug\CapaEntidades.pdb
-C:\Users\Walter\Documents\GitHub\CarWash!\CapaEntidades\obj\Debug\CapaEntidades.csprojResolveAssemblyReference.cache
 C:\Users\Walter\Documents\GitHub\CarWash!\CapaEntidades\obj\Debug\CapaEntidades.dll
 C:\Users\Walter\Documents\GitHub\CarWash!\CapaEntidades\obj\Debug\CapaEntidades.pdb

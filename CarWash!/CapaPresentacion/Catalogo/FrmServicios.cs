@@ -30,22 +30,12 @@ namespace CapaPresentacion
             investigarCorrelativo();
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Limpiar();
             chkLista.Checked = false;
             chkLista.Enabled = true;
             HabilitarBotones(true, false, false, false, false);
-        }
-
-        private void btnModificar_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void chkLista_CheckedChanged(object sender, EventArgs e)

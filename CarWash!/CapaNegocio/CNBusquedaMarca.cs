@@ -6,30 +6,27 @@ using System.Threading.Tasks;
 using CapaDatos;
 using CapaEntidades;
 using System.Data;
-namespace CapaNegocio
+using CapaDatos.Busqueda;
+
+namespace CapaNegocio.Busqueda
 {
     public class CNBusquedaMarca
     {
-        CDBusquedaServicio objCl = new CDBusquedaServicio();
+        CDBusquedaMarca objCl = new CDBusquedaMarca();
 
-        public DataSet BuscarPorCodigo(CEServicio objC)
+        public DataSet BuscarPorCodigo(CEMarca objC)
         {
             return objCl.BuscarPorCodigo(objC);
         }
 
-        public DataSet BuscarPorNombre(CEServicio objC)
+        public DataSet BuscarPorNombre(CEMarca objC)
         {
             return objCl.BuscarPorNombre(objC);
         }
 
         public DataSet MostrarServicio()
         {
-            return objCl.MostrarServicio();
-        }
-
-        public object BuscarPorCodigo(CEMarca objSer)
-        {
-            throw new NotImplementedException();
+            return objCl.MostrarMarca();
         }
     }
 }

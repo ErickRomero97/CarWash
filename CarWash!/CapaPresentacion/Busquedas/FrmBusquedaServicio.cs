@@ -29,30 +29,7 @@ namespace CapaPresentacion
             MostrarTodoServicio();
         }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
-        {
-            if (txtBuscar.Text == "")
-            {
-                epBuscar.SetError(txtBuscar, "El campo de busqueda está vacío");
-                txtBuscar.Focus();
-                return;
-            }
-            else
-            {
-                epBuscar.SetError(txtBuscar, "");
-            }
-
-
-            if (rdbId.Checked == true)
-            {
-                BuscarServicio(Convert.ToInt32(txtBuscar.Text));
-            }
-            else
-            {
-                BuscarNombreCliente(txtBuscar.Text);
-            }
-        }
-
+       
         private void rdbId_CheckedChanged(object sender, EventArgs e)
         {
             txtBuscar.Enabled = true;
@@ -70,7 +47,7 @@ namespace CapaPresentacion
         }
         private void BuscarServicio(int Codigo)
         {
-            CNBusquedaServicio buscarC = new CNBusquedaServicio();
+            CNBusquedaMarca buscarC = new CNBusquedaMarca();
             CEServicio objSer = new CEServicio();
             objSer.IdServicio = Codigo;
             dgvSer.DataSource = buscarC.BuscarPorCodigo(objSer).Tables["MostrarXServicio"];
@@ -78,7 +55,7 @@ namespace CapaPresentacion
 
         private void BuscarNombreCliente(String Nombre)
         {
-            CNBusquedaServicio buscarC = new CNBusquedaServicio();
+            CNBusquedaMarca buscarC = new CNBusquedaMarca();
             CEServicio objSer = new CEServicio();
             objSer.Servicio = Nombre;
             dgvSer.DataSource = buscarC.BuscarPorNombre(objSer).Tables["MostrarXNombre"];
@@ -86,9 +63,8 @@ namespace CapaPresentacion
 
         private void MostrarTodoServicio()
         {
-            CNBusquedaServicio buscarC = new CNBusquedaServicio();
+            CNBusquedaMarca buscarC = new CNBusquedaMarca();
             dgvSer.DataSource = buscarC.MostrarServicio().Tables["MostrarTodoCliente"];
-            //this.dgvMostrar.Columns["CodUsuario"].Visible = false;
         }
 
         private void btnBuscar_Click_1(object sender, EventArgs e)

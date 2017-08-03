@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMarca));
             this.label1 = new System.Windows.Forms.Label();
             this.txtIdMarca = new System.Windows.Forms.TextBox();
             this.txtMarca = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvMarca = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.grpMarca = new System.Windows.Forms.GroupBox();
             this.chkLista = new System.Windows.Forms.CheckBox();
@@ -40,8 +41,14 @@
             this.btnModificar = new DevExpress.XtraEditors.SimpleButton();
             this.btnGuardar = new DevExpress.XtraEditors.SimpleButton();
             this.btnNuevo = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.CmsOpciones = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.editarMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMarca)).BeginInit();
             this.grpMarca.SuspendLayout();
+            this.CmsOpciones.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -68,13 +75,14 @@
             this.txtMarca.Size = new System.Drawing.Size(113, 20);
             this.txtMarca.TabIndex = 2;
             // 
-            // dataGridView1
+            // dgvMarca
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 163);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(279, 93);
-            this.dataGridView1.TabIndex = 3;
+            this.dgvMarca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMarca.ContextMenuStrip = this.CmsOpciones;
+            this.dgvMarca.Location = new System.Drawing.Point(12, 163);
+            this.dgvMarca.Name = "dgvMarca";
+            this.dgvMarca.Size = new System.Drawing.Size(279, 93);
+            this.dgvMarca.TabIndex = 3;
             // 
             // label2
             // 
@@ -107,6 +115,7 @@
             this.chkLista.TabIndex = 29;
             this.chkLista.Text = "Ver Lista";
             this.chkLista.UseVisualStyleBackColor = true;
+            this.chkLista.CheckedChanged += new System.EventHandler(this.chkLista_CheckedChanged);
             // 
             // btnCancelar
             // 
@@ -117,6 +126,7 @@
             this.btnCancelar.Size = new System.Drawing.Size(86, 29);
             this.btnCancelar.TabIndex = 24;
             this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnModificar
             // 
@@ -127,6 +137,7 @@
             this.btnModificar.Size = new System.Drawing.Size(86, 29);
             this.btnModificar.TabIndex = 25;
             this.btnModificar.Text = "Modificar";
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnGuardar
             // 
@@ -137,6 +148,7 @@
             this.btnGuardar.Size = new System.Drawing.Size(86, 29);
             this.btnGuardar.TabIndex = 26;
             this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnNuevo
             // 
@@ -147,6 +159,36 @@
             this.btnNuevo.Size = new System.Drawing.Size(86, 29);
             this.btnNuevo.TabIndex = 27;
             this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
+            // CmsOpciones
+            // 
+            this.CmsOpciones.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.CmsOpciones.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editarMenuItem,
+            this.eliminarMenuItem});
+            this.CmsOpciones.Name = "CmsOpciones";
+            this.CmsOpciones.Size = new System.Drawing.Size(122, 56);
+            // 
+            // editarMenuItem
+            // 
+            this.editarMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("editarMenuItem.Image")));
+            this.editarMenuItem.Name = "editarMenuItem";
+            this.editarMenuItem.Size = new System.Drawing.Size(121, 26);
+            this.editarMenuItem.Text = "Editar";
+            this.editarMenuItem.Click += new System.EventHandler(this.editarMenuItem_Click);
+            // 
+            // eliminarMenuItem
+            // 
+            this.eliminarMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("eliminarMenuItem.Image")));
+            this.eliminarMenuItem.Name = "eliminarMenuItem";
+            this.eliminarMenuItem.Size = new System.Drawing.Size(121, 26);
+            this.eliminarMenuItem.Text = "Eliminar";
+            this.eliminarMenuItem.Click += new System.EventHandler(this.eliminarMenuItem_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // FrmMarca
             // 
@@ -159,12 +201,15 @@
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnNuevo);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvMarca);
             this.Name = "FrmMarca";
             this.Text = "Marca";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FrmMarca_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMarca)).EndInit();
             this.grpMarca.ResumeLayout(false);
             this.grpMarca.PerformLayout();
+            this.CmsOpciones.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,7 +220,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtIdMarca;
         private System.Windows.Forms.TextBox txtMarca;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvMarca;
         private DevExpress.XtraEditors.SimpleButton btnCancelar;
         private DevExpress.XtraEditors.SimpleButton btnModificar;
         private DevExpress.XtraEditors.SimpleButton btnGuardar;
@@ -183,5 +228,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox grpMarca;
         private System.Windows.Forms.CheckBox chkLista;
+        internal System.Windows.Forms.ContextMenuStrip CmsOpciones;
+        internal System.Windows.Forms.ToolStripMenuItem editarMenuItem;
+        internal System.Windows.Forms.ToolStripMenuItem eliminarMenuItem;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

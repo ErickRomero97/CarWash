@@ -83,6 +83,18 @@
     <Compile Include="Busquedas\FrmBusquedaAuto.Designer.cs">
       <DependentUpon>FrmBusquedaAuto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Busquedas\FrmBusquedaMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\FrmBusquedaMarca.Designer.cs">
+      <DependentUpon>FrmBusquedaMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busquedas\FrmBusquedaModelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\FrmBusquedaModelo.Designer.cs">
+      <DependentUpon>FrmBusquedaModelo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principales\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +187,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Busquedas\FrmBusquedaAuto.resx">
       <DependentUpon>FrmBusquedaAuto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\FrmBusquedaMarca.resx">
+      <DependentUpon>FrmBusquedaMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\FrmBusquedaModelo.resx">
+      <DependentUpon>FrmBusquedaModelo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principales\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

@@ -43,6 +43,7 @@
     <Compile Include="CEAuto.cs" />
     <Compile Include="CEEmpleado.cs" />
     <Compile Include="CEFactura.cs" />
+    <Compile Include="CEMarca.cs" />
     <Compile Include="CEServicio.cs" />
     <Compile Include="CEUsuario.cs" />
     <Compile Include="CECliente.cs" />
