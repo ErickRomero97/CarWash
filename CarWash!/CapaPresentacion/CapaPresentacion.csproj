@@ -119,7 +119,6 @@
     <Compile Include="Catalogo\FrmEmpleados.Designer.cs">
       <DependentUpon>FrmEmpleados.cs</DependentUpon>
     </Compile>
-    <Compile Include="Principales\frmBuscarCliente.cs" />
     <Compile Include="Principales\FrmFactura.cs">
       <SubType>Form</SubType>
     </Compile>

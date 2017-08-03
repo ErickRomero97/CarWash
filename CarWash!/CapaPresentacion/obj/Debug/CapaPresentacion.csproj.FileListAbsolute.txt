@@ -138,3 +138,47 @@ C:\Users\Cristhain\Desktop\Proyecto  Cientifica\CarWash\CarWash!\CapaPresentacio
 C:\Users\Cristhain\Desktop\Proyecto  Cientifica\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
 C:\Users\Cristhain\Desktop\Proyecto  Cientifica\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.exe.licenses
 C:\Users\Cristhain\Desktop\Proyecto  Cientifica\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.Principales.FrmSplash.resources
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.Busquedas.FrmBusquedaAuto.resources
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.Busquedas.FrmBusquedaMarca.resources
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.Busquedas.FrmBusquedaModelo.resources
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.Formularios.FrmMarca.resources
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.Formularios.FrmModelo.resources
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.FrmBusquedaFactura.resources
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.Principales.FrmSplash.resources
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\obj\Debug\CapaPresentacion.exe.licenses
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\DevExpress.Data.v16.1.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\DevExpress.Printing.v16.1.Core.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\DevExpress.Sparkline.v16.1.Core.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\DevExpress.Utils.v16.1.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\DevExpress.XtraEditors.v16.1.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\DevExpress.Pdf.v16.1.Core.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\DevExpress.Data.v16.1.xml
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\DevExpress.Printing.v16.1.Core.xml
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\DevExpress.Sparkline.v16.1.Core.xml
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\DevExpress.Utils.v16.1.xml
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\DevExpress.XtraEditors.v16.1.xml
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\DevExpress.Pdf.v16.1.Core.xml
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\de\DevExpress.Data.v16.1.resources.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\es\DevExpress.Data.v16.1.resources.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\ja\DevExpress.Data.v16.1.resources.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\ru\DevExpress.Data.v16.1.resources.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\de\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\es\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\ja\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\ru\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\de\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\es\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\ja\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\ru\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\de\DevExpress.Utils.v16.1.resources.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\es\DevExpress.Utils.v16.1.resources.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\ja\DevExpress.Utils.v16.1.resources.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\ru\DevExpress.Utils.v16.1.resources.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\de\DevExpress.XtraEditors.v16.1.resources.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\es\DevExpress.XtraEditors.v16.1.resources.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\ja\DevExpress.XtraEditors.v16.1.resources.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\ru\DevExpress.XtraEditors.v16.1.resources.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\de\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\es\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\ja\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\Walter\Documents\GitHub\CarWash\CarWash!\CapaPresentacion\bin\Debug\ru\DevExpress.Pdf.v16.1.Core.resources.dll

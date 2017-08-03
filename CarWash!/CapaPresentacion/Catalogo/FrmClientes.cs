@@ -103,17 +103,12 @@ namespace CapaPresentacion
             gbDatos.Enabled = datos;
         }
 
-       
-
         private void editarToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             FilaSeleccionada();
             gbDatos.Enabled = true;
             HabilitarBotones(false, true, false, true, true);
         }
-
-     
-      
 
         #endregion
 
@@ -168,9 +163,6 @@ namespace CapaPresentacion
             cboSexo.ValueMember = "IdSexo";
 
         }
-        
-
-       
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {

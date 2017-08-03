@@ -12,7 +12,7 @@ namespace CapaEntidades
         public string Descripcion { get; set; }
         public int Anio { get; set; }
         public int IdModelo { get; set; }
-        public int IdCliente { get; set; }
+        public string IdCliente { get; set; }
         public int IdUsuario { get; set; }
     }
 }

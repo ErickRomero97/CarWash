@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBusquedaMarca));
             this.btnBuscar = new DevExpress.XtraEditors.SimpleButton();
             this.txtBuscar = new System.Windows.Forms.TextBox();
@@ -37,8 +38,10 @@
             this.rdbId = new System.Windows.Forms.RadioButton();
             this.dgvSer = new System.Windows.Forms.DataGridView();
             this.label13 = new System.Windows.Forms.Label();
+            this.epBuscar = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epBuscar)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBuscar
@@ -50,6 +53,7 @@
             this.btnBuscar.Size = new System.Drawing.Size(86, 29);
             this.btnBuscar.TabIndex = 26;
             this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtBuscar
             // 
@@ -57,6 +61,7 @@
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(229, 20);
             this.txtBuscar.TabIndex = 25;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // txtIdEmpleado
             // 
@@ -87,6 +92,7 @@
             this.rdbNombre.TabStop = true;
             this.rdbNombre.Text = "Nombre Servicio";
             this.rdbNombre.UseVisualStyleBackColor = true;
+            this.rdbNombre.CheckedChanged += new System.EventHandler(this.rdbNombre_CheckedChanged);
             // 
             // rdbId
             // 
@@ -98,6 +104,7 @@
             this.rdbId.TabStop = true;
             this.rdbId.Text = "Id Servicio";
             this.rdbId.UseVisualStyleBackColor = true;
+            this.rdbId.CheckedChanged += new System.EventHandler(this.rdbId_CheckedChanged);
             // 
             // dgvSer
             // 
@@ -120,6 +127,10 @@
             this.label13.TabIndex = 54;
             this.label13.Text = "Buscar Marca";
             // 
+            // epBuscar
+            // 
+            this.epBuscar.ContainerControl = this;
+            // 
             // FrmBusquedaMarca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -136,9 +147,11 @@
             this.DoubleBuffered = true;
             this.Name = "FrmBusquedaMarca";
             this.Text = "FrmBusquedaMarca";
+            this.Load += new System.EventHandler(this.FrmBusquedaMarca_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epBuscar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,5 +167,6 @@
         private System.Windows.Forms.RadioButton rdbId;
         public System.Windows.Forms.DataGridView dgvSer;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ErrorProvider epBuscar;
     }
 }

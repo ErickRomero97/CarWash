@@ -91,5 +91,10 @@ namespace CapaPresentacion
                 BuscarNombreCliente(txtBuscar.Text);
             }
         }
+
+        private void dgvMostrar_DoubleClick(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

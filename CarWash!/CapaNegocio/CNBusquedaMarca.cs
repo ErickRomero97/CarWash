@@ -8,7 +8,7 @@ using CapaEntidades;
 using System.Data;
 using CapaDatos.Busqueda;
 
-namespace CapaNegocio.Busqueda
+namespace CapaNegocio
 {
     public class CNBusquedaMarca
     {

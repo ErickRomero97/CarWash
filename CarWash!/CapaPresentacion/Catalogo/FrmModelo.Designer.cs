@@ -28,24 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmModelo));
             this.chkLista = new System.Windows.Forms.CheckBox();
             this.grpModelo = new System.Windows.Forms.GroupBox();
-            this.btnMarca = new System.Windows.Forms.Button();
+            this.btnMarcaA = new System.Windows.Forms.Button();
+            this.cboMarca = new System.Windows.Forms.ComboBox();
+            this.btnMarcaFormu = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtIdModelo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtIdMarca = new System.Windows.Forms.TextBox();
             this.txtModelo = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvModelo = new System.Windows.Forms.DataGridView();
             this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
             this.btnModificar = new DevExpress.XtraEditors.SimpleButton();
             this.btnGuardar = new DevExpress.XtraEditors.SimpleButton();
             this.btnNuevo = new DevExpress.XtraEditors.SimpleButton();
             this.label13 = new System.Windows.Forms.Label();
+            this.CmsOpciones = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.editarMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.grpModelo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvModelo)).BeginInit();
+            this.CmsOpciones.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // chkLista
@@ -58,16 +66,18 @@
             this.chkLista.TabIndex = 36;
             this.chkLista.Text = "Ver Lista";
             this.chkLista.UseVisualStyleBackColor = false;
+            this.chkLista.CheckedChanged += new System.EventHandler(this.chkLista_CheckedChanged);
             // 
             // grpModelo
             // 
             this.grpModelo.BackColor = System.Drawing.Color.Transparent;
-            this.grpModelo.Controls.Add(this.btnMarca);
+            this.grpModelo.Controls.Add(this.btnMarcaA);
+            this.grpModelo.Controls.Add(this.cboMarca);
+            this.grpModelo.Controls.Add(this.btnMarcaFormu);
             this.grpModelo.Controls.Add(this.label3);
             this.grpModelo.Controls.Add(this.label1);
             this.grpModelo.Controls.Add(this.txtIdModelo);
             this.grpModelo.Controls.Add(this.label2);
-            this.grpModelo.Controls.Add(this.txtIdMarca);
             this.grpModelo.Controls.Add(this.txtModelo);
             this.grpModelo.Location = new System.Drawing.Point(47, 109);
             this.grpModelo.Name = "grpModelo";
@@ -76,17 +86,36 @@
             this.grpModelo.TabStop = false;
             this.grpModelo.Text = "Datos Modelo";
             // 
-            // btnMarca
+            // btnMarcaA
             // 
-            this.btnMarca.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMarca.BackgroundImage")));
-            this.btnMarca.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMarca.FlatAppearance.BorderSize = 0;
-            this.btnMarca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMarca.Location = new System.Drawing.Point(140, 72);
-            this.btnMarca.Name = "btnMarca";
-            this.btnMarca.Size = new System.Drawing.Size(25, 20);
-            this.btnMarca.TabIndex = 13;
-            this.btnMarca.UseVisualStyleBackColor = true;
+            this.btnMarcaA.Location = new System.Drawing.Point(193, 70);
+            this.btnMarcaA.Name = "btnMarcaA";
+            this.btnMarcaA.Size = new System.Drawing.Size(33, 23);
+            this.btnMarcaA.TabIndex = 55;
+            this.btnMarcaA.Text = "...";
+            this.btnMarcaA.UseVisualStyleBackColor = true;
+            this.btnMarcaA.Click += new System.EventHandler(this.btnMarcaA_Click);
+            // 
+            // cboMarca
+            // 
+            this.cboMarca.FormattingEnabled = true;
+            this.cboMarca.Location = new System.Drawing.Point(73, 70);
+            this.cboMarca.Name = "cboMarca";
+            this.cboMarca.Size = new System.Drawing.Size(114, 21);
+            this.cboMarca.TabIndex = 14;
+            // 
+            // btnMarcaFormu
+            // 
+            this.btnMarcaFormu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMarcaFormu.BackgroundImage")));
+            this.btnMarcaFormu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMarcaFormu.FlatAppearance.BorderSize = 0;
+            this.btnMarcaFormu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMarcaFormu.Location = new System.Drawing.Point(234, 74);
+            this.btnMarcaFormu.Name = "btnMarcaFormu";
+            this.btnMarcaFormu.Size = new System.Drawing.Size(25, 20);
+            this.btnMarcaFormu.TabIndex = 13;
+            this.btnMarcaFormu.UseVisualStyleBackColor = true;
+            this.btnMarcaFormu.Click += new System.EventHandler(this.btnMarcaFormu_Click);
             // 
             // label3
             // 
@@ -102,9 +131,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(19, 74);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.Size = new System.Drawing.Size(40, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "IdMarca:";
+            this.label1.Text = "Marca:";
             // 
             // txtIdModelo
             // 
@@ -123,14 +152,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Modelo:";
             // 
-            // txtIdMarca
-            // 
-            this.txtIdMarca.Location = new System.Drawing.Point(74, 71);
-            this.txtIdMarca.Name = "txtIdMarca";
-            this.txtIdMarca.Size = new System.Drawing.Size(61, 20);
-            this.txtIdMarca.TabIndex = 1;
-            this.txtIdMarca.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // txtModelo
             // 
             this.txtModelo.Location = new System.Drawing.Point(74, 45);
@@ -138,13 +159,14 @@
             this.txtModelo.Size = new System.Drawing.Size(113, 20);
             this.txtModelo.TabIndex = 2;
             // 
-            // dataGridView1
+            // dgvModelo
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(47, 272);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(279, 93);
-            this.dataGridView1.TabIndex = 30;
+            this.dgvModelo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvModelo.ContextMenuStrip = this.CmsOpciones;
+            this.dgvModelo.Location = new System.Drawing.Point(47, 272);
+            this.dgvModelo.Name = "dgvModelo";
+            this.dgvModelo.Size = new System.Drawing.Size(405, 93);
+            this.dgvModelo.TabIndex = 30;
             // 
             // btnCancelar
             // 
@@ -155,6 +177,7 @@
             this.btnCancelar.Size = new System.Drawing.Size(86, 29);
             this.btnCancelar.TabIndex = 31;
             this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnModificar
             // 
@@ -165,6 +188,7 @@
             this.btnModificar.Size = new System.Drawing.Size(86, 29);
             this.btnModificar.TabIndex = 32;
             this.btnModificar.Text = "Modificar";
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnGuardar
             // 
@@ -175,6 +199,7 @@
             this.btnGuardar.Size = new System.Drawing.Size(86, 29);
             this.btnGuardar.TabIndex = 33;
             this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnNuevo
             // 
@@ -185,6 +210,7 @@
             this.btnNuevo.Size = new System.Drawing.Size(86, 29);
             this.btnNuevo.TabIndex = 34;
             this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // label13
             // 
@@ -197,6 +223,35 @@
             this.label13.Size = new System.Drawing.Size(194, 55);
             this.label13.TabIndex = 54;
             this.label13.Text = "Modelo";
+            // 
+            // CmsOpciones
+            // 
+            this.CmsOpciones.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.CmsOpciones.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editarMenuItem,
+            this.eliminarMenuItem});
+            this.CmsOpciones.Name = "CmsOpciones";
+            this.CmsOpciones.Size = new System.Drawing.Size(122, 56);
+            // 
+            // editarMenuItem
+            // 
+            this.editarMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("editarMenuItem.Image")));
+            this.editarMenuItem.Name = "editarMenuItem";
+            this.editarMenuItem.Size = new System.Drawing.Size(121, 26);
+            this.editarMenuItem.Text = "Editar";
+            this.editarMenuItem.Click += new System.EventHandler(this.editarMenuItem_Click);
+            // 
+            // eliminarMenuItem
+            // 
+            this.eliminarMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("eliminarMenuItem.Image")));
+            this.eliminarMenuItem.Name = "eliminarMenuItem";
+            this.eliminarMenuItem.Size = new System.Drawing.Size(121, 26);
+            this.eliminarMenuItem.Text = "Eliminar";
+            this.eliminarMenuItem.Click += new System.EventHandler(this.eliminarMenuItem_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // FrmModelo
             // 
@@ -212,13 +267,16 @@
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnNuevo);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvModelo);
             this.DoubleBuffered = true;
             this.Name = "FrmModelo";
             this.Text = "Modelo";
+            this.Load += new System.EventHandler(this.FrmModelo_Load);
             this.grpModelo.ResumeLayout(false);
             this.grpModelo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvModelo)).EndInit();
+            this.CmsOpciones.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,16 +288,21 @@
         private System.Windows.Forms.GroupBox grpModelo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtIdMarca;
         private System.Windows.Forms.TextBox txtModelo;
         private DevExpress.XtraEditors.SimpleButton btnCancelar;
         private DevExpress.XtraEditors.SimpleButton btnModificar;
         private DevExpress.XtraEditors.SimpleButton btnGuardar;
         private DevExpress.XtraEditors.SimpleButton btnNuevo;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvModelo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtIdModelo;
-        private System.Windows.Forms.Button btnMarca;
+        private System.Windows.Forms.Button btnMarcaFormu;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox cboMarca;
+        private System.Windows.Forms.Button btnMarcaA;
+        internal System.Windows.Forms.ContextMenuStrip CmsOpciones;
+        internal System.Windows.Forms.ToolStripMenuItem editarMenuItem;
+        internal System.Windows.Forms.ToolStripMenuItem eliminarMenuItem;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

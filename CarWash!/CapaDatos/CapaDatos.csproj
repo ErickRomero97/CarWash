@@ -44,14 +44,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Busqueda\CDBusquedaAuto.cs" />
+    <Compile Include="CDAuto.cs" />
     <Compile Include="CDBusquedaMarca.cs" />
     <Compile Include="CDAudiLog.cs" />
     <Compile Include="Busqueda\CDBusquedaCliente.cs" />
     <Compile Include="Busqueda\CDBusquedaFactura.cs" />
     <Compile Include="Busqueda\CDBusquedaServicio.cs" />
+    <Compile Include="CDBusquedaModelo.cs" />
     <Compile Include="CDEmpleado.cs" />
     <Compile Include="CDFactura.cs" />
     <Compile Include="CDMarca.cs" />
+    <Compile Include="CDModelo.cs" />
     <Compile Include="CDServicio.cs" />
     <Compile Include="CDUsuario.cs" />
     <Compile Include="Conexion.cs" />

@@ -47,7 +47,7 @@ namespace CapaPresentacion
         }
         private void BuscarServicio(int Codigo)
         {
-            CNBusquedaMarca buscarC = new CNBusquedaMarca();
+            CNBusquedaServicio buscarC = new CNBusquedaServicio();
             CEServicio objSer = new CEServicio();
             objSer.IdServicio = Codigo;
             dgvSer.DataSource = buscarC.BuscarPorCodigo(objSer).Tables["MostrarXServicio"];
@@ -55,7 +55,7 @@ namespace CapaPresentacion
 
         private void BuscarNombreCliente(String Nombre)
         {
-            CNBusquedaMarca buscarC = new CNBusquedaMarca();
+            CNBusquedaServicio buscarC = new CNBusquedaServicio();
             CEServicio objSer = new CEServicio();
             objSer.Servicio = Nombre;
             dgvSer.DataSource = buscarC.BuscarPorNombre(objSer).Tables["MostrarXNombre"];
@@ -63,7 +63,7 @@ namespace CapaPresentacion
 
         private void MostrarTodoServicio()
         {
-            CNBusquedaMarca buscarC = new CNBusquedaMarca();
+            CNBusquedaServicio buscarC = new CNBusquedaServicio();
             dgvSer.DataSource = buscarC.MostrarServicio().Tables["MostrarTodoCliente"];
         }
 

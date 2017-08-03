@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using CapaEntidades;
 using System.Data;
 using System.Data.SqlClient;
-namespace CapaDatos.Busqueda
+namespace CapaDatos
 {
     public class CDBusquedaMarca:Conexion
     {
