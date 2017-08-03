@@ -78,6 +78,7 @@
             this.label = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.epFactu = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFactu)).BeginInit();
             this.gbArticulos.SuspendLayout();
             this.gbDatos.SuspendLayout();
@@ -86,21 +87,21 @@
             // 
             // txtISV
             // 
-            this.txtISV.Location = new System.Drawing.Point(668, 556);
+            this.txtISV.Location = new System.Drawing.Point(668, 650);
             this.txtISV.Name = "txtISV";
             this.txtISV.Size = new System.Drawing.Size(114, 20);
             this.txtISV.TabIndex = 51;
             // 
             // txtTotal
             // 
-            this.txtTotal.Location = new System.Drawing.Point(668, 582);
+            this.txtTotal.Location = new System.Drawing.Point(668, 676);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(114, 20);
             this.txtTotal.TabIndex = 50;
             // 
             // txtSub
             // 
-            this.txtSub.Location = new System.Drawing.Point(668, 529);
+            this.txtSub.Location = new System.Drawing.Point(668, 623);
             this.txtSub.Name = "txtSub";
             this.txtSub.Size = new System.Drawing.Size(114, 20);
             this.txtSub.TabIndex = 49;
@@ -109,7 +110,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(626, 585);
+            this.label14.Location = new System.Drawing.Point(626, 679);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(34, 13);
             this.label14.TabIndex = 46;
@@ -118,7 +119,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(633, 563);
+            this.label15.Location = new System.Drawing.Point(633, 657);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(27, 13);
             this.label15.TabIndex = 47;
@@ -127,7 +128,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(607, 536);
+            this.label16.Location = new System.Drawing.Point(607, 630);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(53, 13);
             this.label16.TabIndex = 48;
@@ -146,7 +147,7 @@
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dgvFactu.Location = new System.Drawing.Point(12, 282);
+            this.dgvFactu.Location = new System.Drawing.Point(12, 376);
             this.dgvFactu.Name = "dgvFactu";
             this.dgvFactu.ReadOnly = true;
             this.dgvFactu.Size = new System.Drawing.Size(768, 208);
@@ -197,7 +198,8 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(677, 214);
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Location = new System.Drawing.Point(677, 308);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(49, 13);
             this.label9.TabIndex = 43;
@@ -206,65 +208,73 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(615, 214);
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Location = new System.Drawing.Point(615, 308);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(45, 13);
             this.label8.TabIndex = 44;
             this.label8.Text = "Guardar";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // btnNuevo
             // 
+            this.btnNuevo.BackColor = System.Drawing.Color.Transparent;
             this.btnNuevo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNuevo.BackgroundImage")));
             this.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNuevo.FlatAppearance.BorderSize = 0;
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevo.Location = new System.Drawing.Point(554, 171);
+            this.btnNuevo.Location = new System.Drawing.Point(554, 265);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(44, 40);
             this.btnNuevo.TabIndex = 39;
-            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.UseVisualStyleBackColor = false;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(556, 214);
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Location = new System.Drawing.Point(556, 308);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(42, 13);
             this.label10.TabIndex = 42;
             this.label10.Text = "Insertar";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // btnGuardar
             // 
+            this.btnGuardar.BackColor = System.Drawing.Color.Transparent;
             this.btnGuardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGuardar.BackgroundImage")));
             this.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatAppearance.BorderSize = 0;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Location = new System.Drawing.Point(614, 172);
+            this.btnGuardar.Location = new System.Drawing.Point(614, 266);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(44, 40);
             this.btnGuardar.TabIndex = 40;
-            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnCancelar
             // 
+            this.btnCancelar.BackColor = System.Drawing.Color.Transparent;
             this.btnCancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancelar.BackgroundImage")));
             this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancelar.FlatAppearance.BorderSize = 0;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Location = new System.Drawing.Point(678, 176);
+            this.btnCancelar.Location = new System.Drawing.Point(678, 270);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(44, 38);
             this.btnCancelar.TabIndex = 41;
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // gbArticulos
             // 
+            this.gbArticulos.BackColor = System.Drawing.Color.Transparent;
             this.gbArticulos.Controls.Add(this.btnAgregar);
             this.gbArticulos.Controls.Add(this.txtPrecio);
             this.gbArticulos.Controls.Add(this.txtNombreSer);
@@ -273,7 +283,7 @@
             this.gbArticulos.Controls.Add(this.label6);
             this.gbArticulos.Controls.Add(this.label5);
             this.gbArticulos.Controls.Add(this.label2);
-            this.gbArticulos.Location = new System.Drawing.Point(12, 171);
+            this.gbArticulos.Location = new System.Drawing.Point(12, 265);
             this.gbArticulos.Name = "gbArticulos";
             this.gbArticulos.Size = new System.Drawing.Size(524, 95);
             this.gbArticulos.TabIndex = 38;
@@ -356,6 +366,7 @@
             // 
             // gbDatos
             // 
+            this.gbDatos.BackColor = System.Drawing.Color.Transparent;
             this.gbDatos.Controls.Add(this.txtAnio);
             this.gbDatos.Controls.Add(this.label12);
             this.gbDatos.Controls.Add(this.txtDescAuto);
@@ -373,7 +384,7 @@
             this.gbDatos.Controls.Add(this.label4);
             this.gbDatos.Controls.Add(this.label);
             this.gbDatos.Controls.Add(this.label1);
-            this.gbDatos.Location = new System.Drawing.Point(12, 9);
+            this.gbDatos.Location = new System.Drawing.Point(12, 103);
             this.gbDatos.Name = "gbDatos";
             this.gbDatos.Size = new System.Drawing.Size(745, 161);
             this.gbDatos.TabIndex = 52;
@@ -527,11 +538,26 @@
             // 
             this.epFactu.ContainerControl = this;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.label13.Location = new System.Drawing.Point(275, 18);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(207, 55);
+            this.label13.TabIndex = 53;
+            this.label13.Text = "Factura";
+            // 
             // FrmFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(802, 653);
+            this.BackgroundImage = global::CapaPresentacion.Properties.Resources.frm;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(802, 723);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.gbDatos);
             this.Controls.Add(this.txtISV);
             this.Controls.Add(this.txtTotal);
@@ -547,6 +573,7 @@
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.gbArticulos);
+            this.DoubleBuffered = true;
             this.Name = "FrmFactura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmFactura";
@@ -612,5 +639,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.Label label13;
     }
 }

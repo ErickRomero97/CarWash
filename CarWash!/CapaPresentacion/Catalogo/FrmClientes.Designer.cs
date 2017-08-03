@@ -53,6 +53,7 @@
             this.btnModificar = new DevExpress.XtraEditors.SimpleButton();
             this.btnGuardar = new DevExpress.XtraEditors.SimpleButton();
             this.btnNuevo = new DevExpress.XtraEditors.SimpleButton();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.CmsOpciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -66,11 +67,11 @@
             this.dgvClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvClientes.ContextMenuStrip = this.CmsOpciones;
-            this.dgvClientes.Location = new System.Drawing.Point(12, 273);
+            this.dgvClientes.Location = new System.Drawing.Point(12, 399);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.ReadOnly = true;
             this.dgvClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvClientes.Size = new System.Drawing.Size(488, 222);
+            this.dgvClientes.Size = new System.Drawing.Size(488, 131);
             this.dgvClientes.TabIndex = 24;
             // 
             // CmsOpciones
@@ -101,12 +102,13 @@
             // chkVer
             // 
             this.chkVer.AutoSize = true;
-            this.chkVer.Location = new System.Drawing.Point(335, 250);
+            this.chkVer.BackColor = System.Drawing.Color.Transparent;
+            this.chkVer.Location = new System.Drawing.Point(335, 376);
             this.chkVer.Name = "chkVer";
             this.chkVer.Size = new System.Drawing.Size(67, 17);
             this.chkVer.TabIndex = 23;
             this.chkVer.Text = "Ver Lista";
-            this.chkVer.UseVisualStyleBackColor = true;
+            this.chkVer.UseVisualStyleBackColor = false;
             this.chkVer.CheckedChanged += new System.EventHandler(this.chkVer_CheckedChanged);
             // 
             // txtApellidos
@@ -174,6 +176,7 @@
             // 
             // gbDatos
             // 
+            this.gbDatos.BackColor = System.Drawing.Color.Transparent;
             this.gbDatos.Controls.Add(this.mtbIdCliente);
             this.gbDatos.Controls.Add(this.dtpFechaNac);
             this.gbDatos.Controls.Add(this.txtDireccion);
@@ -186,7 +189,7 @@
             this.gbDatos.Controls.Add(this.label5);
             this.gbDatos.Controls.Add(this.txtNombre);
             this.gbDatos.Controls.Add(this.txtApellidos);
-            this.gbDatos.Location = new System.Drawing.Point(12, 12);
+            this.gbDatos.Location = new System.Drawing.Point(12, 138);
             this.gbDatos.Name = "gbDatos";
             this.gbDatos.Size = new System.Drawing.Size(295, 244);
             this.gbDatos.TabIndex = 113;
@@ -238,7 +241,7 @@
             // 
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnCancelar.Location = new System.Drawing.Point(357, 160);
+            this.btnCancelar.Location = new System.Drawing.Point(357, 286);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(86, 29);
             this.btnCancelar.TabIndex = 114;
@@ -249,7 +252,7 @@
             // 
             this.btnModificar.Image = ((System.Drawing.Image)(resources.GetObject("btnModificar.Image")));
             this.btnModificar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnModificar.Location = new System.Drawing.Point(357, 125);
+            this.btnModificar.Location = new System.Drawing.Point(357, 251);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(86, 29);
             this.btnModificar.TabIndex = 115;
@@ -260,7 +263,7 @@
             // 
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
             this.btnGuardar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnGuardar.Location = new System.Drawing.Point(357, 90);
+            this.btnGuardar.Location = new System.Drawing.Point(357, 216);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(86, 29);
             this.btnGuardar.TabIndex = 116;
@@ -271,18 +274,33 @@
             // 
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
             this.btnNuevo.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnNuevo.Location = new System.Drawing.Point(357, 55);
+            this.btnNuevo.Location = new System.Drawing.Point(357, 181);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(86, 29);
             this.btnNuevo.TabIndex = 117;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.label13.Location = new System.Drawing.Point(123, 49);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(216, 55);
+            this.label13.TabIndex = 118;
+            this.label13.Text = "Clientes";
+            // 
             // FrmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(512, 290);
+            this.BackgroundImage = global::CapaPresentacion.Properties.Resources.frm;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(512, 542);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnGuardar);
@@ -329,5 +347,6 @@
         private DevExpress.XtraEditors.SimpleButton btnModificar;
         private DevExpress.XtraEditors.SimpleButton btnGuardar;
         private DevExpress.XtraEditors.SimpleButton btnNuevo;
+        private System.Windows.Forms.Label label13;
     }
 }

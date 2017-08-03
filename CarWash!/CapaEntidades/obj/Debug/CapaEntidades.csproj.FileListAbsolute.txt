@@ -7,3 +7,8 @@ C:\Users\Walter\Documents\GitHub\CarWash!\CapaEntidades\bin\Debug\CapaEntidades.
 C:\Users\Walter\Documents\GitHub\CarWash!\CapaEntidades\bin\Debug\CapaEntidades.pdb
 C:\Users\Walter\Documents\GitHub\CarWash!\CapaEntidades\obj\Debug\CapaEntidades.dll
 C:\Users\Walter\Documents\GitHub\CarWash!\CapaEntidades\obj\Debug\CapaEntidades.pdb
+C:\Users\Cristhain\Desktop\Proyecto  Cientifica\CarWash\CarWash!\CapaEntidades\bin\Debug\CapaEntidades.dll
+C:\Users\Cristhain\Desktop\Proyecto  Cientifica\CarWash\CarWash!\CapaEntidades\bin\Debug\CapaEntidades.pdb
+C:\Users\Cristhain\Desktop\Proyecto  Cientifica\CarWash\CarWash!\CapaEntidades\obj\Debug\CapaEntidades.csprojResolveAssemblyReference.cache
+C:\Users\Cristhain\Desktop\Proyecto  Cientifica\CarWash\CarWash!\CapaEntidades\obj\Debug\CapaEntidades.dll
+C:\Users\Cristhain\Desktop\Proyecto  Cientifica\CarWash\CarWash!\CapaEntidades\obj\Debug\CapaEntidades.pdb

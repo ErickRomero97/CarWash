@@ -31,7 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmModelo));
             this.chkLista = new System.Windows.Forms.CheckBox();
             this.grpModelo = new System.Windows.Forms.GroupBox();
+            this.btnMarca = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtIdModelo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtIdMarca = new System.Windows.Forms.TextBox();
             this.txtModelo = new System.Windows.Forms.TextBox();
@@ -40,9 +43,7 @@
             this.btnModificar = new DevExpress.XtraEditors.SimpleButton();
             this.btnGuardar = new DevExpress.XtraEditors.SimpleButton();
             this.btnNuevo = new DevExpress.XtraEditors.SimpleButton();
-            this.txtIdModelo = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnMarca = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
             this.grpModelo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -50,15 +51,17 @@
             // chkLista
             // 
             this.chkLista.AutoSize = true;
-            this.chkLista.Location = new System.Drawing.Point(246, 134);
+            this.chkLista.BackColor = System.Drawing.Color.Transparent;
+            this.chkLista.Location = new System.Drawing.Point(281, 248);
             this.chkLista.Name = "chkLista";
             this.chkLista.Size = new System.Drawing.Size(67, 17);
             this.chkLista.TabIndex = 36;
             this.chkLista.Text = "Ver Lista";
-            this.chkLista.UseVisualStyleBackColor = true;
+            this.chkLista.UseVisualStyleBackColor = false;
             // 
             // grpModelo
             // 
+            this.grpModelo.BackColor = System.Drawing.Color.Transparent;
             this.grpModelo.Controls.Add(this.btnMarca);
             this.grpModelo.Controls.Add(this.label3);
             this.grpModelo.Controls.Add(this.label1);
@@ -66,12 +69,33 @@
             this.grpModelo.Controls.Add(this.label2);
             this.grpModelo.Controls.Add(this.txtIdMarca);
             this.grpModelo.Controls.Add(this.txtModelo);
-            this.grpModelo.Location = new System.Drawing.Point(12, 12);
+            this.grpModelo.Location = new System.Drawing.Point(47, 109);
             this.grpModelo.Name = "grpModelo";
             this.grpModelo.Size = new System.Drawing.Size(279, 129);
             this.grpModelo.TabIndex = 35;
             this.grpModelo.TabStop = false;
             this.grpModelo.Text = "Datos Modelo";
+            // 
+            // btnMarca
+            // 
+            this.btnMarca.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMarca.BackgroundImage")));
+            this.btnMarca.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMarca.FlatAppearance.BorderSize = 0;
+            this.btnMarca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMarca.Location = new System.Drawing.Point(140, 72);
+            this.btnMarca.Name = "btnMarca";
+            this.btnMarca.Size = new System.Drawing.Size(25, 20);
+            this.btnMarca.TabIndex = 13;
+            this.btnMarca.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(14, 22);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(54, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "IdModelo:";
             // 
             // label1
             // 
@@ -81,6 +105,14 @@
             this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "IdMarca:";
+            // 
+            // txtIdModelo
+            // 
+            this.txtIdModelo.Location = new System.Drawing.Point(74, 19);
+            this.txtIdModelo.Name = "txtIdModelo";
+            this.txtIdModelo.Size = new System.Drawing.Size(61, 20);
+            this.txtIdModelo.TabIndex = 1;
+            this.txtIdModelo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
@@ -109,7 +141,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 167);
+            this.dataGridView1.Location = new System.Drawing.Point(47, 272);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(279, 93);
             this.dataGridView1.TabIndex = 30;
@@ -118,7 +150,7 @@
             // 
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnCancelar.Location = new System.Drawing.Point(331, 126);
+            this.btnCancelar.Location = new System.Drawing.Point(366, 231);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(86, 29);
             this.btnCancelar.TabIndex = 31;
@@ -128,7 +160,7 @@
             // 
             this.btnModificar.Image = ((System.Drawing.Image)(resources.GetObject("btnModificar.Image")));
             this.btnModificar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnModificar.Location = new System.Drawing.Point(331, 91);
+            this.btnModificar.Location = new System.Drawing.Point(366, 196);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(86, 29);
             this.btnModificar.TabIndex = 32;
@@ -138,7 +170,7 @@
             // 
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
             this.btnGuardar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnGuardar.Location = new System.Drawing.Point(331, 56);
+            this.btnGuardar.Location = new System.Drawing.Point(366, 161);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(86, 29);
             this.btnGuardar.TabIndex = 33;
@@ -148,46 +180,32 @@
             // 
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
             this.btnNuevo.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnNuevo.Location = new System.Drawing.Point(331, 21);
+            this.btnNuevo.Location = new System.Drawing.Point(366, 126);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(86, 29);
             this.btnNuevo.TabIndex = 34;
             this.btnNuevo.Text = "Nuevo";
             // 
-            // txtIdModelo
+            // label13
             // 
-            this.txtIdModelo.Location = new System.Drawing.Point(74, 19);
-            this.txtIdModelo.Name = "txtIdModelo";
-            this.txtIdModelo.Size = new System.Drawing.Size(61, 20);
-            this.txtIdModelo.TabIndex = 1;
-            this.txtIdModelo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(14, 22);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "IdModelo:";
-            // 
-            // btnMarca
-            // 
-            this.btnMarca.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMarca.BackgroundImage")));
-            this.btnMarca.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMarca.FlatAppearance.BorderSize = 0;
-            this.btnMarca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMarca.Location = new System.Drawing.Point(140, 72);
-            this.btnMarca.Name = "btnMarca";
-            this.btnMarca.Size = new System.Drawing.Size(25, 20);
-            this.btnMarca.TabIndex = 13;
-            this.btnMarca.UseVisualStyleBackColor = true;
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.label13.Location = new System.Drawing.Point(141, 35);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(194, 55);
+            this.label13.TabIndex = 54;
+            this.label13.Text = "Modelo";
             // 
             // FrmModelo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(439, 261);
+            this.BackgroundImage = global::CapaPresentacion.Properties.Resources.frm;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(511, 436);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.chkLista);
             this.Controls.Add(this.grpModelo);
             this.Controls.Add(this.btnCancelar);
@@ -195,6 +213,7 @@
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.dataGridView1);
+            this.DoubleBuffered = true;
             this.Name = "FrmModelo";
             this.Text = "Modelo";
             this.grpModelo.ResumeLayout(false);
@@ -221,5 +240,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtIdModelo;
         private System.Windows.Forms.Button btnMarca;
+        private System.Windows.Forms.Label label13;
     }
 }

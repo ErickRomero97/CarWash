@@ -38,6 +38,7 @@
             this.dgvMostrar = new System.Windows.Forms.DataGridView();
             this.btnBuscar = new DevExpress.XtraEditors.SimpleButton();
             this.epBuscar = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label13 = new System.Windows.Forms.Label();
             this.gbBuscar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMostrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.epBuscar)).BeginInit();
@@ -45,7 +46,7 @@
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(195, 78);
+            this.txtBuscar.Location = new System.Drawing.Point(195, 170);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(229, 20);
             this.txtBuscar.TabIndex = 24;
@@ -53,16 +54,17 @@
             // 
             // txtIdEmpleado
             // 
-            this.txtIdEmpleado.Location = new System.Drawing.Point(195, 78);
+            this.txtIdEmpleado.Location = new System.Drawing.Point(195, 170);
             this.txtIdEmpleado.Name = "txtIdEmpleado";
             this.txtIdEmpleado.Size = new System.Drawing.Size(229, 20);
             this.txtIdEmpleado.TabIndex = 23;
             // 
             // gbBuscar
             // 
+            this.gbBuscar.BackColor = System.Drawing.Color.Transparent;
             this.gbBuscar.Controls.Add(this.rdbNombre);
             this.gbBuscar.Controls.Add(this.rdbId);
-            this.gbBuscar.Location = new System.Drawing.Point(205, 30);
+            this.gbBuscar.Location = new System.Drawing.Point(205, 122);
             this.gbBuscar.Name = "gbBuscar";
             this.gbBuscar.Size = new System.Drawing.Size(297, 39);
             this.gbBuscar.TabIndex = 22;
@@ -97,10 +99,10 @@
             // 
             this.dgvMostrar.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
             this.dgvMostrar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMostrar.Location = new System.Drawing.Point(6, 113);
+            this.dgvMostrar.Location = new System.Drawing.Point(6, 205);
             this.dgvMostrar.Name = "dgvMostrar";
             this.dgvMostrar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMostrar.Size = new System.Drawing.Size(661, 227);
+            this.dgvMostrar.Size = new System.Drawing.Size(661, 156);
             this.dgvMostrar.TabIndex = 21;
             this.dgvMostrar.DoubleClick += new System.EventHandler(this.dgvMostrar_DoubleClick);
             // 
@@ -108,7 +110,7 @@
             // 
             this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
             this.btnBuscar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnBuscar.Location = new System.Drawing.Point(430, 72);
+            this.btnBuscar.Location = new System.Drawing.Point(430, 164);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(86, 29);
             this.btnBuscar.TabIndex = 25;
@@ -119,16 +121,32 @@
             // 
             this.epBuscar.ContainerControl = this;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.label13.Location = new System.Drawing.Point(189, 24);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(315, 55);
+            this.label13.TabIndex = 54;
+            this.label13.Text = "Buscar Auto";
+            // 
             // FrmBusquedaAuto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::CapaPresentacion.Properties.Resources.Imagen2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(673, 370);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.txtIdEmpleado);
             this.Controls.Add(this.gbBuscar);
             this.Controls.Add(this.dgvMostrar);
+            this.DoubleBuffered = true;
             this.Name = "FrmBusquedaAuto";
             this.Text = "FrmBusquedaAuto";
             this.Load += new System.EventHandler(this.FrmBusquedaAuto_Load);
@@ -151,5 +169,6 @@
         private System.Windows.Forms.RadioButton rdbId;
         public System.Windows.Forms.DataGridView dgvMostrar;
         private System.Windows.Forms.ErrorProvider epBuscar;
+        private System.Windows.Forms.Label label13;
     }
 }

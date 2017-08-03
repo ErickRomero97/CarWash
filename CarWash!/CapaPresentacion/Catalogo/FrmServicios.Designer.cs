@@ -50,6 +50,7 @@
             this.btnModificar = new DevExpress.XtraEditors.SimpleButton();
             this.btnGuardar = new DevExpress.XtraEditors.SimpleButton();
             this.btnNuevo = new DevExpress.XtraEditors.SimpleButton();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicios)).BeginInit();
             this.CmsOpciones.SuspendLayout();
             this.gbDatos.SuspendLayout();
@@ -63,12 +64,12 @@
             this.dgvServicios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvServicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvServicios.ContextMenuStrip = this.CmsOpciones;
-            this.dgvServicios.Location = new System.Drawing.Point(12, 288);
+            this.dgvServicios.Location = new System.Drawing.Point(12, 409);
             this.dgvServicios.Name = "dgvServicios";
             this.dgvServicios.ReadOnly = true;
             this.dgvServicios.RowHeadersVisible = false;
             this.dgvServicios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvServicios.Size = new System.Drawing.Size(634, 195);
+            this.dgvServicios.Size = new System.Drawing.Size(634, 147);
             this.dgvServicios.TabIndex = 22;
             // 
             // CmsOpciones
@@ -99,16 +100,18 @@
             // chkLista
             // 
             this.chkLista.AutoSize = true;
-            this.chkLista.Location = new System.Drawing.Point(437, 240);
+            this.chkLista.BackColor = System.Drawing.Color.Transparent;
+            this.chkLista.Location = new System.Drawing.Point(437, 361);
             this.chkLista.Name = "chkLista";
             this.chkLista.Size = new System.Drawing.Size(67, 17);
             this.chkLista.TabIndex = 21;
             this.chkLista.Text = "Ver Lista";
-            this.chkLista.UseVisualStyleBackColor = true;
+            this.chkLista.UseVisualStyleBackColor = false;
             this.chkLista.CheckedChanged += new System.EventHandler(this.chkLista_CheckedChanged);
             // 
             // gbDatos
             // 
+            this.gbDatos.BackColor = System.Drawing.Color.Transparent;
             this.gbDatos.Controls.Add(this.txtDesc);
             this.gbDatos.Controls.Add(this.btnProveedor);
             this.gbDatos.Controls.Add(this.txtPrecio);
@@ -118,7 +121,7 @@
             this.gbDatos.Controls.Add(this.label5);
             this.gbDatos.Controls.Add(this.label2);
             this.gbDatos.Controls.Add(this.label1);
-            this.gbDatos.Location = new System.Drawing.Point(12, 12);
+            this.gbDatos.Location = new System.Drawing.Point(12, 133);
             this.gbDatos.Name = "gbDatos";
             this.gbDatos.Size = new System.Drawing.Size(405, 245);
             this.gbDatos.TabIndex = 14;
@@ -210,7 +213,7 @@
             // 
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnCancelar.Location = new System.Drawing.Point(493, 158);
+            this.btnCancelar.Location = new System.Drawing.Point(493, 279);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(86, 29);
             this.btnCancelar.TabIndex = 24;
@@ -221,7 +224,7 @@
             // 
             this.btnModificar.Image = ((System.Drawing.Image)(resources.GetObject("btnModificar.Image")));
             this.btnModificar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnModificar.Location = new System.Drawing.Point(493, 123);
+            this.btnModificar.Location = new System.Drawing.Point(493, 244);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(86, 29);
             this.btnModificar.TabIndex = 25;
@@ -232,7 +235,7 @@
             // 
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
             this.btnGuardar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnGuardar.Location = new System.Drawing.Point(493, 88);
+            this.btnGuardar.Location = new System.Drawing.Point(493, 209);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(86, 29);
             this.btnGuardar.TabIndex = 26;
@@ -243,18 +246,33 @@
             // 
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
             this.btnNuevo.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnNuevo.Location = new System.Drawing.Point(493, 53);
+            this.btnNuevo.Location = new System.Drawing.Point(493, 174);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(86, 29);
             this.btnNuevo.TabIndex = 27;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click_1);
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.label13.Location = new System.Drawing.Point(195, 53);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(242, 55);
+            this.label13.TabIndex = 54;
+            this.label13.Text = "Servicios";
+            // 
             // FrmServicios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(658, 495);
+            this.BackgroundImage = global::CapaPresentacion.Properties.Resources.frm;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(658, 586);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnGuardar);
@@ -262,6 +280,7 @@
             this.Controls.Add(this.dgvServicios);
             this.Controls.Add(this.chkLista);
             this.Controls.Add(this.gbDatos);
+            this.DoubleBuffered = true;
             this.Name = "FrmServicios";
             this.Text = "Servicios";
             this.Load += new System.EventHandler(this.FrmServicios_Load);
@@ -297,5 +316,6 @@
         private DevExpress.XtraEditors.SimpleButton btnModificar;
         private DevExpress.XtraEditors.SimpleButton btnGuardar;
         private DevExpress.XtraEditors.SimpleButton btnNuevo;
+        private System.Windows.Forms.Label label13;
     }
 }

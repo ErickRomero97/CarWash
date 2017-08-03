@@ -47,6 +47,7 @@
             this.btnGuardar = new DevExpress.XtraEditors.SimpleButton();
             this.btnModificar = new DevExpress.XtraEditors.SimpleButton();
             this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +55,7 @@
             // dgvProductos
             // 
             this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProductos.Location = new System.Drawing.Point(12, 248);
+            this.dgvProductos.Location = new System.Drawing.Point(22, 385);
             this.dgvProductos.Name = "dgvProductos";
             this.dgvProductos.Size = new System.Drawing.Size(497, 133);
             this.dgvProductos.TabIndex = 22;
@@ -62,15 +63,17 @@
             // chkLista
             // 
             this.chkLista.AutoSize = true;
-            this.chkLista.Location = new System.Drawing.Point(319, 204);
+            this.chkLista.BackColor = System.Drawing.Color.Transparent;
+            this.chkLista.Location = new System.Drawing.Point(360, 341);
             this.chkLista.Name = "chkLista";
             this.chkLista.Size = new System.Drawing.Size(67, 17);
             this.chkLista.TabIndex = 21;
             this.chkLista.Text = "Ver Lista";
-            this.chkLista.UseVisualStyleBackColor = true;
+            this.chkLista.UseVisualStyleBackColor = false;
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.btnCliente);
             this.groupBox1.Controls.Add(this.cboModelo);
             this.groupBox1.Controls.Add(this.txtIdCliente);
@@ -82,7 +85,7 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(22, 145);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(332, 230);
             this.groupBox1.TabIndex = 14;
@@ -190,7 +193,7 @@
             // 
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
             this.btnNuevo.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnNuevo.Location = new System.Drawing.Point(378, 45);
+            this.btnNuevo.Location = new System.Drawing.Point(388, 182);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(86, 29);
             this.btnNuevo.TabIndex = 23;
@@ -200,7 +203,7 @@
             // 
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
             this.btnGuardar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnGuardar.Location = new System.Drawing.Point(378, 80);
+            this.btnGuardar.Location = new System.Drawing.Point(388, 217);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(86, 29);
             this.btnGuardar.TabIndex = 23;
@@ -210,7 +213,7 @@
             // 
             this.btnModificar.Image = ((System.Drawing.Image)(resources.GetObject("btnModificar.Image")));
             this.btnModificar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnModificar.Location = new System.Drawing.Point(378, 115);
+            this.btnModificar.Location = new System.Drawing.Point(388, 252);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(86, 29);
             this.btnModificar.TabIndex = 23;
@@ -220,17 +223,32 @@
             // 
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnCancelar.Location = new System.Drawing.Point(378, 150);
+            this.btnCancelar.Location = new System.Drawing.Point(388, 287);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(86, 29);
             this.btnCancelar.TabIndex = 23;
             this.btnCancelar.Text = "Cancelar";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.label13.Location = new System.Drawing.Point(129, 42);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(312, 55);
+            this.label13.TabIndex = 54;
+            this.label13.Text = "Automoviles";
+            // 
             // FrmAutomoviles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(521, 391);
+            this.BackgroundImage = global::CapaPresentacion.Properties.Resources.frm;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(551, 525);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnGuardar);
@@ -238,6 +256,7 @@
             this.Controls.Add(this.dgvProductos);
             this.Controls.Add(this.chkLista);
             this.Controls.Add(this.groupBox1);
+            this.DoubleBuffered = true;
             this.Name = "FrmAutomoviles";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Automoviles";
@@ -269,5 +288,6 @@
         private DevExpress.XtraEditors.SimpleButton btnGuardar;
         private DevExpress.XtraEditors.SimpleButton btnModificar;
         private DevExpress.XtraEditors.SimpleButton btnCancelar;
+        private System.Windows.Forms.Label label13;
     }
 }

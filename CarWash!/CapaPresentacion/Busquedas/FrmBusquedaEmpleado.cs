@@ -95,5 +95,10 @@ namespace CapaPresentacion
         {
             BuscarEmpleadoId(txtIdEmpleado.Text);
         }
+
+        private void dgvEmpleado_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

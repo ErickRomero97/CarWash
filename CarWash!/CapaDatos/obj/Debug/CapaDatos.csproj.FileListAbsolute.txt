@@ -12,3 +12,10 @@ C:\Users\Walter\Documents\GitHub\CarWash!\CapaDatos\bin\Debug\CapaEntidades.pdb
 C:\Users\Walter\Documents\GitHub\CarWash!\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
 C:\Users\Walter\Documents\GitHub\CarWash!\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\Walter\Documents\GitHub\CarWash!\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Cristhain\Desktop\Proyecto  Cientifica\CarWash\CarWash!\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Cristhain\Desktop\Proyecto  Cientifica\CarWash\CarWash!\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Cristhain\Desktop\Proyecto  Cientifica\CarWash\CarWash!\CapaDatos\bin\Debug\CapaEntidades.dll
+C:\Users\Cristhain\Desktop\Proyecto  Cientifica\CarWash\CarWash!\CapaDatos\bin\Debug\CapaEntidades.pdb
+C:\Users\Cristhain\Desktop\Proyecto  Cientifica\CarWash\CarWash!\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\Cristhain\Desktop\Proyecto  Cientifica\CarWash\CarWash!\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Cristhain\Desktop\Proyecto  Cientifica\CarWash\CarWash!\CapaDatos\obj\Debug\CapaDatos.pdb
