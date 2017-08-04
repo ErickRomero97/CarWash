@@ -79,7 +79,9 @@ namespace CapaPresentacion
                 }
                 else
                 {
-                    //FrmPrincipal.buttom = false;
+                    frm.logAuditoriaToolStripMenuItem.Enabled = false;
+                    frm.usuariosToolStripMenuItem.Enabled = false;
+                    frm.btnFactura.Enabled = false;
                 }
                 frm.Show();
                 this.Hide();

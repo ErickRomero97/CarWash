@@ -51,11 +51,21 @@
     <StartupObject>CapaPresentacion.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Charts.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v16.1.UI, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v16.1.Extensions, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -187,6 +197,47 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporte\dsCarWash.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCarWash.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\ReportePorTipoDeServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte\ReportePorTipoDeServicio.Designer.cs">
+      <DependentUpon>ReportePorTipoDeServicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\ReporTotalIngresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte\ReporTotalIngresos.Designer.cs">
+      <DependentUpon>ReporTotalIngresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\RptFactura.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporte\RptFactura.Designer.cs">
+      <DependentUpon>RptFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\RptIngresos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporte\RptIngresos.Designer.cs">
+      <DependentUpon>RptIngresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\RptTotalIngresos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporte\RptTotalIngresos.Designer.cs">
+      <DependentUpon>RptTotalIngresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\ç.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte\ç.Designer.cs">
+      <DependentUpon>ç.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Busquedas\BusquedaCliente.resx">
       <DependentUpon>BusquedaCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -255,6 +306,24 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reporte\ReportePorTipoDeServicio.resx">
+      <DependentUpon>ReportePorTipoDeServicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\ReporTotalIngresos.resx">
+      <DependentUpon>ReporTotalIngresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\RptFactura.resx">
+      <DependentUpon>RptFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\RptIngresos.resx">
+      <DependentUpon>RptIngresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\RptTotalIngresos.resx">
+      <DependentUpon>RptTotalIngresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\ç.resx">
+      <DependentUpon>ç.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -297,6 +366,17 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Reporte\dsCarWash.xsc">
+      <DependentUpon>dsCarWash.xsd</DependentUpon>
+    </None>
+    <None Include="Reporte\dsCarWash.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCarWash.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reporte\dsCarWash.xss">
+      <DependentUpon>dsCarWash.xsd</DependentUpon>
+    </None>
     <None Include="Resources\page_add.png" />
   </ItemGroup>
   <ItemGroup>

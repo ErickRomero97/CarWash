@@ -323,7 +323,7 @@
             // 
             this.automovilToolStripMenuItem.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.automovilToolStripMenuItem.Name = "automovilToolStripMenuItem";
-            this.automovilToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.automovilToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.automovilToolStripMenuItem.Text = "Automovil";
             this.automovilToolStripMenuItem.Click += new System.EventHandler(this.automovilToolStripMenuItem_Click);
             // 
@@ -331,7 +331,7 @@
             // 
             this.clienteToolStripMenuItem.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.clienteToolStripMenuItem.Text = "Cliente";
             this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
@@ -339,7 +339,7 @@
             // 
             this.empleadosToolStripMenuItem.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
-            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.empleadosToolStripMenuItem.Text = "Empleados";
             this.empleadosToolStripMenuItem.Click += new System.EventHandler(this.empleadosToolStripMenuItem_Click);
             // 
@@ -347,7 +347,7 @@
             // 
             this.marcaToolStripMenuItem.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.marcaToolStripMenuItem.Name = "marcaToolStripMenuItem";
-            this.marcaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.marcaToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.marcaToolStripMenuItem.Text = "Marca";
             this.marcaToolStripMenuItem.Click += new System.EventHandler(this.marcaToolStripMenuItem_Click);
             // 
@@ -355,7 +355,7 @@
             // 
             this.modeloToolStripMenuItem.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.modeloToolStripMenuItem.Name = "modeloToolStripMenuItem";
-            this.modeloToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.modeloToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.modeloToolStripMenuItem.Text = "Modelo";
             this.modeloToolStripMenuItem.Click += new System.EventHandler(this.modeloToolStripMenuItem_Click);
             // 
@@ -385,7 +385,7 @@
             // 
             this.clienteToolStripMenuItem1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.clienteToolStripMenuItem1.Name = "clienteToolStripMenuItem1";
-            this.clienteToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.clienteToolStripMenuItem1.Size = new System.Drawing.Size(127, 22);
             this.clienteToolStripMenuItem1.Text = "Cliente";
             this.clienteToolStripMenuItem1.Click += new System.EventHandler(this.clienteToolStripMenuItem1_Click);
             // 
@@ -393,7 +393,7 @@
             // 
             this.autoToolStripMenuItem.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.autoToolStripMenuItem.Name = "autoToolStripMenuItem";
-            this.autoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.autoToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.autoToolStripMenuItem.Text = "Auto";
             this.autoToolStripMenuItem.Click += new System.EventHandler(this.autoToolStripMenuItem_Click);
             // 
@@ -401,7 +401,7 @@
             // 
             this.empleadoToolStripMenuItem.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.empleadoToolStripMenuItem.Name = "empleadoToolStripMenuItem";
-            this.empleadoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.empleadoToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.empleadoToolStripMenuItem.Text = "Empleado";
             this.empleadoToolStripMenuItem.Click += new System.EventHandler(this.empleadoToolStripMenuItem_Click);
             // 
@@ -409,7 +409,7 @@
             // 
             this.facturaToolStripMenuItem.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.facturaToolStripMenuItem.Name = "facturaToolStripMenuItem";
-            this.facturaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.facturaToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.facturaToolStripMenuItem.Text = "Factura";
             this.facturaToolStripMenuItem.Click += new System.EventHandler(this.facturaToolStripMenuItem_Click);
             // 
@@ -417,7 +417,7 @@
             // 
             this.marcaToolStripMenuItem1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.marcaToolStripMenuItem1.Name = "marcaToolStripMenuItem1";
-            this.marcaToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.marcaToolStripMenuItem1.Size = new System.Drawing.Size(127, 22);
             this.marcaToolStripMenuItem1.Text = "Marca";
             this.marcaToolStripMenuItem1.Click += new System.EventHandler(this.marcaToolStripMenuItem1_Click);
             // 
@@ -425,7 +425,7 @@
             // 
             this.modeloToolStripMenuItem1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.modeloToolStripMenuItem1.Name = "modeloToolStripMenuItem1";
-            this.modeloToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.modeloToolStripMenuItem1.Size = new System.Drawing.Size(127, 22);
             this.modeloToolStripMenuItem1.Text = "Modelo";
             this.modeloToolStripMenuItem1.Click += new System.EventHandler(this.modeloToolStripMenuItem1_Click);
             // 
@@ -433,7 +433,7 @@
             // 
             this.servicioToolStripMenuItem.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.servicioToolStripMenuItem.Name = "servicioToolStripMenuItem";
-            this.servicioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.servicioToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.servicioToolStripMenuItem.Text = "Servicio";
             this.servicioToolStripMenuItem.Click += new System.EventHandler(this.servicioToolStripMenuItem_Click);
             // 
@@ -465,7 +465,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "CarWash";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.statusStrip1.ResumeLayout(false);
@@ -504,13 +504,11 @@
         private System.Windows.Forms.Button btnClientes;
         private System.Windows.Forms.Button btnAutomovil;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btnFactura;
         private System.Windows.Forms.ToolStripMenuItem automovilToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem empleadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem marcaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modeloToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem autoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem empleadoToolStripMenuItem;
@@ -518,6 +516,8 @@
         private System.Windows.Forms.ToolStripMenuItem marcaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem modeloToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem servicioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem logAuditoriaToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem logAuditoriaToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
+        public System.Windows.Forms.Button btnFactura;
     }
 }

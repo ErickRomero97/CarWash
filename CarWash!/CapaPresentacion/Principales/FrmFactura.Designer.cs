@@ -89,6 +89,7 @@
             this.txtISV.Name = "txtISV";
             this.txtISV.Size = new System.Drawing.Size(114, 20);
             this.txtISV.TabIndex = 51;
+            this.txtISV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtTotal
             // 
@@ -96,6 +97,7 @@
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(114, 20);
             this.txtTotal.TabIndex = 50;
+            this.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtSub
             // 
@@ -103,7 +105,7 @@
             this.txtSub.Name = "txtSub";
             this.txtSub.Size = new System.Drawing.Size(114, 20);
             this.txtSub.TabIndex = 49;
-            this.txtSub.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSub.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label14
             // 

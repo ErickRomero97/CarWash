@@ -26,3 +26,10 @@ C:\Users\ERICK GALLARDO\Desktop\CarWash\CarWash!\CapaDatos\bin\Debug\CapaEntidad
 C:\Users\ERICK GALLARDO\Desktop\CarWash\CarWash!\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
 C:\Users\ERICK GALLARDO\Desktop\CarWash\CarWash!\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\ERICK GALLARDO\Desktop\CarWash\CarWash!\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Miguel\Desktop\Proyecto Carwash\CarWash\CarWash!\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Miguel\Desktop\Proyecto Carwash\CarWash\CarWash!\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Miguel\Desktop\Proyecto Carwash\CarWash\CarWash!\CapaDatos\bin\Debug\CapaEntidades.dll
+C:\Users\Miguel\Desktop\Proyecto Carwash\CarWash\CarWash!\CapaDatos\bin\Debug\CapaEntidades.pdb
+C:\Users\Miguel\Desktop\Proyecto Carwash\CarWash\CarWash!\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\Miguel\Desktop\Proyecto Carwash\CarWash\CarWash!\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Miguel\Desktop\Proyecto Carwash\CarWash\CarWash!\CapaDatos\obj\Debug\CapaDatos.pdb

@@ -11,6 +11,9 @@ using CapaEntidades;
 using CapaNegocio;
 using System.Data.SqlClient;
 using CapaDatos;
+using DevExpress.XtraReports.UI;
+using CapaPresentacion.Reporte;
+
 namespace CapaPresentacion
 {
     public partial class FrmFactura : Form
@@ -222,6 +225,19 @@ namespace CapaPresentacion
 
             InsertarFactura();
             AgregarDetalle();
+            if(MessageBox.Show("¿Desea imprimir la factura?","CarWash", MessageBoxButtons.YesNo, MessageBoxIcon.Information)==DialogResult.Yes)
+            {
+                int id = int.Parse(txtIdFactura.Text);
+                string isv = txtISV.Text;
+                string total = txtTotal.Text;
+
+                
+                RptFactura reporte = new RptFactura(id,isv,total);
+                ReportPrintTool viewer = new ReportPrintTool(reporte);
+
+                viewer.ShowRibbonPreview();
+            }
+
             Limpiar();
             LimpiarArticulos();
             HabilitarBotones(true, false, false, false, false);
