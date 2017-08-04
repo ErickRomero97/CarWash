@@ -217,7 +217,7 @@ namespace CapaPresentacion
             objM.IdModelo = Convert.ToInt32(cboModelo.SelectedValue);
             objM.Anio = Convert.ToInt16(txtAño.Text);
             objM.IdCliente = txtIdCliente.Text;
-            objM.IdUsuario = 10;
+            objM.IdUsuario =FrmPrincipal.id ;
             if (insertC.Nuevo(objM) > 0)
             {
                 MessageBox.Show(null, "Se Guardo bien el nuevo registro de Auto", "CarWash System", MessageBoxButtons.OK);
@@ -238,7 +238,7 @@ namespace CapaPresentacion
             objM.IdModelo = Convert.ToInt32(cboModelo.SelectedValue);
             objM.Anio = Convert.ToInt16(txtAño.Text);
             objM.IdCliente = txtIdCliente.Text;
-            objM.IdUsuario = 10;
+            objM.IdUsuario = FrmPrincipal.id;
             if (actualizarC.Actualizar(objM) > 0)
             {
                 MessageBox.Show(null, "Se ha Actualizado el Auto", "CarWash System", MessageBoxButtons.OK);

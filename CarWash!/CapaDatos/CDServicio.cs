@@ -83,7 +83,7 @@ namespace CapaDatos
             }
             catch (Exception ex)
             {
-                throw new Exception("Error al intentar el eliminar el registtro de servicio", ex);
+                throw new Exception("Error al intentar el eliminar el registro de servicio", ex);
             }
             finally
             {

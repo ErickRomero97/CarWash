@@ -17,7 +17,7 @@ namespace CapaPresentacion
         {
             InitializeComponent();
         }
-
+        
         private void FrmUsuarios_Load(object sender, EventArgs e)
         {
             CargarUsuarios();
@@ -152,12 +152,7 @@ namespace CapaPresentacion
         public static string idEmpleado;
         public static string nombre;
 
-       
-        private void FrmUsuarios_Activated(object sender, EventArgs e)
-        {
-            mtbIdEmpleado.Text = idEmpleado;
-            txtNombreEmpleado.Text = nombre;
-        }
+     
 
         private void btnNuevo_Click_1(object sender, EventArgs e)
         {
@@ -169,11 +164,7 @@ namespace CapaPresentacion
             Validar();
         }
 
-        private void btnEditar_Click(object sender, EventArgs e)
-        {
-
-        }
-
+     
         private void btnCancelar_Click_1(object sender, EventArgs e)
         {
             Limpiar();
@@ -198,10 +189,7 @@ namespace CapaPresentacion
             frmbuscar.Show();
         }
 
-        private void editarToolStripMenuItem_Click_1(object sender, EventArgs e)
-        {
-            
-        }
+ 
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
@@ -276,6 +264,12 @@ namespace CapaPresentacion
             txtNombreEmpleado.Text = dgvUsuarios.CurrentRow.Cells[5].Value.ToString();
             cboTipoUsuario.Text = dgvUsuarios.CurrentRow.Cells[6].Value.ToString();
             HabilitarBotones(false, false, true, true, true);
+        }
+
+        private void FrmUsuarios_Activated_1(object sender, EventArgs e)
+        {
+            mtbIdEmpleado.Text = idEmpleado;
+            txtNombreEmpleado.Text = nombre;
         }
     }
 }

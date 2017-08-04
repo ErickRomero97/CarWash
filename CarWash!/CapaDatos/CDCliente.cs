@@ -34,7 +34,7 @@ namespace CapaDatos
             catch (Exception ex)
             {
 
-                throw new Exception("Error al ingresar un nuevo reguistro de clientes", ex);
+                throw new Exception("Error al ingresar un nuevo registro de clientes", ex);
                
             }
             finally
@@ -65,7 +65,7 @@ namespace CapaDatos
             }
             catch (Exception ex )
             {
-                throw new Exception("Error al actualizar el reguistro del cliente", ex);
+                throw new Exception("Error al actualizar el registro del cliente", ex);
             }
             finally
             {
@@ -101,7 +101,7 @@ namespace CapaDatos
                 }
                 else
                 {
-                    throw new Exception("Error al eliminar el reguistro del cliente", ex);
+                    throw new Exception("Error al eliminar el registro del cliente", ex);
                 }
             }
             finally

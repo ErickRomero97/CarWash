@@ -18,6 +18,7 @@ namespace CapaPresentacion
         {
             InitializeComponent();
         }
+        public static int id;
 
         private void button7_Click(object sender, EventArgs e)
         {
@@ -160,6 +161,11 @@ namespace CapaPresentacion
         {
             FrmLogAuditoria MiLog = new FrmLogAuditoria();
             MiLog.Show();
+        }
+
+        private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

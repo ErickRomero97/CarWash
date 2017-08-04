@@ -68,7 +68,7 @@ namespace CapaPresentacion
             if (!validar.ValidarLogin(objDatos)[0].Equals("0") && !validar.ValidarLogin(objDatos)[0].Equals("-1"))
             {
                 FrmPrincipal frm = new FrmPrincipal();
-
+                FrmPrincipal.id = Convert.ToInt32(validar.ValidarLogin(objDatos)[0].ToString());
                 frm.tsslIdUsuario.Text = validar.ValidarLogin(objDatos)[0].ToString();
                 frm.tsslNombreUsuario.Text = validar.ValidarLogin(objDatos)[2].ToString();
                 frm.tsslTipoUsuario.Text = validar.ValidarLogin(objDatos)[1].ToString();
@@ -82,6 +82,7 @@ namespace CapaPresentacion
                     frm.logAuditoriaToolStripMenuItem.Enabled = false;
                     frm.usuariosToolStripMenuItem.Enabled = false;
                     frm.btnFactura.Enabled = false;
+                 
                 }
                 frm.Show();
                 this.Hide();

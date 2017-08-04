@@ -318,13 +318,13 @@
             this.CmsOpciones.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.editarMenuItem});
             this.CmsOpciones.Name = "CmsOpciones";
-            this.CmsOpciones.Size = new System.Drawing.Size(157, 52);
+            this.CmsOpciones.Size = new System.Drawing.Size(109, 30);
             // 
             // editarMenuItem
             // 
             this.editarMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("editarMenuItem.Image")));
             this.editarMenuItem.Name = "editarMenuItem";
-            this.editarMenuItem.Size = new System.Drawing.Size(156, 26);
+            this.editarMenuItem.Size = new System.Drawing.Size(108, 26);
             this.editarMenuItem.Text = "Editar";
             this.editarMenuItem.Click += new System.EventHandler(this.editarMenuItem_Click);
             // 
@@ -347,6 +347,7 @@
             this.Name = "FrmUsuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Usuarios";
+            this.Activated += new System.EventHandler(this.FrmUsuarios_Activated_1);
             this.Load += new System.EventHandler(this.FrmUsuarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
             this.gbDatos.ResumeLayout(false);

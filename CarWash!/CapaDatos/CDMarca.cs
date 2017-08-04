@@ -31,7 +31,7 @@ namespace CapaDatos
             catch (Exception ex)
             {
 
-                throw new Exception("Error al ingresar un nuevo reguistro de  Marca", ex);
+                throw new Exception("Error al ingresar un nuevo registro de  Marca", ex);
 
             }
             finally
@@ -58,7 +58,7 @@ namespace CapaDatos
             }
             catch (Exception ex)
             {
-                throw new Exception("Error al actualizar el reguistro de Marca", ex);
+                throw new Exception("Error al actualizar el registro de Marca", ex);
             }
             finally
             {
@@ -92,7 +92,7 @@ namespace CapaDatos
                 }
                 else
                 {
-                    throw new Exception("Error al eliminar el reguistro de marca", ex);
+                    throw new Exception("Error al eliminar el registro de marca", ex);
                 }
             }
             finally

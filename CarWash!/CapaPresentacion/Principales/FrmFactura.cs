@@ -99,7 +99,7 @@ namespace CapaPresentacion
             CEFactura objFactura = new CEFactura();
             objFactura.Fecha = dtpFechaFactura.Value;
             objFactura.IdAutomovil = txtIdAutomovil.Text;
-            objFactura.IdUsuario = Convert.ToInt16(10);
+            objFactura.IdUsuario = FrmPrincipal.id;
             if(inserF.NuevaFactura(objFactura)>0)
             {
 

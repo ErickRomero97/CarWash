@@ -67,7 +67,7 @@ namespace CapaPresentacion
             objSer.Servicio = txtNS.Text;
             objSer.Precio = Convert.ToDecimal(txtPrecio.Text);
             objSer.Descripcion = txtDesc.Text;
-            objSer.IdUsuario = 10;
+            objSer.IdUsuario = FrmPrincipal.id;
             if (inserP.NuevoServicio(objSer) > 0)
             {
                 MessageBox.Show(null, "Se ingreso un nuevo registro de Servicio", "CarWash System", MessageBoxButtons.OK);
@@ -86,7 +86,7 @@ namespace CapaPresentacion
             objSer.Servicio = txtNS.Text;
             objSer.Precio = Convert.ToDecimal(txtPrecio.Text);
             objSer.Descripcion = txtDesc.Text;
-            objSer.IdUsuario = 10;
+            objSer.IdUsuario = FrmPrincipal.id;
             if (inserP.ActualizarServicio(objSer) > 0)
             {
                 MessageBox.Show(null, "Se Actualizo el registro de Servicio", "CarWash System", MessageBoxButtons.OK);

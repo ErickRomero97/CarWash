@@ -31,7 +31,7 @@ namespace CapaDatos
             catch (Exception ex)
             {
 
-                throw new Exception("Error al ingresar un nuevo reguistro de modelo", ex);
+                throw new Exception("Error al ingresar un nuevo registro de modelo", ex);
 
             }
             finally
@@ -59,7 +59,7 @@ namespace CapaDatos
             }
             catch (Exception ex)
             {
-                throw new Exception("Error al actualizar el reguistro del modelo", ex);
+                throw new Exception("Error al actualizar el registro del modelo", ex);
             }
             finally
             {
@@ -95,7 +95,7 @@ namespace CapaDatos
                 }
                 else
                 {
-                    throw new Exception("Error al eliminar el reguistro de modelo", ex);
+                    throw new Exception("Error al eliminar el registro de modelo", ex);
                 }
             }
             finally

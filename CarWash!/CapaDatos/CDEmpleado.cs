@@ -31,7 +31,7 @@ namespace CapaDatos
             }
             catch (Exception ex)
             {
-                throw new Exception("Error al tratar de almacenar empleado", ex);
+                throw new Exception("Error al tratar de almacenar el registro del Empleado", ex);
             }
             finally
             {
@@ -62,7 +62,7 @@ namespace CapaDatos
             }
             catch (Exception ex)
             {
-                throw new Exception("Error al tratar de actualizar empleado", ex);
+                throw new Exception("Error al tratar de actualizar el registro del empleado", ex);
             }
             finally
             {
