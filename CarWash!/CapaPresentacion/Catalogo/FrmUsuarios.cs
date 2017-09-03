@@ -271,5 +271,17 @@ namespace CapaPresentacion
             mtbIdEmpleado.Text = idEmpleado;
             txtNombreEmpleado.Text = nombre;
         }
+
+        private void txtNombreUsuario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (txtNombreUsuario.Text.Length == 0)
+            {
+                e.KeyChar = e.KeyChar.ToString().ToUpper().ToCharArray()[0];
+            }
+            else if (txtNombreUsuario.Text.Length > 0)
+            {
+                e.KeyChar = e.KeyChar.ToString().ToLower().ToCharArray()[0];
+            }
+        }
     }
 }

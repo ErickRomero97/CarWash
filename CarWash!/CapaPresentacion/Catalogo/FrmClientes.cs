@@ -327,5 +327,41 @@ namespace CapaPresentacion
             HabilitarBotones(true, false, true, false, false);
             Limpiar();
         }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (txtNombre.Text.Length == 0)
+            {
+                e.KeyChar = e.KeyChar.ToString().ToUpper().ToCharArray()[0];
+            }
+            else if (txtNombre.Text.Length > 0)
+            {
+                e.KeyChar = e.KeyChar.ToString().ToLower().ToCharArray()[0];
+            }
+        }
+
+        private void txtApellidos_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (txtApellidos.Text.Length == 0)
+            {
+                e.KeyChar = e.KeyChar.ToString().ToUpper().ToCharArray()[0];
+            }
+            else if (txtApellidos.Text.Length > 0)
+            {
+                e.KeyChar = e.KeyChar.ToString().ToLower().ToCharArray()[0];
+            }
+        }
+
+        private void txtDireccion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (txtDireccion.Text.Length == 0)
+            {
+                e.KeyChar = e.KeyChar.ToString().ToUpper().ToCharArray()[0];
+            }
+            else if (txtDireccion.Text.Length > 0)
+            {
+                e.KeyChar = e.KeyChar.ToString().ToLower().ToCharArray()[0];
+            }
+        }
     }
 }

@@ -103,7 +103,7 @@ namespace CapaPresentacion
             if(inserF.NuevaFactura(objFactura)>0)
             {
 
-                MessageBox.Show(null, "Se Guardo el reguistro de la factura", "CarWash System", MessageBoxButtons.OK);
+                MessageBox.Show(null, "Se guardó el registro de la factura", "CarWash System", MessageBoxButtons.OK);
             }
             else
             {
@@ -123,7 +123,7 @@ namespace CapaPresentacion
                 objFactura.IdServicio = Convert.ToInt32(fila.Cells[1].Value.ToString());
                 if (insertDetalle.AgregarDetalle(objFactura) > 0)
                 {
-                    MessageBox.Show(null, "Se Guardo el reguistro del detalle de la factura", "CarWash System", MessageBoxButtons.OK);
+                    MessageBox.Show(null, "Se guardó el registro del detalle de la factura", "CarWash System", MessageBoxButtons.OK);
                 }
                 else
                 {

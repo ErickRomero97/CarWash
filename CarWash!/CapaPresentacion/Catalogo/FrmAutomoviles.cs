@@ -294,5 +294,16 @@ namespace CapaPresentacion
 
         }
 
+        private void txtDescripcion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (txtDescripcion.Text.Length == 0)
+            {
+                e.KeyChar = e.KeyChar.ToString().ToUpper().ToCharArray()[0];
+            }
+            else if (txtDescripcion.Text.Length > 0)
+            {
+                e.KeyChar = e.KeyChar.ToString().ToLower().ToCharArray()[0];
+            }
+        }
     }
 }

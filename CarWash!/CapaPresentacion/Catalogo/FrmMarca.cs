@@ -206,5 +206,17 @@ namespace CapaPresentacion.Formularios
             CNMarca correlativo = new CNMarca();
             txtIdMarca.Text = Convert.ToString(correlativo.InvestigarCorrelativo());
         }
+
+        private void txtMarca_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (txtMarca.Text.Length == 0)
+            {
+                e.KeyChar = e.KeyChar.ToString().ToUpper().ToCharArray()[0];
+            }
+            else if (txtMarca.Text.Length > 0)
+            {
+                e.KeyChar = e.KeyChar.ToString().ToLower().ToCharArray()[0];
+            }
+        }
     }
 }

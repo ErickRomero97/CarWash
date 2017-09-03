@@ -27,3 +27,8 @@ C:\Users\ERICK GALLARDO\Desktop\Nueva carpeta (2)\CarWash\CarWash!\CapaEntidades
 C:\Users\ERICK GALLARDO\Desktop\Nueva carpeta (2)\CarWash\CarWash!\CapaEntidades\obj\Debug\CapaEntidades.csprojResolveAssemblyReference.cache
 C:\Users\ERICK GALLARDO\Desktop\Nueva carpeta (2)\CarWash\CarWash!\CapaEntidades\obj\Debug\CapaEntidades.dll
 C:\Users\ERICK GALLARDO\Desktop\Nueva carpeta (2)\CarWash\CarWash!\CapaEntidades\obj\Debug\CapaEntidades.pdb
+C:\Users\Miguel\Desktop\CarWash\CarWash!\CapaEntidades\bin\Debug\CapaEntidades.dll
+C:\Users\Miguel\Desktop\CarWash\CarWash!\CapaEntidades\bin\Debug\CapaEntidades.pdb
+C:\Users\Miguel\Desktop\CarWash\CarWash!\CapaEntidades\obj\Debug\CapaEntidades.csprojResolveAssemblyReference.cache
+C:\Users\Miguel\Desktop\CarWash\CarWash!\CapaEntidades\obj\Debug\CapaEntidades.dll
+C:\Users\Miguel\Desktop\CarWash\CarWash!\CapaEntidades\obj\Debug\CapaEntidades.pdb

@@ -231,5 +231,17 @@ namespace CapaPresentacion.Formularios
             frm.ShowDialog();
             this.Show();
         }
+
+        private void txtModelo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (txtModelo.Text.Length == 0)
+            {
+                e.KeyChar = e.KeyChar.ToString().ToUpper().ToCharArray()[0];
+            }
+            else if (txtModelo.Text.Length > 0)
+            {
+                e.KeyChar = e.KeyChar.ToString().ToLower().ToCharArray()[0];
+            }
+        }
     }
 }

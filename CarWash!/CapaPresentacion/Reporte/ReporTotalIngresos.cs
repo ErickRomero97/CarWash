@@ -23,5 +23,10 @@ namespace CapaPresentacion.Reporte
             ReportPrintTool viewer = new ReportPrintTool(reporte);
             viewer.ShowRibbonPreview();
         }
+
+        private void FrmReporTotalIngresos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

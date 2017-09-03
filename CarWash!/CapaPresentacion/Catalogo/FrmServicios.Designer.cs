@@ -135,6 +135,7 @@
             this.txtDesc.Name = "txtDesc";
             this.txtDesc.Size = new System.Drawing.Size(257, 112);
             this.txtDesc.TabIndex = 13;
+            this.txtDesc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDesc_KeyPress);
             // 
             // btnProveedor
             // 
@@ -161,6 +162,7 @@
             this.txtNS.Name = "txtNS";
             this.txtNS.Size = new System.Drawing.Size(131, 20);
             this.txtNS.TabIndex = 2;
+            this.txtNS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNS_KeyPress);
             // 
             // txtIdSer
             // 
@@ -285,6 +287,7 @@
             this.Controls.Add(this.chkLista);
             this.Controls.Add(this.gbDatos);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FrmServicios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Servicios";

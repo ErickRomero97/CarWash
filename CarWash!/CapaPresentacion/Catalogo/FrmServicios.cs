@@ -288,5 +288,29 @@ namespace CapaPresentacion
             chkLista.Enabled = true;
             HabilitarBotones(true, false, false, false, false);
         }
+
+        private void txtNS_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (txtNS.Text.Length == 0)
+            {
+                e.KeyChar = e.KeyChar.ToString().ToUpper().ToCharArray()[0];
+            }
+            else if (txtNS.Text.Length > 0)
+            {
+                e.KeyChar = e.KeyChar.ToString().ToLower().ToCharArray()[0];
+            }
+        }
+
+        private void txtDesc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (txtDesc.Text.Length == 0)
+            {
+                e.KeyChar = e.KeyChar.ToString().ToUpper().ToCharArray()[0];
+            }
+            else if (txtDesc.Text.Length > 0)
+            {
+                e.KeyChar = e.KeyChar.ToString().ToLower().ToCharArray()[0];
+            }
+        }
     }
 }

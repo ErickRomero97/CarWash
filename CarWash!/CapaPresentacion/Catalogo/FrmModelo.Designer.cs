@@ -163,6 +163,7 @@
             this.txtModelo.Name = "txtModelo";
             this.txtModelo.Size = new System.Drawing.Size(113, 20);
             this.txtModelo.TabIndex = 2;
+            this.txtModelo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtModelo_KeyPress);
             // 
             // dgvModelo
             // 
@@ -283,6 +284,7 @@
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.dgvModelo);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FrmModelo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modelo";

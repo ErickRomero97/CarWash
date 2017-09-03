@@ -64,6 +64,7 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.dgvAuditoria);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FrmLogAuditoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LogAuditoria";

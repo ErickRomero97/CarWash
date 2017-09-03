@@ -75,6 +75,7 @@
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(113, 20);
             this.txtMarca.TabIndex = 2;
+            this.txtMarca.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMarca_KeyPress);
             // 
             // dgvMarca
             // 
@@ -230,6 +231,7 @@
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.dgvMarca);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FrmMarca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Marca";

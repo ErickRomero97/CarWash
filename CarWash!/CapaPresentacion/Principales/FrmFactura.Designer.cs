@@ -544,6 +544,7 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.gbArticulos);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FrmFactura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmFactura";
